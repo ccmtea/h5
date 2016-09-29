@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="html">
+<html lang="en">
 <head>
-    <v-meta></v-meta>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable"> 
+    <meta content="yes" name="apple-touch-fullscreen"> 
+    <meta content="telephone=no,email=no" name="format-detection"> 
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
 	<title>reset</title>
-    <v-head-quote></v-head-quote>
+    <script src="../../../js/common/flexible.js"></script>
+    <link rel="stylesheet" href="../../../dist/plugin/highlight.css">
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/global.css">
 </head>
 <body>
     <div id="mo-wrapper">
         <header id="ui-header">
-            <div class="ui-header-con"></div>
+            <div class="ui-header-con">
+                <a href="#"></a>
+                <h2>H5 3.0框架</h2>
+                <a href="#">返回首页</a>
+            </div>
         </header>
         <section id="ui-main">
             <div class="ui-scroll">
@@ -33,11 +43,16 @@
             </nav>
         </footer>
     </div>
-    <v-foot-quote></v-foot-quote>
-    <script src="../../js/vue.js"></script>
+    <script>
+        document.body.addEventListener('touchstart', function () {});  
+    </script>
+    <script src="../../../js/common/vue.js"></script>
+    <script src="../../../js/plugin/highlight.js"></script>
+    <script src="../../../js/plugin/zeroClipboard.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script>
         new Vue({
-            el: '.html'
+            el: 'head'
         });
     </script>
 </body>

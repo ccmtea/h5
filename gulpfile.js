@@ -20,7 +20,7 @@ gulp.task('scss',function(){
         // .pipe(minifyCSS())
 
         // .pipe(plumber())
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(livereload());
 
 });
