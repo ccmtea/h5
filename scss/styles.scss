@@ -1,0 +1,109 @@
+ @import "base/variate",
+         "base/mixin";
+
+ @function px2rem($px, $base-font-size: 75px) {
+  @if (unitless($px)) {
+    @return px2rem($px + 0px); 
+  } @else if (unit($px) == rem) {
+    @return $px;
+  }
+  @return ($px / $base-font-size) * 1rem;
+}
+ body, html,#mo-wrapper, #ui-main{
+    height: 100%;
+    position: relative;
+}
+body{
+    max-width:10rem;
+    margin:auto;
+}
+#ui-header,#ui-footer{
+    position: $pa;
+    width:100%;
+}
+#ui-header{
+    top:0;
+    left:0;
+    right:0;
+    .ui-header-con{
+        width:100%;
+        height: px2rem(72);
+        background: #ffa74d;
+    }
+}
+#ui-footer{
+    bottom:px2rem(-1);
+    left:0;
+    right:0;
+    .ui-footer-con{
+        width:100%;
+        display: flex;
+        height:px2rem(90);
+        background: #fff;
+        >a{
+            display: block;
+            flex-grow: 1;
+            font-size:px2rem(28);
+            line-height: px2rem(90);
+        }
+        &.border{
+            @include border-style(bt);
+        }
+    }
+}
+#mo-wrapper,#ui-main{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+}
+#mo-wrapper{
+    width:100%;
+    overflow: hidden;
+}
+#ui-main{
+    padding:px2rem(72) 0 px2rem(90);
+}
+#ui-header,#ui-footer,#ui-main-ab{
+    z-index:$zi100;
+}
+
+
+
+
+.ui-nav{
+    position:absolute;
+    width:100%;
+    height:px2rem(60);
+    line-height: px2rem(60);
+    color:#fff;
+    font-size:px2rem(30);
+    background: #ded5d5;
+    z-index: 100;
+}
+.ui-scroll{
+    height:100%;
+    padding-top:px2rem(60);
+    overflow-y: auto;
+}
+.ui-tab-con{
+    .ui-tc{
+        li{
+           border-bottom:1px solid $bc;
+           a{
+               position: $pr;
+               display: block;
+               padding:0 px2rem(30);
+               line-height: px2rem(90);
+               font-size:px2rem(26);
+           }
+           span{
+               position: $pa;
+               right:px2rem(30);
+           }
+        }
+        li:last-child{
+            border-bottom:none;
+        }
+    }
+}
+
+

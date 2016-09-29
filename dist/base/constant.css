@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*   文字定位    start*/
+.tl {
+  text-align: left; }
+
+.tc {
+  text-align: center; }
+
+.tr {
+  text-align: right; }
+
+.dl {
+  direction: ltr; }
+
+.dr {
+  direction: rtl; }
+
+/*   文字定位    end*/
+/*   浮动定位    start*/
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*   浮动定位    end*/
+/*   文字颜色    start*/
+.c-6 {
+  color: #666; }
+
+.c-orange {
+  color: #ffa74d; }
+
+.c-29 {
+  color: #292929; }
+
+.c-666 {
+  color: #666; }
+
+.c-da {
+  color: #dadada; }
+
+.c-92 {
+  color: #929292; }
+
+.c-f1 {
+  color: #F1F1F1; }
+
+.c-f2 {
+  color: #F2F2F2; }
+
+.c-f3 {
+  color: #F3F3F3; }
+
+.c-f60 {
+  color: #ff6600; }
+
+.c-58bf8b {
+  color: #58bf8b; }
+
+.c-green {
+  color: #5edd9e; }
+
+.c-white {
+  color: #fff; }
+
+.c-black {
+  color: #000; }
+
+.c-19 {
+  color: #191919; }
+
+.c-e3 {
+  color: #e3e3e3; }
+
+/*   文字颜色    end*/
+/*   背景颜色    start*/
+.bg-orange {
+  background-color: #ffa74d; }
+
+.bg-f60 {
+  background: #ff6600; }
+
+.bg-58bf8b {
+  background-color: #58bf8b; }
+
+.bg-green {
+  background-color: #5edd9e; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-black {
+  background-color: #000; }
+
+.bg-e3 {
+  background-color: #e3e3e3; }
+
+.bg-f3 {
+  background: #f3f3f3; }
+
+.bg-f2 {
+  background: #f2f2f2; }
+
+.bg-f1 {
+  background: #f1f1f1; }
+
+.bg-92 {
+  background: #929292; }
+
+.bg-29 {
+  background: #292929; }
+
+/*   背景颜色    end*/
+/*   边框1px    start*/
+.border {
+  position: relative; }
+
+.border a {
+  position: relative; }
+
+.border:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top; }
+
+/*   边框1px    end*/
+/*   清除浮动    start*/
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden; }
+
+/*   清除浮动    end*/
+/*   列表点击背景    start*/
+.act-list > li:active {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+/*   列表点击背景    end*/
+
+/*# sourceMappingURL=constant.css.map */
