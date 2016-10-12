@@ -9,12 +9,35 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-runtime": "^6.11.6",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-watch": "^4.3.9",
-    "webpack": "^1.13.2"
-  }
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue": "^2.0.1",
+    "vue-loader": "^9.5.1",
+    "vue-router": "^2.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hejuan0219/h5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hejuan0219/h5/issues"
+  },
+  "homepage": "https://github.com/hejuan0219/h5#readme"
 }

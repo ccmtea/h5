@@ -24,6 +24,25 @@ gulp.task('scss',function(){
         .pipe(livereload());
 
 });
+gulp.task('scss2',function(){
+    return gulp.src('src/index.scss')
+
+        //初始化map
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefix({browsers: ['last 2 versions', 'Android >= 4.0']}))
+
+        //编译map
+        .pipe(sourcemaps.write('/'))
+
+        //编译样式文件地址
+        // .pipe(minifyCSS())
+
+        // .pipe(plumber())
+        .pipe(gulp.dest('dist/index.css'))
+        .pipe(livereload());
+
+});
 gulp.task('watch',function(){
     livereload.listen();
     gulp.watch('scss/**/*.scss',['scss']);
