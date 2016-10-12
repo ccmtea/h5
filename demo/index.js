@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import '../src/index.scss'
-import index2 from './index2'
-import header from './components/header.vue'
+import VueAnimatedList from 'vue-animated-list'
+import sidebar from './components/sidebar.vue'
 
+Vue.use(VueAnimatedList)
 var app = new Vue({
     el: '#app',
     components: {
-        hh: header,
+        hh: sidebar,
     },
     data: {
         message: 'Hello Vue!'

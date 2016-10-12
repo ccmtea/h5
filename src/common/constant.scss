@@ -1,4 +1,4 @@
-@import "mixin";
+@import "./util/mixin";
 
 /*   文字定位    start*/
 .tl{
@@ -11,10 +11,10 @@
     text-align: right;
 }
 .dl{
-    direction:ltr;    //文字靠左
+    direction:ltr;    //光标文字靠左
 }
 .dr{
-    direction:rtl;    //文字靠右 
+    direction:rtl;    //光标文字靠右 
 } 
 /*   文字定位    end*/
 /*   浮动定位    start*/

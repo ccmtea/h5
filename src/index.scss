@@ -1,6 +1,7 @@
 @import './common/reset.scss';
-@import './components/btn.scss';
+@import './common/constant.scss';
+@import './util/variate.scss';
 
 html{
-    background: #ff0;
+    background: #fff;
 }
