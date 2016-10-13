@@ -1,10 +1,14 @@
 <template>
     <div class="sidebar">
-        <h1>JUZI-UI</h1>
+        <h1>
+            <router-link :to="{ name: 'index' }">JUZI-UI</router-link>
+            {{ store.routerName }}
+        </h1>
         <ul>
             <li>
-                <h6 class="arrow">基础组件</h6>
-                <div class="sidebar-a">
+                <h6 @click="showTab1 = !showTab1">基础组件</h6>
+                <div v-if="showTab1" class="sidebar-a">
+                    <router-link :class="{ cur: store.routerName === 'btn' }" :to="{ name: 'btn' }">btn</router-link>
                     <a href="#">重置</a>
                     <a href="#">常量</a>
                     <a href="#">变量</a>
@@ -55,62 +59,70 @@
     </div>
 </template>
 <style scoped lang="scss">
+    h1 a {
+        color: #000;
+    }
+    
     .sidebar {
-        position:fixed;
-        width:256px;
-        height:100%;
-        top:0;
-        left:0;
-        color:#666;
-        background:#fff;
+        position: fixed;
+        width: 256px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color: #666;
+        background: #fff;
         box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
-        h1{
-            padding-left:30px;
-            line-height:64px;
-            color:#fff;
-            font-size:20px;
+        h1 {
+            padding-left: 30px;
+            line-height: 64px;
+            color: #fff;
+            font-size: 20px;
             background: #5edd9e;
         }
-        h6,.sidebar-a a{
-            padding-left:30px;
-            line-height:45px;
+        h6,
+        .sidebar-a a {
+            padding-left: 30px;
+            line-height: 45px;
         }
-        h6{
-            position:relative;
-            &.arrow{
-                &:after{
-                    margin-top:-3px;
-                    transform:rotate(315deg);
+        h6 {
+            position: relative;
+            &.arrow {
+                &:after {
+                    margin-top: -3px;
+                    transform: rotate(315deg);
                 }
             }
         }
-        .sidebar-a a{
-            display:block;
-            padding-left:50px;
-            color:#666;
+        .sidebar-a a {
+            display: block;
+            padding-left: 50px;
+            color: #666;
         }
-        h6:after{
-            content:"";
-            position:absolute;
-            width:10px;
-            height:10px;
-            right:30px;
-            top:50%;
-            margin-top:-10px;
-            border-top:1px solid #999;
-            border-right:1px solid #999;
-            transform:rotate(135deg);
-            transition:transform .6s;
+        h6:after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: 30px;
+            top: 50%;
+            margin-top: -10px;
+            border-top: 1px solid #999;
+            border-right: 1px solid #999;
+            transform: rotate(135deg);
+            transition: transform .6s;
         }
     }
 </style>
 
 
 <script>
+    import store from '../store'
     export default{
         data(){
             return{
-                msg:'dj'
+                store,
+                showTab1: true,
+                msg:'',
             }
         }
     }
