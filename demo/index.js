@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import hljs from 'highlight.js'
 import sidebar from './components/sidebar.vue'
+import hh from './components/header.vue'
 import routes from './router'
 import store from './store'
 import '../src/index.scss'
@@ -19,7 +21,15 @@ router.afterEach(route => {
 
 const app = new Vue({
     components: {
-        sidebar
+        sidebar,
+        hh,
     },
     router
 }).$mount('#app')
+
+Vue.directive('highlightjs', {
+  inserted: function (el) {
+    let blocks = this.el.querySelectorAll('pre code');
+    Array.prototype.forEach.call(blocks, hljs.highlightBlock);
+  }
+})

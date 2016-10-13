@@ -2,15 +2,15 @@
     <div class="sidebar">
         <h1>
             <router-link :to="{ name: 'index' }">JUZI-UI</router-link>
-            {{ store.routerName }}
+            <!--{{ store.routerName }}-->
         </h1>
         <ul>
             <li>
                 <h6 @click="showTab1 = !showTab1">基础组件</h6>
                 <div v-if="showTab1" class="sidebar-a">
                     <router-link :class="{ cur: store.routerName === 'btn' }" :to="{ name: 'btn' }">btn</router-link>
-                    <a href="#">重置</a>
-                    <a href="#">常量</a>
+                    <router-link :class="{ cur: store.routerName === 'reset' }" :to="{ name: 'reset'}">重置</router-link>
+                    <router-link :class="{ cur: store.routerName === 'constant' }" :to="{ name: 'constant'}">常量</router-link>
                     <a href="#">变量</a>
                     <a href="#">布局</a>
                     <a href="#">1px</a>
@@ -23,8 +23,8 @@
                 </div>
             </li>
             <li>
-                <h6>UI组件</h6>
-                <div class="sidebar-a">
+                <h6 @click="showTab2 = !showTab2">UI组件</h6>
+                <div v-if="showTab2" class="sidebar-a">
                     <a href="#">按钮</a>
                     <a href="#">头像</a>
                     <a href="#">红点</a>
@@ -44,14 +44,14 @@
                 </div>
             </li>
             <li>
-                <h6>JS插件</h6>
-                <div class="sidebar-a">
+                <h6 @click="showTab3 = !showTab3">JS插件</h6>
+                <div v-if="showTab3" class="sidebar-a">
                     <a href="#">3333333</a>
                 </div>
             </li>
             <li>
-                <h6>UI图标</h6>
-                <div class="sidebar-a">
+                <h6 @click="showTab4 = !showTab4">UI图标</h6>
+                <div v-if="showTab4" class="sidebar-a">
                     <a href="#">字体图标</a>
                 </div>
             </li>
@@ -59,10 +59,6 @@
     </div>
 </template>
 <style scoped lang="scss">
-    h1 a {
-        color: #000;
-    }
-    
     .sidebar {
         position: fixed;
         width: 256px;
@@ -70,6 +66,7 @@
         top: 0;
         left: 0;
         color: #666;
+        z-index:2;
         background: #fff;
         box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
         h1 {
@@ -78,6 +75,13 @@
             color: #fff;
             font-size: 20px;
             background: #5edd9e;
+            a{
+                color:#fff;
+            }
+        }
+        ul{
+            height:calc(100% - 64px);
+            overflow:auto;
         }
         h6,
         .sidebar-a a {
@@ -122,6 +126,9 @@
             return{
                 store,
                 showTab1: true,
+                showTab2: true,
+                showTab3: true,
+                showTab4: true,
                 msg:'',
             }
         }
