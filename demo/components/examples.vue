@@ -22,9 +22,21 @@
             border:1px solid #eee;
             background: #f7f7f7;
         }
-        .com{
+        .con{
             padding: 14px 24px 24px;
             background:#fff;
+            pre{
+                background:#f7f7f7;
+                padding:10px;
+                margin:10px 0 15px;
+            }
+            h6{
+                font-size:16px;
+            }
+            .main{
+                width:80%;
+                margin:0 auto;
+            }
         }
     }
 </style>

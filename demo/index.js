@@ -26,10 +26,3 @@ const app = new Vue({
     },
     router
 }).$mount('#app')
-
-Vue.directive('highlightjs', {
-  inserted: function (el) {
-    let blocks = this.el.querySelectorAll('pre code');
-    Array.prototype.forEach.call(blocks, hljs.highlightBlock);
-  }
-})

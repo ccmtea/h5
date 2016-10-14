@@ -11,7 +11,7 @@
                     <router-link :class="{ cur: store.routerName === 'btn' }" :to="{ name: 'btn' }">btn</router-link>
                     <router-link :class="{ cur: store.routerName === 'reset' }" :to="{ name: 'reset'}">重置</router-link>
                     <router-link :class="{ cur: store.routerName === 'constant' }" :to="{ name: 'constant'}">常量</router-link>
-                    <a href="#">变量</a>
+                    <router-link :class="{ cur: store.routerName === 'variate' }" :to="{ name: 'variate'}">变量</router-link>
                     <a href="#">布局</a>
                     <a href="#">1px</a>
                     <a href="#">箭头</a>
@@ -87,6 +87,9 @@
         .sidebar-a a {
             padding-left: 30px;
             line-height: 45px;
+            &.cur{
+                background:#ccc;
+            }
         }
         h6 {
             position: relative;
