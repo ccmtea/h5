@@ -17,7 +17,7 @@
             background:#e8e8e8;
         }
         .pre{
-            height:450px;
+            max-height:450px;
             overflow:auto;
             border:1px solid #eee;
             background: #f7f7f7;

@@ -135,6 +135,17 @@
 }
 /*   边框1px    end*/
 
+/*   箭头    start*/
+.arrows{
+	position: relative;
+}
+.arrows:before{
+	content:"";
+	position:absolute;
+	
+}
+/*   箭头    end*/
+
 /*   清除浮动    start*/
 .clear:after{
     content:"";

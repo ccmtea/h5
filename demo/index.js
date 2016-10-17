@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import hljs from 'highlight.js'
 import sidebar from './components/sidebar.vue'
 import hh from './components/header.vue'
 import routes from './router'
