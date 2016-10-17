@@ -1,10 +1,11 @@
 <template>
     <div class="constant">
-        <examples>
-             <h4>constant</h4>
-             <div class="pre">
-<pre  v-highlight>
-    <code>
+        <examples type="css">
+            <h4>constant</h4>
+            <div class="pre">
+                <pre>
+                    <code class="css" v-highlight>
+                    
     /*   文字定位    start*/
     .tl{
         text-align: left;
@@ -157,26 +158,22 @@
     }
     /*   列表点击背景    end*/
     </code>
-</pre>
+                </pre>
             </div>
             <div class="con">
                 <h6>文字定位</h6>
                 ex：
                 <div class="main">
-<pre>   .tr{
-        text-align:right;}
-    &lt;p class="tr"&gt;文字向右&lt;/p&gt;
-</pre>
+                    <pre> .tr{ text-align:right;} &lt;p class="tr"&gt;文字向右&lt;/p&gt;
+                    </pre>
                     <p class="tr">
                         文字向右
                     </p>
                 </div>
         </examples>
-    </div>
+        </div>
 </template>
 <script>
-    import examples from '../../components/examples.vue'
-    import hljs from 'highlight.js'
     import marked from 'marked'
     export default{
         data(){
@@ -184,10 +181,6 @@
 
             }
         },
-        components:{
-            examples,
-        }
-        
     }
     
 </script>

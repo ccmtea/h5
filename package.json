@@ -45,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/hejuan0219/h5/issues"
   },
-  "homepage": "https://github.com/hejuan0219/h5#readme"
+  "homepage": "https://github.com/hejuan0219/h5#readme",
+  "dependencies": {
+    "highlight.js": "^9.7.0"
+  }
 }

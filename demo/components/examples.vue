@@ -1,5 +1,6 @@
 <template>
     <div class="examples">
+        <h3>这是个{{type}}例子</h3>
         <slot>
             如果没有分发内容则显示我。
         </slot>
@@ -47,6 +48,7 @@
             return{
                 msg:'',
             }
-        }
+        },
+        props:['type'],
     };
 </script>

@@ -21,15 +21,11 @@
 
 </style>
 <script>
-    import examples from '../../components/examples.vue'
     export default{
         data(){
             return {
 
             }
-        },
-        components:{
-            examples,
         },
     }
 </script>
