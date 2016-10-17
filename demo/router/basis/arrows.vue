@@ -1,7 +1,6 @@
 <template>
     <div class="constant">
-        <examples>
-             <h4>箭头</h4>
+        <examples name="箭头">
             <div class="con">
                 ex：
                 <div class="main">

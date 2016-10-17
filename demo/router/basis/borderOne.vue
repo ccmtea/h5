@@ -1,11 +1,10 @@
 <template>
     <div class="constant">
-        <examples>
-             <h4>1px</h4>
+        <examples name="1px">
             <div class="con">
                 ex：
                 <div class="main">
-<pre><code>     <span style="color:red">from：constant.scss</span>
+<pre class="css" v-highlight>     from：constant.scss
 
     .border{
         position: relative;}
@@ -18,11 +17,24 @@
         left: 0;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: 200%;height: 200%;
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
         -webkit-transform-origin: left top;
         transform-origin: left top;}
+        @media screen and (-webkit-min-device-pixel-ratio: 2){
+            .border:before{
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+            }
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 5){
+            .border:before{
+                -webkit-transform: scale(0.333333);
+                transform: scale(0.333333);
+            }
+        }
     
 </pre>
 <pre>   .b-around:before{

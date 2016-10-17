@@ -1,11 +1,8 @@
 <template>
     <div class="constant">
-        <examples type="css">
-            <h4>constant</h4>
+        <examples name="constant">
             <div class="pre">
-                <pre>
-                    <code class="css" v-highlight>
-                    
+                <pre class="css" v-highlight>
     /*   文字定位    start*/
     .tl{
         text-align: left;
@@ -157,14 +154,14 @@
         background-color: rgba(0, 0, 0, 0.1);
     }
     /*   列表点击背景    end*/
-    </code>
                 </pre>
             </div>
             <div class="con">
                 <h6>文字定位</h6>
                 ex：
                 <div class="main">
-                    <pre> .tr{ text-align:right;} &lt;p class="tr"&gt;文字向右&lt;/p&gt;
+	                <pre class="html"  v-highlight>   .tr{ text-align:right;} 
+    &lt;p class="tr"&gt;文字向右&lt;/p&gt;
                     </pre>
                     <p class="tr">
                         文字向右
@@ -174,7 +171,6 @@
         </div>
 </template>
 <script>
-    import marked from 'marked'
     export default{
         data(){
             return {

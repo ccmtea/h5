@@ -9,6 +9,7 @@ import '../src/index.scss'
 import './index.scss'
 
 import highlight from 'highlight.js'
+import 'highlight.js/styles/magula.css'
 
 Vue.use(VueRouter)
 Vue.component('examples', examples)

@@ -1,10 +1,8 @@
 <template>
     <div class="reset">
-        <examples>
-             <h4>variate</h4>
+        <examples name="variate">
              <div class="pre">
-<pre>
-    <code>
+                <pre class="css" v-highlight>
     /*    z-index   start  */
     $zi1:1;
     $zi2:2;
@@ -26,8 +24,7 @@
     /*    颜色   start     */
     $bc:#ececec;   //border-color
     /*    颜色   start     */
-    </code>
-</pre>
+                </pre>
             </div>
         </examples>
     </div>

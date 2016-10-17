@@ -1,10 +1,8 @@
 <template>
     <div class="reset">
-        <examples>
-             <h4>reset</h4>
+        <examples name="reset">
              <div class="pre">
-<pre>
-    <code>
+                <pre class="css" v-highlight>
     html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl,dd, button, hr, pre, fieldset, menu, figure, blockquote {
         margin:0;
         padding:0;
@@ -123,9 +121,7 @@
     input::-webkit-outer-spin-button {
         -webkit-appearance: none;
     }
-
-    </code>
-</pre>
+                </pre>
             </div>
         </examples>
     </div>

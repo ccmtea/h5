@@ -1,6 +1,6 @@
 <template>
     <div class="examples">
-        <h3>这是个{{type}}例子</h3>
+        <h4>{{ name }}</h4>
         <slot>
             如果没有分发内容则显示我。
         </slot>
@@ -49,6 +49,6 @@
                 msg:'',
             }
         },
-        props:['type'],
+        props:['name'],
     };
 </script>
