@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        *, :after, :before, legend {
+    box-sizing:border-box;
+}
+        table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ul li{
+    list-style: none;
+}
+        .border{
+    position: relative;
+}
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl,dd, button, hr, pre, fieldset, menu, figure, blockquote {
     margin:0;
     padding:0;
@@ -6,7 +28,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, dl,dd, button, hr, pre, fieldset,
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-touch-callout: none;
 }
-*, ::after, ::before, legend {
+*, :after, :before, legend {
     box-sizing:border-box;
 }
 html {
@@ -56,7 +78,7 @@ del {
 audio, canvas, video {
 	display: inline-block;
 }
-q::before, q::after {
+q:before, q:after {
 	content: '';
 }
 abbr, acronym {
@@ -116,3 +138,31 @@ input::-webkit-inner-spin-button {
 input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.carst-top{
+    transform: rotate(180deg);
+}
+.carst-left{
+    transform: rotate(90deg);
+}
+.carst-right{
+    transform: rotate(-90deg);
+}
+    </style>
+</head>
+<body>
+    <span class="caret"></span>
+    <span class="caret carst-top"></span>
+    <span class="caret carst-left"></span>
+    <span class="caret carst-right"></span>
+</body>
+</html>

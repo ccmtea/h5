@@ -12,9 +12,10 @@
                     <router-link :class="{ cur: store.routerName === 'reset' }" :to="{ name: 'reset'}">重置</router-link>
                     <router-link :class="{ cur: store.routerName === 'constant' }" :to="{ name: 'constant'}">常量</router-link>
                     <router-link :class="{ cur: store.routerName === 'variate' }" :to="{ name: 'variate'}">变量</router-link>
+                    <router-link :class="{ cur: store.routerName === 'borderOne' }" :to="{ name: 'borderOne'}">边框1px</router-link>
+                    <router-link :class="{ cur: store.routerName === 'caret' }" :to="{ name: 'caret'}">三角符号</router-link>
+                    <a href="#">文本</a>
                     <a href="#">布局</a>
-                    <router-link :class="{ cur: store.routerName === 'borderOne' }" :to="{ name: 'borderOne'}">1px</router-link>
-                    <router-link :class="{ cur: store.routerName === 'arrows' }" :to="{ name: 'arrows'}">箭头</router-link>
                     <a href="#">文字截断</a>
                     <a href="#">两端留白</a>
                     <a href="#">两端对齐</a>

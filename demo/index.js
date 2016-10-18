@@ -9,7 +9,7 @@ import '../src/index.scss'
 import './index.scss'
 
 import highlight from 'highlight.js'
-import 'highlight.js/styles/magula.css'
+import 'highlight.js/styles/kimbie.light.css'
 
 Vue.use(VueRouter)
 Vue.component('examples', examples)

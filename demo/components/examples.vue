@@ -23,6 +23,9 @@
             border:1px solid #eee;
             background: #f7f7f7;
         }
+        .pre pre{
+            background:#f7f7f7;
+        }
         .con{
             padding: 14px 24px 24px;
             background:#fff;

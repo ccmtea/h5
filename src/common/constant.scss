@@ -115,10 +115,10 @@
 .border{
     position: relative;
 }
-.border a{
-    position: relative;
+.border > a,a.border{
+	position: relative;
 }
-.border:before{
+.border::before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -130,25 +130,18 @@
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transform-origin: left top;
-	transform-origin: left top;}
-@media screen and (-webkit-device-pixel-ratio: 1.5){
-	.border:before{
+	transform-origin: left top;
+	pointer-events: none;}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+	.border::before{
 		width: 200%;
 		height: 200%;
 		-webkit-transform: scale(0.5);
 		transform: scale(0.5);
 	}
 }
-@media screen and (-webkit-device-pixel-ratio: 2){
-	.border:before{
-		width: 200%;
-		height: 200%;
-		-webkit-transform: scale(0.5);
-		transform: scale(0.5);
-	}
-}
-@media (-webkit-device-pixel-ratio:3){
-	.border:before{
+@media only screen and (-webkit-min-device-pixel-ratio:3){
+	.border::before{
 		width: 300%;
 		height: 300%;
 		-webkit-transform: scale(0.333333);
@@ -156,18 +149,29 @@
 	}
 }
 /*   边框1px    end*/
-/*   箭头    start*/
-.arrows{
-	position: relative;
+/*   三角符号    start*/
+.caret-solid{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }
-.arrows:before{
-	content:"";
-	position:absolute;
-	
+.caret-solid-top{
+    transform: rotate(180deg);
 }
-/*   箭头    end*/
+.caret-solid-left{
+    transform: rotate(90deg);
+}
+.caret-solid-right{
+    transform: rotate(-90deg);
+}
+/*   三角符号    end*/
 /*   清除浮动    start*/
-.clear:after{
+.clear::after{
     content:"";
     display: block;
     clear:both;

@@ -3,7 +3,7 @@ import Reset from './basis/reset.vue'
 import Constant from './basis/constant.vue'
 import Variate from './basis/variate.vue'
 import BorderOne from './basis/borderOne.vue'
-import Arrows from './basis/arrows.vue'
+import Caret from './basis/caret.vue'
 
 
 export default [
@@ -12,5 +12,5 @@ export default [
     { path: '/constant', name: 'constant', component: Constant },
     { path: '/variate', name: 'variate', component: Variate },
     { path: '/borderOne', name: 'borderOne', component: BorderOne },
-    { path: '/arrows', name: 'arrows', component: Arrows }
+    { path: '/arrows', name: 'caret', component: Caret }
 ]

@@ -1,15 +1,12 @@
 <template>
     <div class="constant">
-        <examples name="箭头">
+        <examples name="三角符号">
             <div class="con">
                 ex：
                 <div class="main">
-<pre>   .tr{
-        text-align:right;}
-    &lt;p class="tr"&gt;文字向右&lt;/p&gt;
-
+<pre>   
 </pre>
-                    <p class="arrows icon-chevron-thin-right">
+                    <p class="caret">
                         左箭头
                     </p>
                 </div>
