@@ -1,3 +1,4 @@
+var autoprefixer = require('autoprefixer');
 module.exports = {
     entry: "./demo/index.js",
     output: {
@@ -7,13 +8,14 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.scss$/, loader: "style!css!sass" },
+            { test: /\.scss$/, loader: "style!css!postcss!sass" },
             { test: /\.css$/, loader: "style!css" },
             { test: /\.vue$/, loader: 'vue' },
             { test: /\.js?$/, exclude: /(node_modules)/, loader: 'babel' },
             { test: /\.(eot|woff|svg|ttf|woff2|gif)(\?|$)/, loader: 'file-loader?name=[hash].[ext]' }
         ]
     },
+    postcss: [ autoprefixer({ browsers: ["android 4", "iOS 6"] }) ],
     babel: {
         presets: ['es2015', 'stage-0'],
         plugins: ['transform-runtime']
@@ -26,7 +28,7 @@ module.exports = {
     },
     vue: {
         loaders: {
-            scss: 'style!css!sass'
+            scss: 'style!css!postcss!sass'
         },
     }
 };

@@ -1,5 +1,5 @@
 <template>
-    <div class="reset">
+    <div class="variate">
         <examples name="variate">
              <div class="pre">
                 <pre class="css" v-highlight>

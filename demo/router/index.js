@@ -4,6 +4,7 @@ import Constant from './basis/constant.vue'
 import Variate from './basis/variate.vue'
 import BorderOne from './basis/borderOne.vue'
 import Caret from './basis/caret.vue'
+import Text_cut_off from './basis/text_cut_off.vue'
 
 
 export default [
@@ -12,5 +13,6 @@ export default [
     { path: '/constant', name: 'constant', component: Constant },
     { path: '/variate', name: 'variate', component: Variate },
     { path: '/borderOne', name: 'borderOne', component: BorderOne },
-    { path: '/arrows', name: 'caret', component: Caret }
+    { path: '/arrows', name: 'caret', component: Caret },
+    { path: '/text_cut_off', name: 'text_cut_off', component: Text_cut_off }
 ]
