@@ -1,12 +1,10 @@
 <template>
-    <div class="constant">
+    <div class="borderOne">
         <examples name="1px">
             <div class="con">
-                ex：
                 <div class="main">
-<pre class="css" v-highlight>     from：constant.scss
-
-    .border{
+                    from：constant.scss
+<pre class="css" v-highlight>   .border{
         position: relative;
     }
     .border > a,a.border{
@@ -17,20 +15,15 @@
         position: absolute;
         top: 0;
         left: 0;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
         width: 100%;
         height: 100%;
-        -webkit-transform: scale(1);
         transform: scale(1);
-        -webkit-transform-origin: left top;
         transform-origin: left top;
         pointer-events: none;}
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
         .border::before{
             width: 200%;
             height: 200%;
-            -webkit-transform: scale(0.5);
             transform: scale(0.5);
         }
     }
@@ -38,11 +31,11 @@
         .border::before{
             width: 300%;
             height: 300%;
-            -webkit-transform: scale(0.333333);
             transform: scale(0.333333);
         }
     }  
 </pre>
+                ex：
 <pre>   .b-around::before{
         border:1px solid #333;}
     &lt;p class="border  b-around"&gt;四周边框&lt;/p&gt;

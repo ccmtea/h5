@@ -1,5 +1,5 @@
 <template>
-    <div class="constant">
+    <div class="caret">
         <examples name="三角符号">
             <div class="con">
                 ex：

@@ -16,7 +16,7 @@
                     <router-link :class="{ cur: store.routerName === 'caret' }" :to="{ name: 'caret'}">三角符号</router-link>
                     <a href="#">文本</a>
                     <a href="#">布局</a>
-                    <a href="#">文字截断</a>
+                    <router-link :class="{ cur: store.routerName === 'text_cut_off' }" :to="{ name: 'text_cut_off'}">文字截断</router-link>
                     <a href="#">两端留白</a>
                     <a href="#">两端对齐</a>
                     <a href="#">毛玻璃</a>

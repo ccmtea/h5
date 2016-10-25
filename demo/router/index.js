@@ -16,5 +16,7 @@ export default [
     { path: '/borderOne', name: 'borderOne', component: BorderOne },
     { path: '/caret', name: 'caret', component: Caret },
     { path: '/text_cut_off', name: 'text_cut_off', component: Text_cut_off },
-    { path: '/justify', name: 'justify', component: Justify }
+    { path: '/justify', name: 'justify', component: Justify },
+    { path: '/arrows', name: 'caret', component: Caret },
+    { path: '/text_cut_off', name: 'text_cut_off', component: Text_cut_off }
 ]
