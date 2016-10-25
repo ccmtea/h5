@@ -8,17 +8,17 @@
             <li>
                 <h6 @click="showTab1 = !showTab1">基础组件</h6>
                 <div v-if="showTab1" class="sidebar-a">
-                    <router-link :class="{ cur: store.routerName === 'btn' }" :to="{ name: 'btn' }">btn</router-link>
                     <router-link :class="{ cur: store.routerName === 'reset' }" :to="{ name: 'reset'}">重置</router-link>
                     <router-link :class="{ cur: store.routerName === 'constant' }" :to="{ name: 'constant'}">常量</router-link>
                     <router-link :class="{ cur: store.routerName === 'variate' }" :to="{ name: 'variate'}">变量</router-link>
                     <router-link :class="{ cur: store.routerName === 'borderOne' }" :to="{ name: 'borderOne'}">边框1px</router-link>
                     <router-link :class="{ cur: store.routerName === 'caret' }" :to="{ name: 'caret'}">三角符号</router-link>
+                    <router-link :class="{ cur: store.routerName === 'text_overflow' }" :to="{ name: 'text_overflow'}">文字截断</router-link>
+                    <router-link :class="{ cur: store.routerName === 'justify' }" :to="{ name: 'justify'}">两端对齐</router-link>
+                    <router-link :class="{ cur: store.routerName === 'img_pre_seat' }" :to="{ name: 'img_pre_seat'}">预留图片位置</router-link>
                     <a href="#">文本</a>
                     <a href="#">布局</a>
-                    <router-link :class="{ cur: store.routerName === 'text_cut_off' }" :to="{ name: 'text_cut_off'}">文字截断</router-link>
                     <a href="#">两端留白</a>
-                    <a href="#">两端对齐</a>
                     <a href="#">毛玻璃</a>
                     <a href="#">弹层背景虚化</a>
                 </div>

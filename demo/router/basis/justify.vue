@@ -8,6 +8,14 @@
 /*   两端对齐    start*/
 .ui-justify{
 	text-align: justify;
+	font-size:0;
+	&:after{
+		content:"";
+		display: inline-block;
+		width:100%;
+		height:0;
+		overflow: hidden;
+	}
 	>*{
 		display: inline-block;
 	}

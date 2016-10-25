@@ -222,3 +222,8 @@
 	background-color: rgba(0, 0, 0, 0.1);
 }
 /*   列表点击背景    end*/
+/*   预留图片位置    start*/
+.img-pre{
+	@include img-pre(10%,10%);
+}
+/*   预留图片位置    end*/

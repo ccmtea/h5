@@ -4,156 +4,229 @@
             <div class="pre">
                 <pre class="css" v-highlight>
     /*   文字定位    start*/
-    .tl{
-        text-align: left;
-    }
-    .tc{
-        text-align: center;
-    }
-    .tr{
-        text-align: right;
-    }
-    .dl{
-        direction:ltr;    //光标文字靠左
-    }
-    .dr{
-        direction:rtl;    //光标文字靠右 
-    } 
-    /*   文字定位    end*/
-    /*   浮动定位    start*/
-    .fl{
-        float:left;
-    }
-    .fr{
-        float:right;
-    }
-    /*   浮动定位    end*/
-    /*   文字颜色    start*/
-    .c-6{
-        color:#666;
-    }
-    .c-orange {
-        color: #ffa74d;
-    }
-    .c-29 {
-        color: #292929;
-    }
-    .c-666 {
-        color: #666;
-    }
-    .c-da {
-        color: #dadada
-    }
-    .c-92 {
-        color: #929292;
-    }
-    .c-f1 {
-        color: #F1F1F1;
-    }
-    .c-f2 {
-        color: #F2F2F2;
-    }
-    .c-f3 {
-        color: #F3F3F3;
-    }
-    .c-f60 {
-        color: #ff6600;
-    }
-    .c-58bf8b {
-        color: #58bf8b;
-    }
-    .c-green {
-        color: #5edd9e;
-    }
-    .c-white {
-        color: #fff;
-    }
-    .c-black {
-        color: #000;
-    }
-    .c-19 {
-        color: #191919;
-    }
-    .c-e3 {
-        color: #e3e3e3;
-    }
-    /*   文字颜色    end*/
-    /*   背景颜色    start*/
-    .bg-orange {
-        background-color: #ffa74d;
-    }
-    .bg-f60 {
-        background: #ff6600;
-    }
-    .bg-58bf8b {
-        background-color: #58bf8b;
-    }
-    .bg-green {
-        background-color: #5edd9e;
-    }
-    .bg-white {
-        background-color: #fff;
-    }
-    .bg-black {
-        background-color: #000;
-    }
-    .bg-e3 {
-        background-color: #e3e3e3;
-    }
-    .bg-f3 {
-        background: #f3f3f3;
-    }
-    .bg-f2 {
-        background: #f2f2f2;
-    }
-    .bg-f1 {
-        background: #f1f1f1;
-    }
-    .bg-92 {
-        background: #929292;
-    }
-    .bg-29 {
-        background: #292929;
-    }
-    /*   背景颜色    end*/
-
-    /*   边框1px    start*/
-    .border{
-        position: relative;
-    }
-    .border a{
-        position: relative;
-    }
-    .border:before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 200%;
-        height: 200%;
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-        -webkit-transform-origin: left top;
-        transform-origin: left top;
-    }
-    /*   边框1px    end*/
-
-    /*   清除浮动    start*/
-    .clear:after{
-        content:"";
-        display: block;
-        clear:both;
-        visibility: hidden;
-    }
-    /*   清除浮动    end*/
-
-    /*   列表点击背景    start*/
-    .act-list>li:active{
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    /*   列表点击背景    end*/
+.tl{
+    text-align: left;
+}
+.tc{
+    text-align: center;
+}
+.tr{
+    text-align: right;
+}
+.dl{
+    direction:ltr;    //光标文字靠左
+}
+.dr{
+    direction:rtl;    //光标文字靠右 
+} 
+/*   文字定位      end*/
+/*   浮动定位    start*/
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/*   浮动定位      end*/
+/*   文字颜色    start*/
+.c-6{
+	color:#666;
+}
+.c-orange {
+	color: #ffa74d;
+}
+.c-29 {
+	color: #292929;
+}
+.c-666 {
+	color: #666;
+}
+.c-da {
+	color: #dadada
+}
+.c-92 {
+	color: #929292;
+}
+.c-f1 {
+	color: #F1F1F1;
+}
+.c-f2 {
+	color: #F2F2F2;
+}
+.c-f3 {
+	color: #F3F3F3;
+}
+.c-f60 {
+	color: #ff6600;
+}
+.c-58bf8b {
+	color: #58bf8b;
+}
+.c-green {
+	color: #5edd9e;
+}
+.c-white {
+	color: #fff;
+}
+.c-black {
+	color: #000;
+}
+.c-19 {
+	color: #191919;
+}
+.c-e3 {
+	color: #e3e3e3;
+}
+/*   文字颜色      end*/
+/*   背景颜色    start*/
+.bg-orange {
+	background-color: #ffa74d;
+}
+.bg-f60 {
+	background: #ff6600;
+}
+.bg-58bf8b {
+	background-color: #58bf8b;
+}
+.bg-green {
+	background-color: #5edd9e;
+}
+.bg-white {
+	background-color: #fff;
+}
+.bg-black {
+	background-color: #000;
+}
+.bg-e3 {
+	background-color: #e3e3e3;
+}
+.bg-f3 {
+	background: #f3f3f3;
+}
+.bg-f2 {
+	background: #f2f2f2;
+}
+.bg-f1 {
+	background: #f1f1f1;
+}
+.bg-92 {
+	background: #929292;
+}
+.bg-29 {
+	background: #292929;
+}
+/*   背景颜色     end*/
+/*   边框1px    start*/
+.border{
+    position: relative;
+}
+.border > a,a.border{
+	position: relative;
+}
+.border::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	pointer-events: none;}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+	.border::before{
+		width: 200%;
+		height: 200%;
+		transform: scale(0.5);
+	}
+}
+@media only screen and (-webkit-min-device-pixel-ratio:3){
+	.border::before{
+		width: 300%;
+		height: 300%;
+		transform: scale(0.333333);
+	}
+}
+/*   边框1px       end*/
+/*   三角符号    start*/
+/**
+**.caret-solid  默认 下
+**.caret-solid-top   上
+**.caret-solid-left  左
+**.caret-solid-right 右
+**/
+.caret-solid{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.caret-solid-top{
+    transform: rotate(180deg);
+}
+.caret-solid-left{
+    transform: rotate(90deg);
+}
+.caret-solid-right{
+    transform: rotate(-90deg);
+}
+/*   三角符号    end*/
+/*   三角符号      end*/
+/*   文字截断    start*/
+/**
+**.text-cut-off-only 单行
+**.text-cut-off-odd  多行
+** line-clamp: 2;  根据需要改变需要的行数
+**/
+.text-cut-off-only{
+    width:100%;
+    overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.text-cut-off-odd{
+    display: -webkit-box;
+	text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/*   文字截断      end*/
+/*   两端对齐    start*/
+.ui-justify{
+	text-align: justify;
+	font-size:0;
+	&:after{
+		content:"";
+		display: inline-block;
+		width:100%;
+		height:0;
+		overflow: hidden;
+	}
+	>*{
+		display: inline-block;
+	}
+}
+/*   两端对齐    end*/
+/*   清除浮动    start*/
+.clear::after{
+    content:"";
+    display: block;
+    clear:both;
+    visibility: hidden;
+}
+/*   清除浮动          end*/
+/*   列表点击背景    start*/
+.act-list>li:active{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+/*   列表点击背景    end*/
                 </pre>
             </div>
             <div class="con">
