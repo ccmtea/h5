@@ -1,6 +1,6 @@
 <template>
     <div class="borderOne">
-        <examples name="1px">
+        <examples name="border 1px">
             <div class="con">
                 <div class="main">
                     from：constant.scss

@@ -1,15 +1,42 @@
 /*    预留图片位置    start*/
-@mixin img-pre($out-width,$in-width){
+/**
+** img-square 图片为正方形
+** img-rectangle 图片为长方形
+**/
+@mixin img-square($parentSize,$childSize){
     position: relative;
-    width:$out-width;
+    width:$parentSize;
     height:0;
-    padding-bottom:$out-width;
+    padding-bottom:$parentSize;
     > img{
         position: absolute;
         left:0;
-        width:$in-width;
-        height:$in-width;
+        width:$childSize;
+        height:$childSize;
+    }
+}
+@mixin img-rectangle($imgW,$imgH,$parentSize,$childSize){
+    position: relative;
+    width:percentage($parentSize);
+    height:0;
+    padding-bottom:percentage(round($imgH / $imgW * 100) / (100 / $parentSize));
+    > img{
+        position: absolute;
+        left:0;
+        width:$childSize;
+        height:$childSize;
     }
 }
 /*    预留图片位置    end*/
+/*    按钮    start*/
+@mixin btn(){
+
+}
+@mixin btn-size($width,$height,$fs){
+    width:$width;
+    height:$height;
+    font-size:$fs;
+
+}
+/*    按钮    end*/
 

@@ -3,7 +3,7 @@
         <examples name="constant">
             <div class="pre">
                 <pre class="css" v-highlight>
-    /*   文字定位    start*/
+/*   文字定位    start*/
 .tl{
     text-align: left;
 }
@@ -77,6 +77,34 @@
 .c-e3 {
 	color: #e3e3e3;
 }
+/**
+**  不同状态文本颜色
+**  ui-txt-default  主要内容色
+**  ui-txt-info 次要内容色
+**  ui-txt-muted 不可点击状态文本色
+**  ui-txt-warning  警示
+**  ui-txt-highlight  关键词颜色
+**  链接文本候默认色
+**/
+.ui-txt-default{
+	color:#3c3c3c;
+}
+.ui-txt-white{
+
+}
+.ui-txt-info{
+	color:#a7a7a7;
+}
+.ui-txt-muted{
+	color:#bbb;
+}
+.ui-txt-warning{
+	color:#ff4222;
+}
+.ui-txt-highlight{
+	color:#ff9a33;
+}
+
 /*   文字颜色      end*/
 /*   背景颜色    start*/
 .bg-orange {
@@ -180,17 +208,17 @@
 /*   三角符号      end*/
 /*   文字截断    start*/
 /**
-**.text-cut-off-only 单行
-**.text-cut-off-odd  多行
-** line-clamp: 2;  根据需要改变需要的行数
+**.text-overflow-only 单行
+**.text-overflow-odd  多行
+** line-clamp: 2;  根据需要改变需要的行数覆盖即可
 **/
-.text-cut-off-only{
+.text-overflow-only{
     width:100%;
     overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
-.text-cut-off-odd{
+.text-overflow-odd{
     display: -webkit-box;
 	text-overflow: ellipsis;
     -webkit-line-clamp: 2;

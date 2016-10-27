@@ -6,27 +6,27 @@
         </h1>
         <ul>
             <li>
-                <h6 @click="showTab1 = !showTab1">基础组件</h6>
+                <h6 @click="showTab1 = !showTab1" :class = "{arrow: showTab1}">基础组件</h6>
                 <div v-if="showTab1" class="sidebar-a">
                     <router-link :class="{ cur: store.routerName === 'reset' }" :to="{ name: 'reset'}">重置</router-link>
                     <router-link :class="{ cur: store.routerName === 'constant' }" :to="{ name: 'constant'}">常量</router-link>
                     <router-link :class="{ cur: store.routerName === 'variate' }" :to="{ name: 'variate'}">变量</router-link>
-                    <router-link :class="{ cur: store.routerName === 'borderOne' }" :to="{ name: 'borderOne'}">边框1px</router-link>
+                    <router-link :class="{ cur: store.routerName === 'border' }" :to="{ name: 'border'}">边框1px</router-link>
                     <router-link :class="{ cur: store.routerName === 'caret' }" :to="{ name: 'caret'}">三角符号</router-link>
                     <router-link :class="{ cur: store.routerName === 'text_overflow' }" :to="{ name: 'text_overflow'}">文字截断</router-link>
                     <router-link :class="{ cur: store.routerName === 'justify' }" :to="{ name: 'justify'}">两端对齐</router-link>
                     <router-link :class="{ cur: store.routerName === 'img_pre_seat' }" :to="{ name: 'img_pre_seat'}">预留图片位置</router-link>
-                    <a href="#">文本</a>
+                    <router-link :class="{ cur: store.routerName === 'text' }" :to="{ name: 'text'}">文本</router-link>
                     <a href="#">布局</a>
                     <a href="#">两端留白</a>
-                    <a href="#">毛玻璃</a>
-                    <a href="#">弹层背景虚化</a>
+                    <!--<a href="#">毛玻璃</a>
+                    <a href="#">弹层背景虚化</a>-->
                 </div>
             </li>
             <li>
-                <h6 @click="showTab2 = !showTab2">UI组件</h6>
+                <h6 @click="showTab2 = !showTab2" :class = "{arrow: showTab2}">UI组件</h6>
                 <div v-if="showTab2" class="sidebar-a">
-                    <a href="#">按钮</a>
+                    <router-link :class="{ cur: store.routerName === 'buttons' }" :to="{ name: 'buttons'}">按钮</router-link>
                     <a href="#">头像</a>
                     <a href="#">红点</a>
                     <a href="#">徽标</a>
@@ -45,13 +45,13 @@
                 </div>
             </li>
             <li>
-                <h6 @click="showTab3 = !showTab3">JS插件</h6>
+                <h6 @click="showTab3 = !showTab3" :class = "{arrow: showTab3}">JS插件</h6>
                 <div v-if="showTab3" class="sidebar-a">
                     <a href="#">3333333</a>
                 </div>
             </li>
             <li>
-                <h6 @click="showTab4 = !showTab4">UI图标</h6>
+                <h6 @click="showTab4 = !showTab4" :class = "{arrow: showTab4}">UI图标</h6>
                 <div v-if="showTab4" class="sidebar-a">
                     <a href="#">字体图标</a>
                 </div>
@@ -96,8 +96,8 @@
             position: relative;
             &.arrow {
                 &:after {
-                    margin-top: -3px;
-                    transform: rotate(315deg);
+                    margin-top: -10px;
+                    transform: rotate(135deg);
                 }
             }
         }
@@ -113,11 +113,10 @@
             height: 10px;
             right: 30px;
             top: 50%;
-            margin-top: -10px;
+            margin-top: -3px;
+            transform: rotate(315deg);
             border-top: 1px solid #999;
             border-right: 1px solid #999;
-            transform: rotate(135deg);
-            transition: transform .6s;
         }
     }
 </style>
@@ -130,9 +129,9 @@
             return{
                 store,
                 showTab1: true,
-                showTab2: true,
-                showTab3: true,
-                showTab4: true,
+                showTab2: false,
+                showTab3: false,
+                showTab4: false,
                 msg:'',
             }
         }

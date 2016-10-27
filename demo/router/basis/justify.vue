@@ -1,6 +1,6 @@
 <template>
     <div class="justify">
-        <examples name="ui-justify">
+        <examples name="两端对齐">
             <div class="con">
                 <div class="main">
                     from：constant.scss
