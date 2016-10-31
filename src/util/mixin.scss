@@ -30,13 +30,16 @@
 /*    预留图片位置    end*/
 /*    按钮    start*/
 @mixin btn(){
-
+    display: inline-block;
+    
+    
 }
-@mixin btn-size($width,$height,$fs){
+
+@mixin btn-size($width,$height,$fs,$br:6px){
     width:$width;
     height:$height;
     font-size:$fs;
-
+    border-radius: $br;
 }
 /*    按钮    end*/
 
