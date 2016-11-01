@@ -29,13 +29,21 @@
 }
 /*    预留图片位置    end*/
 /*    按钮    start*/
-@mixin btn(){
-    display: inline-block;
+@mixin btn-variant($color,$background){
+    $active-bg:darken($background,10%);
+    $disabled-bg:lighten($background,10%);
     
-    
+    color:$color;
+    background-color:$background;
+    &:active{
+        background: $active-bg;
+    }
+    &:disabled{
+        background: $disabled-bg;
+    }
 }
 
-@mixin btn-size($width,$height,$fs,$br:6px){
+@mixin btn-size($width,$height,$fs,$br){
     width:$width;
     height:$height;
     font-size:$fs;

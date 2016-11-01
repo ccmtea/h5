@@ -1,3 +1,5 @@
+$fs-base:1em;
+$br-base:4px;
 
 /*    z-index   start  */
 $zi1:1;
@@ -19,7 +21,29 @@ $pf:fixed;
 
 /*    颜色   start     */
 /**
- **  bc 边框颜色 border-color
+ **  
 **/
-$bc:#ececec;   //border-color
+
 /*    颜色   start     */
+
+$border-width: 1px;
+$border-color:#ececec;
+
+/*    按钮初始化   start     */
+$btn-width:88px;
+$btn-height:36px;
+
+$btn-default-color:#333;
+$btn-default-bg:#fff;
+
+$btn-primary-color:#fff;
+$btn-primary-bg:#5edd9e;
+
+$btn-secondary-color:#fff;
+$btn-secondary-bg:#fc0;
+
+$btn-warning-color:#fff;
+$btn-warning-bg:#d9534f;
+/*    按钮初始化   end     */
+
+

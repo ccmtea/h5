@@ -1,8 +1,9 @@
 @import './common/reset.scss';
 @import './util/mixin.scss';
-@import './common/constant.scss';
 @import './util/variate.scss';
+@import './common/constant.scss';
 @import './resource/font.scss';
+@import './components/btn.scss';
 
 html{
     background: #fff;

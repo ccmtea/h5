@@ -3,66 +3,78 @@
         <examples name="border 1px">
             <div class="con">
                 <div class="main">
-                    from：constant.scss
-<pre class="css" v-highlight>   .border{
-        position: relative;
-    }
-    .border > a,a.border{
-        position: relative;
-    }
-    .border::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform: scale(1);
-        transform-origin: left top;
-        pointer-events: none;}
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
-        .border::before{
-            width: 200%;
-            height: 200%;
-            transform: scale(0.5);
-        }
-    }
-    @media only screen and (-webkit-min-device-pixel-ratio:3){
-        .border::before{
-            width: 300%;
-            height: 300%;
-            transform: scale(0.333333);
-        }
-    }  
+                    from：constant.scss  &&  variate.scss
+<pre class="css" v-highlight>$border-width: 1px;
+$border-color:#ececec;
+
+/*   边框1px    start*/
+.border{
+    position: relative;
+}
+.border > a,a.border{
+	position: relative;
+}
+.border::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	border:$border-width solid $border-color;
+	transform: scale(1);
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+	pointer-events: none;}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+	.border::before{
+		width: 200%;
+		height: 200%;
+		transform: scale(0.5);
+	}
+}
+@media only screen and (-webkit-min-device-pixel-ratio:3){
+	.border::before{
+		width: 300%;
+		height: 300%;
+		transform: scale(0.333333);
+	}
+}
 </pre>
                 ex：
 <pre>   .b-around::before{
-        border:1px solid #333;}
+        border-color:#333;}
     &lt;p class="border  b-around"&gt;四周边框&lt;/p&gt;
 </pre>
                     <p class="border b-around">四周边框</p> 
 <pre>   .b-left::before{
+        border:none;
         border-left:1px solid #333;}
     &lt;p class="border  b-left"&gt;左侧边框&lt;/p&gt;
 </pre>
                     <p class="border b-left">左侧边框</p> 
 <pre>   .b-right::before{
+        border:none;
         border-right:1px solid #333;}
     &lt;p class="border b-right"&gt;右侧边框&lt;/p&gt;
 </pre>
                     <p class="border b-right">右侧边框</p> 
 <pre>   .b-top::before{
+        border:none;
         border-top:1px solid #333;}
     &lt;p class="border  b-top"&gt;上边框&lt;/p&gt;
 </pre>
                     <p class="border b-top">上边框</p>   
 <pre>   .b-bottom::before{
+        border:none;
         border-bottom:1px solid #333;}
     &lt;p class="border  b-bottom"&gt;下边框&lt;/p&gt;
 </pre>
                     <p class="border b-bottom">下边框</p> 
 
 <pre>   ul::before{
+        border:none;
         border-top:1px solid #333;
         border-bottom:1px solid #333;
     }
@@ -71,6 +83,7 @@
         width:20%;
         padding:10px 0;
         &::before{
+            border:none;
             border-right:1px solid #333;
         }
         &:first-child::before{
@@ -151,21 +164,26 @@
         padding:10px 0 10px 10px;
     }
     .b-around::before{
-        border:1px solid #333;
+        border-color:#333;
     }
     .b-left::before{
+        border:none;
         border-left:1px solid #333;
     }
     .b-right::before{
+        border:none;
         border-right:1px solid #333;
     }
     .b-top::before{
+        border:none;
         border-top:1px solid #333;
     }
     .b-bottom::before{
+        border:none;
         border-bottom:1px solid #333;
     }
     ul::before{
+            border:none;
         border-top:1px solid #333;
         border-bottom:1px solid #333;
     }
@@ -174,6 +192,7 @@
         width:20%;
         padding:10px 0;
         &::before{
+            border:none;
             border-right:1px solid #333;
         }
         &:first-child::before{
