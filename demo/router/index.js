@@ -9,6 +9,8 @@ import Justify from './basis/justify.vue'
 import Img_pre_seat from './basis/img_pre_seat.vue'
 import Text from './basis/text.vue'
 import Buttons from './ui_compoents/buttons.vue'
+import Avatar from './ui_compoents/avatar.vue'
+
 
 
 export default [
@@ -22,5 +24,6 @@ export default [
     { path: '/justify', name: 'justify', component: Justify },
     { path: '/img_pre_seat', name: 'img_pre_seat', component: Img_pre_seat },
     { path: '/text', name: 'text', component: Text },
-    { path: '/buttons', name: 'buttons', component: Buttons }
+    { path: '/buttons', name: 'buttons', component: Buttons },
+    { path: '/avatar', name: 'avatar', component: Avatar }
 ]

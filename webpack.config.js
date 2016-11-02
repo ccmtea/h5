@@ -12,7 +12,7 @@ module.exports = {
             { test: /\.css$/, loader: "style!css" },
             { test: /\.vue$/, loader: 'vue' },
             { test: /\.js?$/, exclude: /(node_modules)/, loader: 'babel' },
-            { test: /\.(eot|woff|svg|ttf|woff2|gif)(\?|$)/, loader: 'file-loader?name=[hash].[ext]' }
+            { test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/, loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]' }
         ]
     },
     postcss: [ autoprefixer({ browsers: ["android 4", "iOS 6"] }) ],

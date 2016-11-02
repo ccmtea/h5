@@ -27,7 +27,7 @@
                 <h6 @click="showTab2 = !showTab2" :class = "{arrow: showTab2}">UI组件</h6>
                 <div v-if="showTab2" class="sidebar-a">
                     <router-link :class="{ cur: store.routerName === 'buttons' }" :to="{ name: 'buttons'}">按钮</router-link>
-                    <a href="#">头像</a>
+                    <router-link :class="{ cur: store.routerName === 'avatar' }" :to="{ name: 'avatar'}">头像</router-link>
                     <a href="#">红点</a>
                     <a href="#">徽标</a>
                     <a href="#">标签</a>

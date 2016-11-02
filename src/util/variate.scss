@@ -30,6 +30,12 @@ $border-width: 1px;
 $border-color:#ececec;
 
 /*    按钮初始化   start     */
+/**
+**  btn-default 默认按钮
+**  btn-primary 主要按钮
+**  btn-secondary 次要按钮
+**  btn-warning 警示按钮
+**/
 $btn-width:88px;
 $btn-height:36px;
 
@@ -45,5 +51,27 @@ $btn-secondary-bg:#fc0;
 $btn-warning-color:#fff;
 $btn-warning-bg:#d9534f;
 /*    按钮初始化   end     */
+
+/*    头像初始化   start     */
+/**
+**  avatar-default 100*100
+**  avatar-s 60*60
+**  avatar-lg 140*140
+**/
+$avatar-color:#fff;
+$avatar-bg:#bcbcbc;
+
+$avatar-default-width:50px;
+$avatar-default-height:50px;
+$avatar-default-fs:24px;
+
+$avatar-s-width:30px;
+$avatar-s-height:30px;
+$avatar-s-fs:18px;
+
+$avatar-lg-width:70px;
+$avatar-lg-height:70px;
+$avatar-lg-fs:32px;
+/*    头像初始化   end     */
 
 

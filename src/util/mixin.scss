@@ -3,7 +3,7 @@
 ** img-square 图片为正方形
 ** img-rectangle 图片为长方形
 **/
-@mixin img-square($parentSize,$childSize){
+@mixin img-square($parentSize, $childSize){
     position: relative;
     width:$parentSize;
     height:0;
@@ -15,7 +15,7 @@
         height:$childSize;
     }
 }
-@mixin img-rectangle($imgW,$imgH,$parentSize,$childSize){
+@mixin img-rectangle($imgW, $imgH, $parentSize, $childSize){
     position: relative;
     width:percentage($parentSize);
     height:0;
@@ -28,8 +28,9 @@
     }
 }
 /*    预留图片位置    end*/
+
 /*    按钮    start*/
-@mixin btn-variant($color,$background){
+@mixin btn-variant($color, $background){
     $active-bg:darken($background,10%);
     $disabled-bg:lighten($background,10%);
     
@@ -43,11 +44,29 @@
     }
 }
 
-@mixin btn-size($width,$height,$fs,$br){
+@mixin btn-size($width, $height, $fs, $br){
     width:$width;
     height:$height;
     font-size:$fs;
     border-radius: $br;
 }
 /*    按钮    end*/
+
+/*    头像    start*/
+@mixin avatar-variant($color, $bg-color){
+    position: relative;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    color: $color;
+    border-radius: 50%;
+    background-color: $bg-color;
+    vertical-align:middle;
+}
+
+@mixin avatar-size($width, $height){
+    width:$width;
+    height:$height;
+}
+/*    头像    end*/
 

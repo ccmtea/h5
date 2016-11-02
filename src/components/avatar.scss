@@ -1,0 +1,38 @@
+/**
+**  avatar-default 100*100
+**  avatar-s 60*60
+**  avatar-lg 140*140
+**/
+.avatar{
+    @include avatar-variant($avatar-color,$avatar-bg);
+    >img{
+        display: inline-block;
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+    }
+    >[class^="icon-"]{
+        display: inline-block;
+    }
+}
+
+.avatar-default{
+    @include avatar-size($avatar-default-width,$avatar-default-height);
+    >[class^="icon-"]{
+        font-size:$avatar-default-fs;
+    }
+}
+
+.avatar-s{
+    @include avatar-size($avatar-s-width,$avatar-s-height);
+    >[class^="icon-"]{
+        font-size:$avatar-s-fs;
+    }
+}
+
+.avatar-lg{
+    @include avatar-size($avatar-lg-width,$avatar-lg-height);
+    >[class^="icon-"]{
+        font-size:$avatar-lg-fs;
+    }
+}
