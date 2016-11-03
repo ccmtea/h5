@@ -28,8 +28,8 @@
                 <div v-if="showTab2" class="sidebar-a">
                     <router-link :class="{ cur: store.routerName === 'buttons' }" :to="{ name: 'buttons'}">按钮</router-link>
                     <router-link :class="{ cur: store.routerName === 'avatar' }" :to="{ name: 'avatar'}">头像</router-link>
-                    <a href="#">红点</a>
-                    <a href="#">徽标</a>
+                    <router-link :class="{ cur: store.routerName === 'reddot' }" :to="{ name: 'reddot'}">红点</router-link>
+                    <router-link :class="{ cur: store.routerName === 'badge' }" :to="{ name: 'badge'}">徽标</router-link>
                     <a href="#">标签</a>
                     <a href="#">角标</a>
                     <a href="#">搜索框</a>

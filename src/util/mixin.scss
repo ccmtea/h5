@@ -52,6 +52,7 @@
 }
 /*    按钮    end*/
 
+
 /*    头像    start*/
 @mixin avatar-variant($color, $bg-color){
     position: relative;
@@ -69,4 +70,27 @@
     height:$height;
 }
 /*    头像    end*/
+
+/*    红点    start*/
+@mixin reddot-variant($border-color,$bg-color){
+    position: relative;
+    display:inline-block;
+    &::after{
+        content:"";
+        position: absolute;
+        border:1px solid $border-color;
+        border-radius: 50%;
+        background: $bg-color;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+}
+
+@mixin reddot-size($width,$height,$top,$right){
+    width:$width;
+    height:$height;
+    top:$top;
+    right:$right;
+}
+/*    红点    end*/
 

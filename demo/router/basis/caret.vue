@@ -4,7 +4,7 @@
             <div class="con">
                 <div class="main">
                     from：constant.scss
-                    <pre>  
+                    <pre class="html/css" v-highlight>  
  /*   三角符号    start*/
 /**
 **.caret-solid  默认 下
@@ -33,7 +33,7 @@
 }
                     </pre>
                     ex：
-                    <pre>
+                    <pre class="html/css" v-highlight>
 &lt;span class="caret-solid"&gt;&lt;/span&gt;
 &lt;span class="caret-solid caret-solid-top"&gt;&lt;/span&gt;
 &lt;span class="caret-solid caret-solid-left"&gt;&lt;/span&gt;

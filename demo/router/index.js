@@ -10,6 +10,8 @@ import Img_pre_seat from './basis/img_pre_seat.vue'
 import Text from './basis/text.vue'
 import Buttons from './ui_compoents/buttons.vue'
 import Avatar from './ui_compoents/avatar.vue'
+import Reddot from './ui_compoents/reddot.vue'
+import Badge from './ui_compoents/badge.vue'
 
 
 
@@ -25,5 +27,7 @@ export default [
     { path: '/img_pre_seat', name: 'img_pre_seat', component: Img_pre_seat },
     { path: '/text', name: 'text', component: Text },
     { path: '/buttons', name: 'buttons', component: Buttons },
-    { path: '/avatar', name: 'avatar', component: Avatar }
+    { path: '/avatar', name: 'avatar', component: Avatar },
+    { path: '/reddot', name: 'reddot', component: Reddot },
+    { path: '/badge', name: 'badge', component: Badge }
 ]

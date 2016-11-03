@@ -71,7 +71,27 @@ $avatar-s-fs:18px;
 
 $avatar-lg-width:70px;
 $avatar-lg-height:70px;
-$avatar-lg-fs:32px;
+$avatar-lg-fs:36px;
 /*    头像初始化   end     */
+
+
+/*    红点初始化   start     */
+/**
+** $reddot-lg  大红点
+** $reddot-s  小红点
+**/
+$reddot-bc:transparent;   //带边框红点边框默认颜色
+$reddot-bg:#f74c31;
+
+$reddot-lg-width:8px;
+$reddot-lg-height:8px;
+$reddot-lg-top:-4px;
+$reddot-lg-right:-4px;
+
+$reddot-s-width:6px;
+$reddot-s-height:6px;
+$reddot-s-top:-3px;
+$reddot-s-right:-3px;
+/*    红点初始化   end     */
 
 

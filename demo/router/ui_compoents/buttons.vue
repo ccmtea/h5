@@ -86,27 +86,27 @@ $btn-warning-bg:#d9534f;
 }
                     </pre>
                     ex：
-                    <pre>
+                    <pre class="html" v-highlight>
 &lt;button class="btn btn-default border"&gt;default&lt;/button&gt;
                     </pre>
                     <button class="btn btn-default border">default</button>
-                    <pre>
+                    <pre class="html" v-highlight>
 &lt;button class="btn btn-primary"&gt;primary&lt;/button&gt;
                     </pre>
                     <button class="btn btn-primary">primary</button>
-                    <pre>
+                    <pre class="html" v-highlight>
 &lt;button class="btn btn-secondary"&gt;secondary&lt;/button&gt;
                     </pre>
                     <button class="btn btn-secondary">secondary</button>
-                    <pre>
+                    <pre class="html" v-highlight>
 &lt;button class="btn btn-warning"&gt;warning&lt;/button&gt;
                     </pre>
                     <button class="btn btn-warning">warning</button>
-                    <pre>
+                    <pre class="html" v-highlight>
 &lt;button class="btn btn-primary btn-block" disabled &gt;disabled(我是禁用状态，标签在中添加“disabled”)&lt;/button&gt;
                     </pre>                   
                     <button class="btn btn-primary btn-block" disabled>disabled(我是禁用状态，标签在中添加“disabled”)</button>
-                    <pre>
+                    <pre class="html" v-highlight>
 &lt;button class="btn btn-primary btn-block"&gt;primary(我是块级按钮，只需添加“btn-block”)&lt;/button&gt;
                     </pre>
                     <button class="btn btn-primary btn-block">primary(我是块级按钮，只需添加“btn-block”)</button>

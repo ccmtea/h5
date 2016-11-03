@@ -23,7 +23,7 @@
 /*   两端对齐    end*/
                 </pre>
                 ex:
-                <pre>
+                <pre class="html/css" v-highlight>
 &lt;ul class="ui-justify"&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
