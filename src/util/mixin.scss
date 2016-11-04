@@ -54,7 +54,7 @@
 
 
 /*    头像    start*/
-@mixin avatar-variant($color, $bg-color){
+@mixin avatar($color, $bg-color){
     position: relative;
     display: inline-flex;
     align-items: center; 
@@ -72,7 +72,7 @@
 /*    头像    end*/
 
 /*    红点    start*/
-@mixin reddot-variant($border-color,$bg-color){
+@mixin reddot($border-color,$bg-color){
     position: relative;
     display:inline-block;
     &::after{
@@ -93,4 +93,25 @@
     right:$right;
 }
 /*    红点    end*/
+
+/*    徽标/标签    start*/
+@mixin pendant($height,$min-width,$plr,$bg,$fs,$fc,$border-color,$br){
+    display: inline-block;
+    height:$height;
+    min-width:$min-width;
+    padding:0 $plr;
+    line-height: $height;
+    color:$fc;
+    font-size:$fs;
+    background: $bg;
+    border:1px solid $border-color;
+    border-radius: $br;
+}
+
+@mixin pendant-pos($pos,$top,$right){
+    position: $pos;
+    top:$top;
+    right:$right;
+}
+/*    徽标/标签    end*/
 

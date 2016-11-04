@@ -6,11 +6,11 @@
 **/
 
 .reddot{
-    @include reddot-variant($reddot-bc,$reddot-bg);
+    @include reddot($reddot-bc,$reddot-bg);
 }
 
 .reddot-border{
-    @include reddot-variant(#fff,$reddot-bg);
+    @include reddot(#fff,$reddot-bg);
 }
 
 .reddot-s{

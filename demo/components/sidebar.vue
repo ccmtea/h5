@@ -30,7 +30,7 @@
                     <router-link :class="{ cur: store.routerName === 'avatar' }" :to="{ name: 'avatar'}">头像</router-link>
                     <router-link :class="{ cur: store.routerName === 'reddot' }" :to="{ name: 'reddot'}">红点</router-link>
                     <router-link :class="{ cur: store.routerName === 'badge' }" :to="{ name: 'badge'}">徽标</router-link>
-                    <a href="#">标签</a>
+                    <router-link :class="{ cur: store.routerName === 'label' }" :to="{ name: 'label'}">标签</router-link>
                     <a href="#">角标</a>
                     <a href="#">搜索框</a>
                     <a href="#">列表</a>

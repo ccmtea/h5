@@ -1,0 +1,7 @@
+.label,.label-bg{
+    @include pendant($label-height,$label-mWidth,$label-plr,$label-bg,$label-fs,$label-fc,$label-bc,$label-br);
+}
+
+.label-bg{
+    background-color: #ccc;
+}

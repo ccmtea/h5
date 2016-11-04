@@ -4,7 +4,7 @@
 **  avatar-lg 140*140
 **/
 .avatar{
-    @include avatar-variant($avatar-color,$avatar-bg);
+    @include avatar($avatar-color,$avatar-bg);
     >img{
         display: inline-block;
         width:100%;
