@@ -2,9 +2,12 @@
 @import './util/mixin.scss';
 @import './util/variate.scss';
 @import './common/constant.scss';
-@import './resource/font.scss';
+@import './util/font.scss';
 @import './components/btn.scss';
 @import './components/avatar.scss';
+@import './components/reddot.scss';
+@import './components/badge.scss';
+@import './components/label.scss';
 
 html{
     background: #fff;

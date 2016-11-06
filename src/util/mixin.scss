@@ -52,8 +52,9 @@
 }
 /*    按钮    end*/
 
+
 /*    头像    start*/
-@mixin avatar-variant($color, $bg-color){
+@mixin avatar($color, $bg-color){
     position: relative;
     display: inline-flex;
     align-items: center; 
@@ -69,4 +70,48 @@
     height:$height;
 }
 /*    头像    end*/
+
+/*    红点    start*/
+@mixin reddot($border-color,$bg-color){
+    position: relative;
+    display:inline-block;
+    &::after{
+        content:"";
+        position: absolute;
+        border:1px solid $border-color;
+        border-radius: 50%;
+        background: $bg-color;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+}
+
+@mixin reddot-size($width,$height,$top,$right){
+    width:$width;
+    height:$height;
+    top:$top;
+    right:$right;
+}
+/*    红点    end*/
+
+/*    徽标/标签    start*/
+@mixin pendant($height,$min-width,$plr,$bg,$fs,$fc,$border-color,$br){
+    display: inline-block;
+    height:$height;
+    min-width:$min-width;
+    padding:0 $plr;
+    line-height: $height;
+    color:$fc;
+    font-size:$fs;
+    background: $bg;
+    border:1px solid $border-color;
+    border-radius: $br;
+}
+
+@mixin pendant-pos($pos,$top,$right){
+    position: $pos;
+    top:$top;
+    right:$right;
+}
+/*    徽标/标签    end*/
 
