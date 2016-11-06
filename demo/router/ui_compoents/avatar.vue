@@ -1,10 +1,10 @@
 <template>
-    <div class="avatar">
+    <div class="avatars">
         <examples name="头像">
             <div class="con">
                 <div class="main">
                     from：mixin.scss && variate.scss && avatar.scss
-                    <pre class="css" v-highlight>
+                    <pre class="html/css" v-highlight>
 /*    头像初始化   start     */
 /**
 **  avatar-default 100*100
@@ -79,26 +79,80 @@ $avatar-lg-fs:32px;
     }
 }
                     </pre>
-                    <div class="avatar avatar-default">
-
+                    ex:
+                    <pre class="html" v-highlight>
+&lt;div class="avatar avatar-default"&gt;&lt;/div&gt;
+                    </pre>
+                    <div class="avatar-size size-default">
+                        <div class="avatar avatar-default">
+                            <img src="img/avatar.jpg" alt="">
+                        </div>
+                        我是默认(100 * 100)尺寸图片头像哦
                     </div>
-                    <div class="avatar avatar-default">
-                        <span class="icon-newspaper"></span>
+                    <pre class="html" v-highlight>
+&lt;div class="avatar avatar-default"&gt;
+    &lt;span class="icon-user-love"&gt;&lt;/span&gt;
+&lt;/div&gt;                 
+                    </pre>
+                    <div class="avatar-size size-default">
+                        <div class="avatar avatar-default">
+                            <span class="icon-user-love"></span>
+                        </div>
+                        我是默认(100 * 100)尺寸字体图标哦
                     </div>
-                    <div class="avatar avatar-s">
-                        
+                    <pre class="html" v-highlight>
+&lt;div class="avatar avatar-s"&gt;&lt;/div&gt;                        
+                    </pre>
+                    <div class="avatar-size size-s">
+                        <div class="avatar avatar-s">
+                            <img src="img/avatar.jpg" alt="">
+                        </div>
+                        我是小小的（60 * 60）的图片头像哦
                     </div>
-                    <div class="avatar avatar-s">
-                        <span class="icon-newspaper"></span>
+                    <pre class="html" v-highlight>
+&lt;div class="avatar avatar-s"&gt;
+    &lt;span class="icon-user-love"&gt;&lt;/span&gt;
+&lt;/div&gt;
+                    </pre>
+                    <div class="avatar-size size-s">
+                        <div class="avatar avatar-s">
+                            <span class="icon-user-love"></span>
+                        </div>
+                        我是小小的（60 * 60）的字体图标哦
                     </div>
-                    <div class="avatar avatar-lg">
-                        
+                    <pre class="html" v-highlight>
+&lt;div class="avatar avatar-lg"&gt;&lt;/div&gt;
+                    </pre>
+                    <div class="avatar-size size-lg">
+                        <div class="avatar avatar-lg">
+                            <img src="img/avatar.jpg" alt="">
+                        </div>
+                        我是大大的（140 * 140）的图片头像哦
                     </div>
-                    <div class="avatar avatar-lg">
-                        <span class="icon-newspaper"></span>
+                    <pre>
+&lt;div class="avatar avatar-lg"&gt;
+    &lt;span class="icon-user-love"&gt;&lt;/span&gt;
+&lt;/div>
+                    </pre>
+                    <div class="avatar-size size-lg">
+                        <div class="avatar avatar-lg">
+                            <span class="icon-user-love"></span>
+                        </div>
+                        我是大大的（140 * 140）的字体图标哦
                     </div>
                 </div>
             </div>
         </examples>
     </div>
 </template>
+<style  scoped lang="scss">
+    .avatar-size{
+        padding:10px 0;
+    }
+    .size-default{
+        padding-left:12px;
+    }
+    .size-s{
+        padding-left:21px;
+    }
+</style>
