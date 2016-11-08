@@ -3,7 +3,7 @@
         <examples name="红点">
             <div class="con">
                 <div class="main">
-                    from：variate.scss && mixin.scss && reddot.scss
+                    from：mixin.scss && reddot.scss
                     <pre class="css" v-highlight>
 /*    红点    start*/
 @mixin reddot-variant($border-color){
@@ -26,11 +26,16 @@
 }
 /*    红点    end*/
 
+/***************************************
+**
+**  .reddot 默认红点基本样式(边框为透明色)
+**  .reddot-border  带边框红点基本样式(默认边框为白色，覆盖改变border-color颜色即可)
+**  .reddot-s   小尺寸红点（6 * 6）
+**  .reddot-lg  大尺寸红点（8 * 8）
+**
+***************************************/
+
 /*    红点初始化   start     */
-/**
-** $reddot-lg  大红点
-** $reddot-s  小红点
-**/
 $reddot-bc:transparent;   //带边框红点边框默认颜色
 $reddot-bg:#f74c31;
 
@@ -45,19 +50,12 @@ $reddot-s-top:-3px;
 $reddot-s-right:-3px;
 /*    红点初始化   end     */
 
-/**
-**  .reddot 默认红点基本样式(边框为透明色)
-**  .reddot-border  带边框红点基本样式(默认边框为白色，覆盖改变border-color颜色即可)
-**  .reddot-s   小尺寸红点（6 * 6）
-**  .reddot-lg  大尺寸红点（8 * 8）
-**/
-
 .reddot{
-    @include reddot-variant($reddot-bc,$reddot-bg);
+    @include reddot($reddot-bc,$reddot-bg);
 }
 
 .reddot-border{
-    @include reddot-variant(#fff,$reddot-bg);
+    @include reddot(#fff,$reddot-bg);
 }
 
 .reddot-s{
@@ -71,6 +69,7 @@ $reddot-s-right:-3px;
         @include reddot-size($reddot-lg-width,$reddot-lg-height,$reddot-lg-top,$reddot-lg-right);
     }
 }
+
 
 
                     </pre>

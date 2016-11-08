@@ -1,0 +1,110 @@
+.subscript{
+    &::before,&::after{
+        position: absolute;
+    }
+    &::after{
+        font-size:12px;
+        color:#fff;
+        font-family: "\9ED\4F53", "Hiragino Sans GB", "Hiragino Sans GB W3", "Droid Sans", "Kalinga", sans-serif;
+    }
+}
+
+.s-triangle,.s-concave,.s-irregular,.s-rectObl,.s-bulge,.s-flatConcave,.s-doubleRounded{
+    &:before{
+        top:0;
+        line-height: 29px;
+        font-size:32px;
+    }
+}
+.s-triangle{
+    &::after{
+        content:"新";
+        padding: 1px 0 0 3px;
+    }
+}
+.s-rectObl{
+    &::before{
+
+    }
+    &::after{
+        content:"会员";
+        transform: rotate(-45deg);
+        left:-1px;
+        top:4px
+    }
+}
+.s-irregular{
+    &::before{
+
+    }
+    &::after{
+        content:"热";
+        left:6px;
+        top:2px;
+    }
+}
+.s-singleFillet{
+    &::before{
+        left:3px;
+        font-size:15px;
+    }
+    &::after{
+        content:"热";
+        padding: 2px 0 0 5px;
+    }
+}
+.s-concave{
+    &::before{
+        left:-2px;
+    }
+    &::after{
+        content:"首发";
+        left:2px;
+        top:5px;
+    }
+}
+.s-bulge{
+    &::before{
+        line-height: 27px;
+    }
+    &::after{
+        content:"首发";
+        left:4px;
+        top:4px;
+    }
+}
+.s-flatConcave{
+    &::before{
+
+    }
+    &::after{
+        content:"新品";
+        left:4px;
+        top:1px;
+    }
+}
+.s-doubleRounded{
+    &::before{
+        font-size:15px;
+        line-height:14px;
+    }
+    &::after{
+        content:"新品";
+        padding: 0 0 0 7px;
+    }
+}
+.s-rect{
+    &::before{
+        content:"免费";
+        position: absolute;
+        width:28px;
+        height:13px;
+        text-align:center;
+        line-height:13px;
+        font-size:12px;
+        right:0;
+        bottom:0;
+        background-color: #666;
+        color:#fff;
+    }
+}

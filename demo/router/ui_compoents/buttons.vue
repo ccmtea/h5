@@ -3,27 +3,10 @@
         <examples name ="按钮">
             <div class="con">
                 <div class="main">
-                    from：variate.scss && mixin.scss && btn.scss
+                    from：mixin.scss && btn.scss
                     <pre class="css" v-highlight>
 $fs-base:1em;
 $br-base:4px;
-
-/*    按钮初始化   start     */
-$btn-width:88px;
-$btn-height:36px;
-
-$btn-default-color:#ccc;
-$btn-default-bg:#fff;
-
-$btn-primary-color:#fff;
-$btn-primary-bg:#5edd9e;
-
-$btn-secondary-color:#fff;
-$btn-secondary-bg:#ff4081;
-
-$btn-warning-color:#fff;
-$btn-warning-bg:#d9534f;
-/*    按钮初始化   end     */
 
 /*    按钮    start*/
 @mixin btn-variant($color,$background){
@@ -48,12 +31,33 @@ $btn-warning-bg:#d9534f;
 }
 /*    按钮    end*/
 
-/**
+/************************
+**
 **  btn-default 默认按钮
 **  btn-primary 主要按钮
 **  btn-secondary 次要按钮
 **  btn-warning 警示按钮
-**/
+**
+************************/
+
+/*    按钮初始化   start     */
+$btn-width:88px;
+$btn-height:36px;
+
+$btn-default-color:#333;
+$btn-default-bg:#fff;
+
+$btn-primary-color:#fff;
+$btn-primary-bg:#5edd9e;
+
+$btn-secondary-color:#fff;
+$btn-secondary-bg:#fc0;
+
+$btn-warning-color:#fff;
+$btn-warning-bg:#d9534f;
+/*    按钮初始化   end     */
+
+
 .btn{
     display: inline-block;
     cursor: pointer;

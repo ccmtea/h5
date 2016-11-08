@@ -3,7 +3,7 @@
         <examples name="徽标">
             <div class="con">
                 <div class="main">
-                    from：variate.scss && mixin.scss && btn.scss
+                    from：mixin.scss && btn.scss
                     <pre class="css" v-highlight>
 /*    徽标/标签    start*/
 @mixin pendant($height,$min-width,$plr,$bg,$fs,$fc,$border-color,$br){
@@ -26,6 +26,14 @@
 }
 /*    徽标/标签    end*/
 
+/***************************
+**
+**  .badge 初始化徽标
+**  .badge-border 初始化徽标(带边框)
+**  .badge-wrap  脱离正常流徽标
+**
+***************************/
+
 /*    徽标初始化   start     */
 $badge-height:18px;
 $badge-mWidth:18px;
@@ -36,16 +44,11 @@ $badge-bc:transparent;
 $badge-bg:#f74c31;
 $badge-br:10px;
 
-$badge-pa:$pa;
+$badge-pa:absolute;
 $badge-top:-16px;
 $badge-right:-15px;
 /*    徽标初始化   end     */
 
-/**
-**  .badge 初始化徽标
-**  .badge-border 初始化徽标(带边框)
-**  .badge-wrap  脱离正常流徽标
-**/
 .badge,.badge-border{
     @include pendant($badge-height,$badge-mWidth,$badge-plr,$badge-bg,$badge-fs,$badge-fc,$badge-bc,$badge-br);
 }

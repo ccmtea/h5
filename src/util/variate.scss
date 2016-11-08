@@ -1,24 +1,6 @@
 $fs-base:1em;
 $br-base:4px;
 
-/*    z-index   start  */
-$zi1:1;
-$zi2:2;
-$zi3:3;
-$zi4:4;
-$zi1:5;
-$zi9:9;
-$zi10:10;
-$zi99:99;
-$zi100:100; 
-/*    z-index   end  */
-
-/*    元素定位类型 start      */
-$pa:absolute;
-$pr:relative;
-$pf:fixed;
-/*    元素定位类型 end      */
-
 /*    颜色   start     */
 /**
  **  
@@ -28,97 +10,6 @@ $pf:fixed;
 
 $border-width: 1px;
 $border-color:#ececec;
-
-/*    按钮初始化   start     */
-/**
-**  btn-default 默认按钮
-**  btn-primary 主要按钮
-**  btn-secondary 次要按钮
-**  btn-warning 警示按钮
-**/
-$btn-width:88px;
-$btn-height:36px;
-
-$btn-default-color:#333;
-$btn-default-bg:#fff;
-
-$btn-primary-color:#fff;
-$btn-primary-bg:#5edd9e;
-
-$btn-secondary-color:#fff;
-$btn-secondary-bg:#fc0;
-
-$btn-warning-color:#fff;
-$btn-warning-bg:#d9534f;
-/*    按钮初始化   end     */
-
-/*    头像初始化   start     */
-/**
-**  avatar-default 100*100
-**  avatar-s 60*60
-**  avatar-lg 140*140
-**/
-$avatar-color:#fff;
-$avatar-bg:#bcbcbc;
-
-$avatar-default-width:50px;
-$avatar-default-height:50px;
-$avatar-default-fs:24px;
-
-$avatar-s-width:30px;
-$avatar-s-height:30px;
-$avatar-s-fs:18px;
-
-$avatar-lg-width:70px;
-$avatar-lg-height:70px;
-$avatar-lg-fs:36px;
-/*    头像初始化   end     */
-
-
-/*    红点初始化   start     */
-/**
-** $reddot-lg  大红点
-** $reddot-s  小红点
-**/
-$reddot-bc:transparent;   //带边框红点边框默认颜色
-$reddot-bg:#f74c31;
-
-$reddot-lg-width:8px;
-$reddot-lg-height:8px;
-$reddot-lg-top:-4px;
-$reddot-lg-right:-4px;
-
-$reddot-s-width:6px;
-$reddot-s-height:6px;
-$reddot-s-top:-3px;
-$reddot-s-right:-3px;
-/*    红点初始化   end     */
-
-/*    徽标初始化   start     */
-$badge-height:18px;
-$badge-mWidth:18px;
-$badge-plr:3px;
-$badge-fs:12px;
-$badge-fc:#fff;
-$badge-bc:transparent;
-$badge-bg:#f74c31;
-$badge-br:10px;
-
-$badge-pa:$pa;
-$badge-top:-16px;
-$badge-right:-15px;
-/*    徽标初始化   end     */
-
-/*    标签初始化   start     */
-$label-height:18px;
-$label-mWidth:18px;
-$label-plr:4px;
-$label-fs:12px;
-$label-fc:#969393;
-$label-bc:#e3e3e3;
-$label-bg:transparent;
-$label-br:2px;
-/*    标签初始化   end     */
 
 
 
