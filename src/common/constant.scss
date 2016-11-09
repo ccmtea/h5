@@ -249,6 +249,52 @@
 	}
 }
 /*   两端对齐    end*/
+
+/*   flex       start*/
+/*水平等宽分布*/
+.jz-flex-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+/*垂直等高分布*/
+.jz-flex-column {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.jz-flex-col {
+	-webkit-box-flex: 1;
+	-ms-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+/*实现文本垂直居中*/
+.jz-flex-vh {
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	-ms-align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	-ms-justify-content: center;
+}
+.vh {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+}
+/*   flex       end*/
 /*   清除浮动    start*/
 .clear::after{
     content:"";

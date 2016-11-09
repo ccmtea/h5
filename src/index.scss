@@ -2,6 +2,7 @@
 @import './util/mixin.scss';
 @import './util/variate.scss';
 @import './common/constant.scss';
+@import './util/style.scss';
 @import './util/iconfont.scss';
 @import './components/btn.scss';
 @import './components/avatar.scss';
@@ -9,6 +10,7 @@
 @import './components/badge.scss';
 @import './components/label.scss';
 @import './components/subscript.scss';
+@import './components/list.scss';
 
 html{
     background: #fff;

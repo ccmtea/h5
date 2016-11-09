@@ -1,0 +1,31 @@
+$lc-plr:15px;
+$lc-ptb:10px;
+
+.list-cells{
+    padding-left:$lc-plr;
+    &::before{
+        border-left:none;
+        border-right:none;
+    }
+    .list-cell{
+        padding-left:0;
+    }
+}
+.list-cell{
+    padding:$lc-ptb $lc-plr;
+    color: inherit;
+    &::before{
+        border:none;
+        border-bottom:1px solid $border-color;
+    }
+    &:first-child::before{
+        border-top:1px solid $border-color;
+    }
+    .list-cell-hd{
+        width:20px;
+        height:20px;
+        margin-right: 5px;
+        background:#ccc;
+        
+    }
+}

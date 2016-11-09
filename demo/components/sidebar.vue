@@ -33,8 +33,8 @@
                     <router-link :class="{ cur: store.routerName === 'label' }" :to="{ name: 'label'}">标签</router-link>
                     <router-link :class="{ cur: store.routerName === 'subscript' }" :to="{ name: 'subscript'}">角标</router-link>
                     <router-link :class="{ cur: store.routerName === 'searchbar' }" :to="{ name: 'searchbar'}">搜索框</router-link>
-                    <a href="#">列表</a>
-                    <a href="#">表单</a>
+                    <router-link :class="{ cur: store.routerName === 'list' }" :to="{ name: 'list'}">列表</router-link>
+                    <router-link :class="{ cur: store.routerName === 'form' }" :to="{ name: 'form'}">表单</router-link>
                     <a href="#">提示</a>
                     <a href="#">对话框</a>
                     <a href="#">菜单</a>

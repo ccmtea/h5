@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Tue Nov  8 17:57:35 2016
+Created by FontForge 20120731 at Wed Nov  9 18:29:44 2016
  By admin
 </metadata>
 <defs>
@@ -40,6 +40,8 @@ d="M1008 -73l-243 243q47 52 74 117q34 80 34 168t-34 168q-33 78 -92.5 137.5t-137.
 t19.5 8t8 19t-8 19zM441 78q-75 0 -144 28.5t-122.5 82t-82 122.5t-28.5 144.5t28.5 144.5t82 122t122.5 81.5t144.5 28.5t144.5 -28.5t122.5 -81.5t82 -122t28.5 -145q0 -153 -107 -262l-4 -4t-4 -5q-110 -106 -263 -106z" />
     <glyph glyph-name="tag-triangle" unicode="&#xe72a;" 
 d="M-8 904v-1039l1040 1039h-1040z" />
+    <glyph glyph-name="chevron-thin-right" unicode="&#xe677;" 
+d="M300 832l456 -447l-456 -446l-35 34l421 412l-421 412z" />
     <glyph glyph-name="tag-concave" unicode="&#xe600;" 
 d="M948 -128l-436 276l-436 -276v1024h872v-512v-512z" />
     <glyph glyph-name="cancel-thin" unicode="&#xe6a1;" 

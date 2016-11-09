@@ -15,6 +15,8 @@ import Badge from './ui_compoents/badge.vue'
 import Label from './ui_compoents/label.vue'
 import Subscript from './ui_compoents/subscript.vue'
 import Searchbar from './ui_compoents/searchbar.vue'
+import List from './ui_compoents/list.vue'
+import Form from './ui_compoents/form.vue'
 
 
 
@@ -35,5 +37,7 @@ export default [
     { path: '/badge', name: 'badge', component: Badge },
     { path: '/label', name: 'label', component: Label },
     { path: '/subscript', name: 'subscript', component: Subscript },
-    { path: '/searchbar', name: 'searchbar', component: Searchbar }
+    { path: '/searchbar', name: 'searchbar', component: Searchbar },
+    { path: '/list', name: 'list', component: List },
+    { path: '/form', name: 'form', component: Form }
 ]
