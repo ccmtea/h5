@@ -1,0 +1,217 @@
+$ui-cell-ptb:6px;
+$ui-cell-height:46px;
+
+/**    表单单选项基本配置    start**/
+$ui-rc-w:26px;
+$ui-rc-h:26px;
+$ui-rc-wb:24px;
+$ui-rc-hb:24px;
+$ui-radio-wa:14px;
+$ui-radio-ha:14px;
+$ui-radio-abr:7px;
+$ui-radio-al:5px;
+$ui-radio-at:5px;
+/**    表单单选项基本配置    end**/
+
+/**    表单多选项基本配置    start**/
+$ui-cb-fs:22px;
+$ui-cb-lh:20px;
+/**    表单多选项基本配置    end**/
+
+
+.ui-form-wrap{
+    font-size:16px;
+    .ui-cell{
+        padding-top:$ui-cell-ptb;
+        padding-bottom:$ui-cell-ptb;
+        height:$ui-cell-height;
+        line-height:$ui-cell-height - $ui-cell-ptb*2;
+    }
+}
+.ui-form-input,.ui-select .ui-form-select{
+    width:100%;
+    border:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+}
+.ui-input-clear{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.ui-select-dib{
+    float:left;
+    position:relative;
+    .ui-form-select{
+        padding-right: 14px;
+    }
+}
+.ui-radio{
+    input[type = "radio"]{
+        display: inline-block;
+        width: $ui-rc-w;
+        height: $ui-rc-h;
+        position: relative;
+        overflow: visible;
+        border: 0;
+        background: none;
+        -webkit-appearance: none;
+        outline: none;
+        vertical-align: middle;
+        &::before{
+            content: '';
+            display: block;
+            width: $ui-rc-wb;
+            height: $ui-rc-hb;
+            border: 1px solid #dfe0e1;
+            border-radius: 13px;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            position: absolute;
+            left: 0px;
+            top: 0;
+        }
+        &:checked::after{
+            content: '';
+            display: block;
+            width: $ui-radio-wa;
+            height:$ui-radio-ha;
+            background: #5edd9e;
+            border-radius: $ui-radio-abr;
+            position: absolute;
+            left: $ui-radio-al;
+            top: $ui-radio-at;
+        }
+    }
+}
+.ui-checkbox input, .ui-checkbox-s input {
+    display: inline-block;
+    width: $ui-rc-w;
+    height: $ui-rc-h;
+    position: relative;
+    overflow: visible;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    vertical-align: middle;
+    &::before{
+        content: '';
+        display: block;
+        width: $ui-rc-wb;
+        height: $ui-rc-hb;
+        border: 1px solid #dfe0e1;
+        border-radius: 50%;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        position: absolute;
+        left: 0px;
+        top: 0;
+    }
+    &:checked::before{
+        content:"\e679";
+        font: normal normal normal 22px/20px "iconfont";
+        -webkit-font-smoothing: antialiased;
+        color:#5edd9e;
+        position: absolute;
+    }
+}
+
+.ui-agree{
+    padding:0 15px;
+    .ui-agree-checkbox{
+        -webkit-appearance: none;
+        appearance: none;
+        outline: 0;
+        font-size: 0;
+        border: 1px solid #D1D1D1;
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        width: 13px;
+        height: 13px;
+        position: relative;
+        vertical-align: 0;
+        top: 2px;
+        &:checked::before{
+                font: normal normal normal 23px/44px "iconfont";
+                text-transform: none;
+                text-align: center;
+                speak: none;
+                display: inline-block;
+                vertical-align: middle;
+                text-decoration: inherit;
+                content: "\e643";
+                color: #5edd9e;
+                font-size: 14px;
+                position: absolute;
+                top: 4px;
+                left: 6px;
+                transform: translate(-50%, -48%) scale(0.73);
+                -webkit-transform: translate(-50%, -48%) scale(0.73);
+        }
+    }
+}
+.ui-vcode-img{
+    height:34px;
+    margin-left:5px;
+}
+.ui-re-send{
+    height:34px;
+    padding:0 8px;
+    margin-left:5px;
+    color:#fff;
+    background:#cacaca;
+}
+.ui-switch{
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 52px;
+    height: 32px;
+    border: 1px solid #DFDFDF;
+    outline: 0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: #DFDFDF;
+    -webkit-transition: background-color 0.1s, border 0.1s;
+    transition: background-color 0.1s, border 0.1s;
+    &::before,&::after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+    }
+    &::before{
+        width: 50px;
+        height: 30px;
+        background-color: #FDFDFD;
+        -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+        transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+        transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+        transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1), -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+    }
+    &::after{
+        width: 30px;
+        height: 30px;
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+        transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+        transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+        transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35), -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    }
+    &:checked{
+        border-color: #5edd9e;
+        background-color: #5edd9e;
+        &:before{
+            transform: scale(0);
+        }
+        &:after{
+            transform: translateX(20px);
+        }
+    }
+}

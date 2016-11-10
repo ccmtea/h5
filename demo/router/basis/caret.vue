@@ -13,23 +13,36 @@
 **.caret-solid-right 右
 **/
 .caret-solid{
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px solid;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+    position:relative;
+	&::after{
+		content:"";
+		position:absolute;
+		width: 0;
+		height: 0;
+		top:50%;
+		margin-top:-4px;
+		right: 2px;
+		vertical-align: middle;
+		border-top: 6px solid;
+		border-right: 5px solid transparent;
+		border-left: 5px solid transparent;
+		color:#a6a6a6;
+	}
 }
 .caret-solid-top{
-    transform: rotate(180deg);
+	&::after{
+		transform: rotate(180deg);
+	}
 }
 .caret-solid-left{
-    transform: rotate(90deg);
+	&::after{
+		transform: rotate(90deg);
+	}
 }
 .caret-solid-right{
-    transform: rotate(-90deg);
+	&::after{
+		transform: rotate(-90deg);
+	}
 }
                     </pre>
                     ex：
@@ -47,8 +60,10 @@
         </examples>
     </div>
 </template>
-<style>
-
+<style scoped lang = "scss">
+    .caret-solid{
+        margin:0 10px;
+    }
 </style>
 <script>
     export default{

@@ -1,19 +1,20 @@
 $lc-plr:15px;
 $lc-ptb:10px;
 
-.list-cells{
+.ui-cells{
     padding-left:$lc-plr;
     &::before{
         border-left:none;
         border-right:none;
     }
-    .list-cell{
+    .ui-cell{
         padding-left:0;
     }
 }
-.list-cell{
+.ui-cell{
     padding:$lc-ptb $lc-plr;
     color: inherit;
+    align-items: center;
     &::before{
         border:none;
         border-bottom:1px solid $border-color;
@@ -21,11 +22,12 @@ $lc-ptb:10px;
     &:first-child::before{
         border-top:1px solid $border-color;
     }
-    .list-cell-hd{
-        width:20px;
-        height:20px;
-        margin-right: 5px;
-        background:#ccc;
-        
+    .ui-cell-hd,.ui-cell-fd{
+        >*{
+            display:block;
+        }
+    }
+    .ui-cell-bd{
+        position:relative;
     }
 }
