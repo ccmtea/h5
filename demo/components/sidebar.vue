@@ -35,7 +35,7 @@
                     <router-link :class="{ cur: store.routerName === 'searchbar' }" :to="{ name: 'searchbar'}">搜索框</router-link>
                     <router-link :class="{ cur: store.routerName === 'list' }" :to="{ name: 'list'}">列表</router-link>
                     <router-link :class="{ cur: store.routerName === 'form' }" :to="{ name: 'form'}">表单</router-link>
-                    <a href="#">提示</a>
+                    <router-link :class="{ cur: store.routerName === 'tips' }" :to="{ name: 'tips'}">提示</router-link>
                     <a href="#">对话框</a>
                     <a href="#">菜单</a>
                     <a href="#">选项卡</a>

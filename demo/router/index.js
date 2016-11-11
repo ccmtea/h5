@@ -17,6 +17,7 @@ import Subscript from './ui_compoents/subscript.vue'
 import Searchbar from './ui_compoents/searchbar.vue'
 import List from './ui_compoents/list.vue'
 import Form from './ui_compoents/form.vue'
+import Tips from './ui_compoents/tips.vue'
 
 
 
@@ -39,5 +40,6 @@ export default [
     { path: '/subscript', name: 'subscript', component: Subscript },
     { path: '/searchbar', name: 'searchbar', component: Searchbar },
     { path: '/list', name: 'list', component: List },
-    { path: '/form', name: 'form', component: Form }
+    { path: '/form', name: 'form', component: Form },
+    { path: '/tips', name: 'tips', component: Tips }
 ]
