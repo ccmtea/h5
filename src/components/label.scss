@@ -1,5 +1,27 @@
+/*******************
+**
+**  .label  初始化标签
+**  .label-bg  有背景颜色的标签
+**
+*******************/
+
+/*    标签初始化   start     */
+$label-height:18px;
+$label-mWidth:18px;
+$label-plr:4px;
+$label-fs:12px;
+$label-fc:#969393;
+$label-bc:#e3e3e3;
+$label-bg:transparent;
+$label-br:2px;
+/*    标签初始化   end     */
+
 .label,.label-bg{
+    margin-left:5px;
     @include pendant($label-height,$label-mWidth,$label-plr,$label-bg,$label-fs,$label-fc,$label-bc,$label-br);
+    &:first-child{
+        margin-left:0;
+    }
 }
 
 .label-bg{
