@@ -1,4 +1,6 @@
+var webpack = require("webpack");
 var autoprefixer = require('autoprefixer');
+var $ = require("jquery");
 module.exports = {
     entry: "./demo/index.js",
     output: {
@@ -23,9 +25,14 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.vue'],
         alias: {
-            'vue': 'vue/dist/vue.js'
+            'vue': 'vue/dist/vue.js',
         }
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery'
+        }),
+    ],
     vue: {
         loaders: {
             scss: 'style!css!postcss!sass'

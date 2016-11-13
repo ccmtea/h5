@@ -13,6 +13,12 @@ import Avatar from './ui_compoents/avatar.vue'
 import Reddot from './ui_compoents/reddot.vue'
 import Badge from './ui_compoents/badge.vue'
 import Label from './ui_compoents/label.vue'
+import Subscript from './ui_compoents/subscript.vue'
+import Searchbar from './ui_compoents/searchbar.vue'
+import List from './ui_compoents/list.vue'
+import Form from './ui_compoents/form.vue'
+import Tips from './ui_compoents/tips.vue'
+import Dialog from './ui_compoents/dialog.vue'
 
 
 
@@ -31,5 +37,11 @@ export default [
     { path: '/avatar', name: 'avatar', component: Avatar },
     { path: '/reddot', name: 'reddot', component: Reddot },
     { path: '/badge', name: 'badge', component: Badge },
-    { path: '/label', name: 'label', component: Label }
+    { path: '/label', name: 'label', component: Label },
+    { path: '/subscript', name: 'subscript', component: Subscript },
+    { path: '/searchbar', name: 'searchbar', component: Searchbar },
+    { path: '/list', name: 'list', component: List },
+    { path: '/form', name: 'form', component: Form },
+    { path: '/tips', name: 'tips', component: Tips },
+    { path: '/dialog', name: 'dialog', component: Dialog }
 ]

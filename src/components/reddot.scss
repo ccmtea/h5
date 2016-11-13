@@ -1,9 +1,26 @@
-/**
+/***************************************
+**
 **  .reddot 默认红点基本样式(边框为透明色)
 **  .reddot-border  带边框红点基本样式(默认边框为白色，覆盖改变border-color颜色即可)
 **  .reddot-s   小尺寸红点（6 * 6）
 **  .reddot-lg  大尺寸红点（8 * 8）
-**/
+**
+***************************************/
+
+/*    红点初始化   start     */
+$reddot-bc:transparent;   //带边框红点边框默认颜色
+$reddot-bg:#f74c31;
+
+$reddot-lg-width:8px;
+$reddot-lg-height:8px;
+$reddot-lg-top:-4px;
+$reddot-lg-right:-6px;
+
+$reddot-s-width:6px;
+$reddot-s-height:6px;
+$reddot-s-top:-3px;
+$reddot-s-right:-3px;
+/*    红点初始化   end     */
 
 .reddot{
     @include reddot($reddot-bc,$reddot-bg);

@@ -1,27 +1,24 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('./resource/font/icomoon.eot?tb3v38');
-  src:  url('./resource/font/icomoon.eot?tb3v38#iefix') format('embedded-opentype'),
-    url('./resource/font/icomoon.ttf?tb3v38') format('truetype'),
-    url('./resource/font/icomoon.woff?tb3v38') format('woff'),
-    url('./resource/font/icomoon.svg?tb3v38#icomoon') format('svg');
+  src:  url('./resource/fonts/icomoon.eot?tb3v38');
+  src:  url('./resource/fonts/icomoon.eot?tb3v38#iefix') format('embedded-opentype'),
+    url('./resource/fonts/icomoon.ttf?tb3v38') format('truetype'),
+    url('./resource/fonts/icomoon.woff?tb3v38') format('woff'),
+    url('./resource/fonts/icomoon.svg?tb3v38#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-accounts:before {

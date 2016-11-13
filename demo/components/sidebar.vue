@@ -31,12 +31,12 @@
                     <router-link :class="{ cur: store.routerName === 'reddot' }" :to="{ name: 'reddot'}">红点</router-link>
                     <router-link :class="{ cur: store.routerName === 'badge' }" :to="{ name: 'badge'}">徽标</router-link>
                     <router-link :class="{ cur: store.routerName === 'label' }" :to="{ name: 'label'}">标签</router-link>
-                    <a href="#">角标</a>
-                    <a href="#">搜索框</a>
-                    <a href="#">列表</a>
-                    <a href="#">表单</a>
-                    <a href="#">提示</a>
-                    <a href="#">对话框</a>
+                    <router-link :class="{ cur: store.routerName === 'subscript' }" :to="{ name: 'subscript'}">角标</router-link>
+                    <router-link :class="{ cur: store.routerName === 'searchbar' }" :to="{ name: 'searchbar'}">搜索框</router-link>
+                    <router-link :class="{ cur: store.routerName === 'list' }" :to="{ name: 'list'}">列表</router-link>
+                    <router-link :class="{ cur: store.routerName === 'form' }" :to="{ name: 'form'}">表单</router-link>
+                    <router-link :class="{ cur: store.routerName === 'tips' }" :to="{ name: 'tips'}">提示</router-link>
+                    <router-link :class="{ cur: store.routerName === 'dialog' }" :to="{ name: 'dialog'}">对话框</router-link>
                     <a href="#">菜单</a>
                     <a href="#">选项卡</a>
                     <a href="#">页脚</a>

@@ -1,0 +1,32 @@
+/**
+**  ui-tips 普通提示
+**  ui-tooltips  工具提示
+**  ui-poptips   浮层提示
+**/
+
+$ui-tooltips-h:35px;
+$ui-tc-right-w:40px;
+$ui-tooltips-bg:#fff2ba;
+
+$ui-poptips-h:40px;
+$ui-poptips-bg: rgba(0,0,0,.6);
+
+.ui-tooltips{
+    position: relative;
+    max-width:100%;
+    padding:0 $ui-tc-right-w 0 15px;
+    line-height: 35px;
+    background: $ui-tooltips-bg;
+    .ui-tc-right{
+        position: absolute;
+        width:$ui-tc-right-w;
+        top:0;
+        right:0;
+        font-size:14px;
+    }
+}
+.ui-poptips{
+    line-height: $ui-poptips-h;
+    color:#fff;
+    background-color: $ui-poptips-bg;
+}

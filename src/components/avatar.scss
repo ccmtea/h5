@@ -1,8 +1,29 @@
-/**
+/************************
+**
 **  avatar-default 100*100
 **  avatar-s 60*60
 **  avatar-lg 140*140
-**/
+**
+*************************/
+
+/*    头像初始化   start     */
+$avatar-color:#fff;
+$avatar-bg:#bcbcbc;
+
+$avatar-default-width:50px;
+$avatar-default-height:50px;
+$avatar-default-fs:24px;
+
+$avatar-s-width:30px;
+$avatar-s-height:30px;
+$avatar-s-fs:18px;
+
+$avatar-lg-width:70px;
+$avatar-lg-height:70px;
+$avatar-lg-fs:36px;
+/*    头像初始化   end     */
+
+
 .avatar{
     @include avatar($avatar-color,$avatar-bg);
     >img{

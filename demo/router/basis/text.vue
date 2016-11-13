@@ -11,14 +11,11 @@
 **  ui-txt-info 次要内容色
 **  ui-txt-muted 不可点击状态文本色
 **  ui-txt-warning  警示
-**  ui-txt-highlight  关键词颜色
+**  ui-txt-highlight  关键词高亮颜色
 **  链接文本候默认色
 **/
 .ui-txt-default{
 	color:#3c3c3c;
-}
-.ui-txt-white{
-
 }
 .ui-txt-info{
 	color:#a7a7a7;
@@ -49,23 +46,23 @@
                     </pre>
                     <p class="ui-txt-info">辅助次要的时候，我是这个颜色</p>
                     <pre class="html/css" v-highlight>
-&lt;p class="ui-txt-muted"&gt;警示的时候，我是这个颜色&lt;/p&gt;
+&lt;p class="ui-txt-muted"&gt;不可点击的时候，我是这个颜色&lt;/p&gt;
 .ui-txt-muted{
 	color:#bbb;
 }
                     </pre>
-                    <p class="ui-txt-muted">警示的时候，我是这个颜色</p>
-                     <pre class="html/css" v-highlight>
-&lt;p&gt;&lt;a href="#"&gt;链接的时候，我是这个颜色(默认色)&lt;/a&gt;&lt;/p&gt;
-                    </pre>                   
-                    <p><a href="#">链接的时候，我是这个颜色(默认色)</a></p>
+                    <p class="ui-txt-muted">不可点击的时候，我是这个颜色</p>
                     <pre class="html/css" v-highlight>
-&lt;p class="ui-txt-warning"&gt;不可点击的时候，我是这个颜色&lt;/p&gt;
+&lt;p class="ui-txt-warning"&gt;警示的时候，我是这个颜色&lt;/p&gt;
 .ui-txt-warning{
 	color:#ff4222;
 }
                     </pre>
-                    <p class="ui-txt-warning">不可点击的时候，我是这个颜色</p>
+                    <p class="ui-txt-warning">警示的时候，我是这个颜色</p>
+                     <pre class="html/css" v-highlight>
+&lt;p&gt;&lt;a href="#"&gt;链接的时候，我是这个颜色(默认色)&lt;/a&gt;&lt;/p&gt;
+                    </pre>                   
+                    <p><a href="#">链接的时候，我是这个颜色(默认色)</a></p>
                     <pre class="html/css" v-highlight>
 &lt;p class="ui-txt-highlight"&gt;关键词高亮的时候，我是这个颜色&lt;/p&gt;
 .ui-txt-highlight{

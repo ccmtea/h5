@@ -1,0 +1,33 @@
+$lc-plr:15px;
+$lc-ptb:10px;
+
+.ui-cells{
+    padding-left:$lc-plr;
+    &::before{
+        border-left:none;
+        border-right:none;
+    }
+    .ui-cell{
+        padding-left:0;
+    }
+}
+.ui-cell{
+    padding:$lc-ptb $lc-plr;
+    color: inherit;
+    align-items: center;
+    &::before{
+        border:none;
+        border-bottom:1px solid $border-color;
+    }
+    &:first-child::before{
+        border-top:1px solid $border-color;
+    }
+    .ui-cell-hd,.ui-cell-fd{
+        >*{
+            display:block;
+        }
+    }
+    .ui-cell-bd{
+        position:relative;
+    }
+}

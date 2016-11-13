@@ -2,12 +2,17 @@
 @import './util/mixin.scss';
 @import './util/variate.scss';
 @import './common/constant.scss';
-@import './util/font.scss';
+@import './util/style.scss';
+@import './util/iconfont.scss';
 @import './components/btn.scss';
 @import './components/avatar.scss';
 @import './components/reddot.scss';
 @import './components/badge.scss';
 @import './components/label.scss';
+@import './components/subscript.scss';
+@import './components/list.scss';
+@import './components/form.scss';
+@import './components/tips.scss';
 
 html{
     background: #fff;
