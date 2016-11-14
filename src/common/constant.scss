@@ -78,7 +78,8 @@
 
 .pt0{
 	padding-top:0;
-}.pr0{
+}
+.pr0{
 	padding-right:0;
 }
 .pb0{
@@ -87,11 +88,25 @@
 .pl0{
 	padding-left:0;
 }
+.pl5{
+	padding-left:5px;
+}
+.pl10{
+	padding-left:10px;
+}
+.pl15{
+	padding-left:15px;
+}
 
+.ptb5{
+	padding-top:5px;
+	padding-bottom:5px;
+}
 .ptb6{
 	padding-top:6px;
 	padding-bottom:6px;
 }
+
 
 .plr0{
 	padding-right:0;
@@ -100,6 +115,10 @@
 .plr5{
 	padding-right:5px;
 	padding-left:5px;
+}
+.plr6{
+	padding-right:6px;
+	padding-left:6px;
 }
 .plr8{
 	padding-right:8px;
@@ -420,4 +439,15 @@
 	background-color: rgba(0, 0, 0, 0.1);
 }
 /*   列表点击背景    end*/
+/*   弹层背景        start*/
+.ui-mask{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 10;
+    background: rgba(0,0,0,.7);
+}
+/*   弹层背景        end*/
 

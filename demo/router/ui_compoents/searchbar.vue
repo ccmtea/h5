@@ -3,54 +3,55 @@
         <examples name = "搜索框">
             <div class = "con">
                 <div class="main">
-                    <div class="searchbar-wrap" :class = "{focus: addFocus}">
-                        <div class="searchbar">
-                            <i class = "icon-search"  v-on:click = "aFocus"></i>
-                            <div class="searchbar-input">
-                                <input type="text" placeholder="搜索产品" v-model = "message">
-                            </div>
-                            <i class="icon-cancel-thin" v-on:click = "iNull"></i>
-                        </div>
-                        <div class="searchbar-cancel" v-on:click = "rFocus">取消</div>
-                    </div>
-                </div>
-            </div>
-        </examples>
-    </div>
-</template>
-<style scoped lang = "scss">
-.searchbar-wrap{
+                    <pre class="css" v-highlight>
+
+$ui-searchbar-wrapH:45px; //搜索框高度
+$ui-searchbar-wrap-ptb:7px;  //搜索框上下内边距
+$ui-searchbar-wrap-plr:15px;  //搜索框左右内边距
+$ui-searchbar-wrap-bg:#eee;  //搜索框背景颜色
+ 
+$ui-searchbar-bg:#fff;  //输入框背景颜色
+$icon-search-lh:$ui-searchbar-wrapH - ($ui-searchbar-wrap-ptb*2);  //box-sizing:border-box  高度 = 行高 + 上下内边距
+
+$icon-cancel-thin-w:40px;  //取消按钮宽度
+
+.ui-searchbar-wrap{
     position: relative;
-    height:45px;
-    padding:7px 15px;
-    background: #eee;
-    .icon-cancel-thin,.searchbar-cancel,.searchbar-input{
+    height:$ui-searchbar-wrapH;
+    padding:$ui-searchbar-wrap-ptb $ui-searchbar-wrap-plr;
+    text-align: center;
+    background: $ui-searchbar-wrap-bg;
+    .icon-cancel-thin,.ui-searchbar-cancel,.ui-searchbar-input{
         display: none;
     }
-    .searchbar{
-        width:calc(100% - 40px);
+    .ui-searchbar{
+        width:100%;
         height:100%;
         position: relative;
+        background: $ui-searchbar-bg;
+        border-radius:$br-base;
     }
     .icon-search{
-        position: absolute;
-        right:-40px;
-        line-height:31px;
+        line-height: $icon-search-lh;
     }
-    .searchbar-input{
+    .ui-searchbar-input{
         height:100%;
-        padding-right:40px;
-        border-radius: 4px;
-        background: #fff;
+        padding-right:$icon-cancel-thin-w;
+        border-radius: $br-base;
+        background: $ui-searchbar-bg;
         input{
             width:100%;
             padding:5px 0 5px 40px;
             border:none;
-            border-radius:6px;
         }
     }
     &.focus{
-        .searchbar-input,.icon-cancel-thin,.searchbar-cancel{
+        padding-right:0;
+        text-align: left;
+        .ui-searchbar-text{
+            display: none;
+        }
+        .ui-searchbar-input,.icon-cancel-thin,.ui-searchbar-cancel{
             display: block;
         }
         .icon-search{
@@ -61,19 +62,49 @@
         }
         .icon-cancel-thin{
             position: absolute;
+            width:$icon-cancel-thin-w;
             top:0;
             right:0;
-            padding:5px 12px;
+            line-height: $icon-search-lh;
         }
-        .searchbar-cancel{
-            position:absolute;
-            top:0;
-            right:0;
-            padding:13px;
-            cursor: pointer;
+        .ui-searchbar-cancel{
+            line-height: $icon-search-lh;
         }
     }
 }
+                    </pre>
+                    ex：
+                    <pre class="html" v-highlight>
+&lt;div class="ui-searchbar-wrap jz-flex-row"&gt;
+    &lt;div class="ui-searchbar jz-flex-col"&gt;
+        &lt;i class = "icon-search pdl15"&gt;&lt;/i&gt;
+        &lt;div class="ui-searchbar-text dib"&gt;搜索&lt;/div&gt;
+        &lt;div class="ui-searchbar-input"&gt;
+            &lt;input type="text" placeholder="搜索产品"&gt;
+        &lt;/div&gt;
+        &lt;i class="icon-cancel-thin tc"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="ui-searchbar-cancel plr15"&gt;取消&lt;/div&gt;
+&lt;/div&gt; 
+                    </pre>
+                    <div class="ui-searchbar-wrap jz-flex-row">
+                        <div class="ui-searchbar jz-flex-col">
+                            <i class = "icon-search pdl15"></i>
+                            <div class="ui-searchbar-text dib">搜索</div>
+                            <div class="ui-searchbar-input">
+                                <input type="text" placeholder="搜索产品">
+                            </div>
+                            <i class="icon-cancel-thin tc"></i>
+                        </div>
+                        <div class="ui-searchbar-cancel plr15">取消</div>
+                    </div>
+                </div>
+            </div>
+        </examples>
+    </div>
+</template>
+<style scoped lang = "scss">
+
 </style>
 <script>
     export default{
@@ -96,4 +127,13 @@
         }
         
     }
+    $(function(){
+        $('.ui-searchbar').click(function(){
+            $('.ui-searchbar-wrap').addClass('focus');
+            $('.ui-searchbar-input input').focus();
+        });
+        $('.ui-searchbar-cancel').click(function(){
+            $('.ui-searchbar-wrap').removeClass('focus');
+        });
+    })
 </script>
