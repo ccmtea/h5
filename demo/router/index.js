@@ -21,6 +21,7 @@ import Tips from './ui_compoents/tips.vue'
 import Dialog from './ui_compoents/dialog.vue'
 import ActionSheet from './ui_compoents/actionSheet.vue'
 import Tab from './ui_compoents/tab.vue'
+import Pagefooter from './ui_compoents/pagefooter.vue'
 
 
 
@@ -47,5 +48,6 @@ export default [
     { path: '/tips', name: 'tips', component: Tips },
     { path: '/dialog', name: 'dialog', component: Dialog },
     { path: '/actionSheet', name: 'actionSheet', component: ActionSheet },
-    { path: '/tab', name: 'tab', component: Tab }
+    { path: '/tab', name: 'tab', component: Tab },
+    { path: '/pagefooter', name: 'pagefooter', component: Pagefooter }
 ]
