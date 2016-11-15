@@ -21,18 +21,18 @@ $badge-top:-16px;
 $badge-right:-15px;
 /*    徽标初始化   end     */
 
-.badge,.badge-border{
+.ui-badge,.ui-badge-border{
     @include pendant($badge-height,$badge-mWidth,$badge-plr,$badge-bg,$badge-fs,$badge-fc,$badge-bc,$badge-br);
 }
 
-.badge-border{
+.ui-badge-border{
     border-color:#e3e3e3;
 }
 
-.badge-wrap{
+.ui-badge-wrap{
     position: relative;
     display: inline-block;
-    >.badge-pos{
+    >.ui-badge-pos{
         @include pendant-pos($badge-pa,$badge-top,$badge-right);
     }
 }

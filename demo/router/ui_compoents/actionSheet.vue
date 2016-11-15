@@ -4,10 +4,10 @@
             <div class="con">
                 <div class="main">
                     <pre class="css" v-highlight>
-$ui-actionsheet-bg:#EFEFF4;   //菜单背景颜色
-$ui-actionsheet-menu-bg:#fff;  //菜单主体内容背景颜色
-$ui-actionsheet-action-bg:#fff; //底部按钮背景颜色
-$ui-actionsheet-cell-fs:16px;   //菜单字体大小
+$actionsheet-bg:#EFEFF4;   //菜单背景颜色
+$actionsheet-menu-bg:#fff;  //菜单主体内容背景颜色
+$actionsheet-action-bg:#fff; //底部按钮背景颜色
+$actionsheet-cell-fs:16px;   //菜单字体大小
 
 .ui-actionsheet {
     position: fixed;
@@ -56,7 +56,7 @@ $ui-actionsheet-cell-fs:16px;   //菜单字体大小
     &lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <button class="btn btn-default border js-showactionsheet">菜单</button>
+                    <button class="ui-btn ui-btn-default border js-showactionsheet">菜单</button>
                     <div>
                         <div class="ui-mask"  style="display: none"></div>
                         <div class="ui-actionsheet js-actionsheet">

@@ -5,22 +5,22 @@
                 <div class="main">
                     <pre class="css" v-highlight>
 
-$ui-searchbar-wrapH:45px; //搜索框高度
-$ui-searchbar-wrap-ptb:7px;  //搜索框上下内边距
-$ui-searchbar-wrap-plr:15px;  //搜索框左右内边距
-$ui-searchbar-wrap-bg:#eee;  //搜索框背景颜色
+$searchbar-wrapH:45px; //搜索框高度
+$searchbar-wrap-ptb:7px;  //搜索框上下内边距
+$searchbar-wrap-plr:15px;  //搜索框左右内边距
+$searchbar-wrap-bg:#eee;  //搜索框背景颜色
  
-$ui-searchbar-bg:#fff;  //输入框背景颜色
-$icon-search-lh:$ui-searchbar-wrapH - ($ui-searchbar-wrap-ptb*2);  //box-sizing:border-box  高度 = 行高 + 上下内边距
+$searchbar-bg:#fff;  //输入框背景颜色
+$icon-search-lh:$searchbar-wrapH - ($searchbar-wrap-ptb*2);  //box-sizing:border-box  高度 = 行高 + 上下内边距
 
 $icon-cancel-thin-w:40px;  //取消按钮宽度
 
 .ui-searchbar-wrap{
     position: relative;
     height:$ui-searchbar-wrapH;
-    padding:$ui-searchbar-wrap-ptb $ui-searchbar-wrap-plr;
+    padding:$searchbar-wrap-ptb $searchbar-wrap-plr;
     text-align: center;
-    background: $ui-searchbar-wrap-bg;
+    background: $searchbar-wrap-bg;
     .icon-cancel-thin,.ui-searchbar-cancel,.ui-searchbar-input{
         display: none;
     }
@@ -28,7 +28,7 @@ $icon-cancel-thin-w:40px;  //取消按钮宽度
         width:100%;
         height:100%;
         position: relative;
-        background: $ui-searchbar-bg;
+        background: $searchbar-bg;
         border-radius:$br-base;
     }
     .icon-search{
@@ -38,7 +38,7 @@ $icon-cancel-thin-w:40px;  //取消按钮宽度
         height:100%;
         padding-right:$icon-cancel-thin-w;
         border-radius: $br-base;
-        background: $ui-searchbar-bg;
+        background: $searchbar-bg;
         input{
             width:100%;
             padding:5px 0 5px 40px;

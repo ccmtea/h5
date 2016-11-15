@@ -48,7 +48,7 @@ $avatar-lg-fs:36px;
 /*    头像初始化   end     */
 
 
-.avatar{
+.ui-avatar{
     @include avatar($avatar-color,$avatar-bg);
     >img{
         display: inline-block;
@@ -61,21 +61,21 @@ $avatar-lg-fs:36px;
     }
 }
 
-.avatar-default{
+.ui-avatar-default{
     @include avatar-size($avatar-default-width,$avatar-default-height);
     >[class^="icon-"]{
         font-size:$avatar-default-fs;
     }
 }
 
-.avatar-s{
+.ui-avatar-s{
     @include avatar-size($avatar-s-width,$avatar-s-height);
     >[class^="icon-"]{
         font-size:$avatar-s-fs;
     }
 }
 
-.avatar-lg{
+.ui-avatar-lg{
     @include avatar-size($avatar-lg-width,$avatar-lg-height);
     >[class^="icon-"]{
         font-size:$avatar-lg-fs;
@@ -84,61 +84,61 @@ $avatar-lg-fs:36px;
                     </pre>
                     ex:
                     <pre class="html" v-highlight>
-&lt;div class="avatar avatar-default"&gt;&lt;/div&gt;
+&lt;div class="ui-avatar ui-avatar-default"&gt;&lt;/div&gt;
                     </pre>
                     <div class="avatar-size size-default">
-                        <div class="avatar avatar-default">
+                        <div class="ui-avatar ui-avatar-default">
                             <img src="img/avatar.jpg" alt="">
                         </div>
                         我是默认(100 * 100)尺寸图片头像哦
                     </div>
                     <pre class="html" v-highlight>
-&lt;div class="avatar avatar-default"&gt;
+&lt;div class="ui-avatar ui-avatar-default"&gt;
     &lt;span class="icon-people"&gt;&lt;/span&gt;
 &lt;/div&gt;                 
                     </pre>
                     <div class="avatar-size size-default">
-                        <div class="avatar avatar-default">
+                        <div class="ui-avatar ui-avatar-default">
                             <span class="icon-people"></span>
                         </div>
                         我是默认(100 * 100)尺寸字体图标哦
                     </div>
                     <pre class="html" v-highlight>
-&lt;div class="avatar avatar-s"&gt;&lt;/div&gt;                        
+&lt;div class="ui-avatar ui-avatar-s"&gt;&lt;/div&gt;                        
                     </pre>
                     <div class="avatar-size size-s">
-                        <div class="avatar avatar-s">
+                        <div class="ui-avatar ui-avatar-s">
                             <img src="img/avatar.jpg" alt="">
                         </div>
                         我是小小的（60 * 60）的图片头像哦
                     </div>
                     <pre class="html" v-highlight>
-&lt;div class="avatar avatar-s"&gt;
+&lt;div class="ui-avatar ui-avatar-s"&gt;
     &lt;span class="icon-people"&gt;&lt;/span&gt;
 &lt;/div&gt;
                     </pre>
                     <div class="avatar-size size-s">
-                        <div class="avatar avatar-s">
+                        <div class="ui-avatar ui-avatar-s">
                             <span class="icon-people"></span>
                         </div>
                         我是小小的（60 * 60）的字体图标哦
                     </div>
                     <pre class="html" v-highlight>
-&lt;div class="avatar avatar-lg"&gt;&lt;/div&gt;
+&lt;div class="ui-avatar ui-avatar-lg"&gt;&lt;/div&gt;
                     </pre>
                     <div class="avatar-size size-lg">
-                        <div class="avatar avatar-lg">
+                        <div class="ui-avatar ui-avatar-lg">
                             <img src="img/avatar.jpg" alt="">
                         </div>
                         我是大大的（140 * 140）的图片头像哦
                     </div>
                     <pre>
-&lt;div class="avatar avatar-lg"&gt;
+&lt;div class="ui-avatar ui-avatar-lg"&gt;
     &lt;span class="icon-people"&gt;&lt;/span&gt;
 &lt;/div>
                     </pre>
                     <div class="avatar-size size-lg">
-                        <div class="avatar avatar-lg">
+                        <div class="ui-avatar ui-avatar-lg">
                             <span class="icon-people"></span>
                         </div>
                         我是大大的（140 * 140）的字体图标哦

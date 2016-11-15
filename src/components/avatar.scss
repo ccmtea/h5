@@ -24,7 +24,7 @@ $avatar-lg-fs:36px;
 /*    头像初始化   end     */
 
 
-.avatar{
+.ui-avatar{
     @include avatar($avatar-color,$avatar-bg);
     >img{
         display: inline-block;
@@ -37,21 +37,21 @@ $avatar-lg-fs:36px;
     }
 }
 
-.avatar-default{
+.ui-avatar-default{
     @include avatar-size($avatar-default-width,$avatar-default-height);
     >[class^="icon-"]{
         font-size:$avatar-default-fs;
     }
 }
 
-.avatar-s{
+.ui-avatar-s{
     @include avatar-size($avatar-s-width,$avatar-s-height);
     >[class^="icon-"]{
         font-size:$avatar-s-fs;
     }
 }
 
-.avatar-lg{
+.ui-avatar-lg{
     @include avatar-size($avatar-lg-width,$avatar-lg-height);
     >[class^="icon-"]{
         font-size:$avatar-lg-fs;

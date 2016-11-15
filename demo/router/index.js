@@ -8,6 +8,7 @@ import Text_overflow from './basis/text_overflow.vue'
 import Justify from './basis/justify.vue'
 import Img_pre_seat from './basis/img_pre_seat.vue'
 import Text from './basis/text.vue'
+import Flex from './basis/flex.vue'
 import Buttons from './ui_compoents/buttons.vue'
 import Avatar from './ui_compoents/avatar.vue'
 import Reddot from './ui_compoents/reddot.vue'
@@ -36,6 +37,7 @@ export default [
     { path: '/justify', name: 'justify', component: Justify },
     { path: '/img_pre_seat', name: 'img_pre_seat', component: Img_pre_seat },
     { path: '/text', name: 'text', component: Text },
+    { path: '/flex', name: 'flex', component: Flex },
     { path: '/buttons', name: 'buttons', component: Buttons },
     { path: '/avatar', name: 'avatar', component: Avatar },
     { path: '/reddot', name: 'reddot', component: Reddot },

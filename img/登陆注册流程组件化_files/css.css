@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*!================================================
+*Author:liufengbo/qinzhanqun/andyhuang
+*English name:henryliu/qinzhanqun/andyhuang
+*Email:875626246@qq.com/henryliu@fenqile.com
+*Edited time:2015-05-01
+*Explanation: The station generic CSS style
+==================================================*/
+/* CSS Document */
+@import url(main.css);
+@import url(date.css);
+@import url(table.css);
+@import url(page.css);
+@import url(input.css);
+@import url(button.css);
+@import url(tabs.css);
+@import url(animate.css);
+@import url(msgtips.css);
+@import url(turntable.css);
+@import url(draw-squares.css);
+@import url(slot.css);

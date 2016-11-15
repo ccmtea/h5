@@ -33,10 +33,10 @@ $br-base:4px;
 
 /************************
 **
-**  btn-default 默认按钮
-**  btn-primary 主要按钮
-**  btn-secondary 次要按钮
-**  btn-warning 警示按钮
+**  ui-btn-default 默认按钮
+**  ui-btn-primary 主要按钮
+**  ui-btn-secondary 次要按钮
+**  ui-btn-warning 警示按钮
 **
 ************************/
 
@@ -58,13 +58,13 @@ $btn-warning-bg:#d9534f;
 /*    按钮初始化   end     */
 
 
-.btn{
+.ui-btn{
     display: inline-block;
     cursor: pointer;
     @include btn-size($btn-width,$btn-height,$fs-base,$br-base);
 }
 
-.btn-default{
+.ui-btn-default{
     @include btn-variant($btn-default-color,$btn-default-bg);
     &:active{
         background: #e6e6e6;
@@ -74,46 +74,46 @@ $btn-warning-bg:#d9534f;
         border-radius: $br-base;
     }
 }
-.btn-primary{
+.ui-btn-primary{
     @include btn-variant($btn-primary-color,$btn-primary-bg);
 }
-.btn-secondary{
+.ui-btn-secondary{
     @include btn-variant($btn-secondary-color,$btn-secondary-bg);
 }
-.btn-warning{
+.ui-btn-warning{
     @include btn-variant($btn-warning-color,$btn-warning-bg);
 }
 
-.btn-block {
+.ui-btn-block {
   display: block;
   width: 100%;
 }
                     </pre>
                     ex：
                     <pre class="html" v-highlight>
-&lt;button class="btn btn-default border"&gt;default&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-default border"&gt;default&lt;/button&gt;
                     </pre>
-                    <button class="btn btn-default border">default</button>
+                    <button class="ui-btn ui-btn-default border">default</button>
                     <pre class="html" v-highlight>
-&lt;button class="btn btn-primary"&gt;primary&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-primary"&gt;primary&lt;/button&gt;
                     </pre>
-                    <button class="btn btn-primary">primary</button>
+                    <button class="ui-btn ui-btn-primary">primary</button>
                     <pre class="html" v-highlight>
-&lt;button class="btn btn-secondary"&gt;secondary&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-secondary"&gt;secondary&lt;/button&gt;
                     </pre>
-                    <button class="btn btn-secondary">secondary</button>
+                    <button class="ui-btn ui-btn-secondary">secondary</button>
                     <pre class="html" v-highlight>
-&lt;button class="btn btn-warning"&gt;warning&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-warning"&gt;warning&lt;/button&gt;
                     </pre>
-                    <button class="btn btn-warning">warning</button>
+                    <button class="ui-btn ui-btn-warning">warning</button>
                     <pre class="html" v-highlight>
-&lt;button class="btn btn-primary btn-block" disabled &gt;disabled(我是禁用状态，标签在中添加“disabled”)&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-primary ui-btn-block" disabled &gt;disabled(我是禁用状态，标签在中添加“disabled”)&lt;/button&gt;
                     </pre>                   
-                    <button class="btn btn-primary btn-block" disabled>disabled(我是禁用状态，标签在中添加“disabled”)</button>
+                    <button class="ui-btn ui-btn-primary ui-btn-block" disabled>disabled(我是禁用状态，标签在中添加“disabled”)</button>
                     <pre class="html" v-highlight>
-&lt;button class="btn btn-primary btn-block"&gt;primary(我是块级按钮，只需添加“btn-block”)&lt;/button&gt;
+&lt;button class="ui-btn ui-btn-primary ui-btn-block"&gt;primary(我是块级按钮，只需添加“btn-block”)&lt;/button&gt;
                     </pre>
-                    <button class="btn btn-primary btn-block">primary(我是块级按钮，只需添加“btn-block”)</button>
+                    <button class="ui-btn ui-btn-primary ui-btn-block">primary(我是块级按钮，只需添加“btn-block”)</button>
                 </div>
             </div>
         </examples>

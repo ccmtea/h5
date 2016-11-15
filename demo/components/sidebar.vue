@@ -17,7 +17,7 @@
                     <router-link :class="{ cur: store.routerName === 'justify' }" :to="{ name: 'justify'}">两端对齐</router-link>
                     <router-link :class="{ cur: store.routerName === 'img_pre_seat' }" :to="{ name: 'img_pre_seat'}">预留图片位置</router-link>
                     <router-link :class="{ cur: store.routerName === 'text' }" :to="{ name: 'text'}">文本</router-link>
-                    <a href="#">布局</a>
+                    <router-link :class="{ cur: store.routerName === 'flex' }" :to="{ name: 'flex'}">弹性布局</router-link>
                     <a href="#">两端留白</a>
                     <!--<a href="#">毛玻璃</a>
                     <a href="#">弹层背景虚化</a>-->

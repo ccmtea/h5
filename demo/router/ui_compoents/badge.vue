@@ -49,56 +49,56 @@ $badge-top:-16px;
 $badge-right:-15px;
 /*    徽标初始化   end     */
 
-.badge,.badge-border{
+.ui-badge,.ui-badge-border{
     @include pendant($badge-height,$badge-mWidth,$badge-plr,$badge-bg,$badge-fs,$badge-fc,$badge-bc,$badge-br);
 }
 
-.badge-border{
+.ui-badge-border{
     border-color:#e3e3e3;
 }
 
-.badge-wrap{
+.ui-badge-wrap{
     position: relative;
     display: inline-block;
-    >.badge-pos{
+    >.ui-badge-pos{
         @include pendant-pos($badge-pa,$badge-top,$badge-right);
     }
 }
                     </pre>
                     <pre class="html" v-highlight>
-&lt;div class="badge tc"&gt;123&lt;/div&gt;
+&lt;div class="ui-badge tc"&gt;123&lt;/div&gt;
                     </pre>
                     <div>
                         我是徽标
-                        <div class="badge tc">123</div>
+                        <div class="ui-badge tc">123</div>
                     </div>
                     <pre class="html" v-highlight>
-&lt;div class="badge-border tc"&gt;1&lt;/div&gt;
+&lt;div class="ui-badge-border tc"&gt;1&lt;/div&gt;
                     </pre>
                     <div>
                         我是徽标
-                        <div class="badge-border tc">1</div>
+                        <div class="ui-badge-border tc">1</div>
                     </div>
                     <pre class="html" v-highlight>
-&lt;div class="badge-wrap"&gt;
+&lt;div class="ui-badge-wrap"&gt;
     我是绝对定位(不带边框)徽标
-    &lt;div class="badge badge-pos"&gt;99&lt;/div&gt;
+    &lt;div class="ui-badge ui-badge-pos"&gt;99&lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <div class="badge-wrap">
+                    <div class="ui-badge-wrap">
                         我是绝对定位(不带边框)徽标
-                        <div class="badge badge-pos">99</div>
+                        <div class="ui-badge ui-badge-pos">99</div>
                     </div>
                     <br/>
                     <pre class="html" v-highlight>
-&lt;div class="badge-wrap"&gt;
+&lt;div class="ui-badge-wrap"&gt;
     我是绝对定位(带边框)徽标
-    &lt;div class="badge-border badge-pos"&gt;99&lt;/div&gt;
+    &lt;div class="ui-badge-border ui-badge-pos"&gt;99&lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <div class="badge-wrap">
+                    <div class="ui-badge-wrap">
                         我是绝对定位(带边框)徽标
-                        <div class="badge-border badge-pos">99</div>
+                        <div class="ui-badge-border ui-badge-pos">99</div>
                     </div>
                 </div>
             </div>

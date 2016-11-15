@@ -27,8 +27,8 @@
 
 /*******************
 **
-**  .label  初始化标签
-**  .label-bg  有背景颜色的标签
+**  .ui-label  初始化标签
+**  .ui-label-bg  有背景颜色的标签
 **
 *******************/
 
@@ -43,7 +43,7 @@ $label-bg:transparent;
 $label-br:2px;
 /*    标签初始化   end     */
 
-.label,.label-bg{
+.ui-label,.ui-label-bg{
     margin-left:5px;
     @include pendant($label-height,$label-mWidth,$label-plr,$label-bg,$label-fs,$label-fc,$label-bc,$label-br);
     &:first-child{
@@ -51,21 +51,21 @@ $label-br:2px;
     }
 }
 
-.label-bg{
+.ui-label-bg{
     background-color: #ccc;
 }
                     </pre>
                     ex：
                     <br/>
                     <pre class="html/css" v-highlight>
-&lt;div class="label"&gt;恐怖&lt;/div&gt;
-&lt;div class="label"&gt;喜剧&lt;/div&gt;
+&lt;div class="ui-label"&gt;恐怖&lt;/div&gt;
+&lt;div class="ui-label"&gt;喜剧&lt;/div&gt;
                     </pre>
-                    <div class="label">恐怖</div><div class="label">喜剧</div>
+                    <div class="ui-label">恐怖</div><div class="ui-label">喜剧</div>
                     <pre class="html/css" v-highlight>
-&lt;div class="label-bg">生肉&lt;/div&gt;
+&lt;div class="ui-label-bg">生肉&lt;/div&gt;
                     </pre>
-                    <div class="label-bg">生肉</div>
+                    <div class="ui-label-bg">生肉</div>
                 </div>
             </div>
         </examples>

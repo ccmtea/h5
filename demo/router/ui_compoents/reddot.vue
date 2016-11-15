@@ -28,10 +28,10 @@
 
 /***************************************
 **
-**  .reddot 默认红点基本样式(边框为透明色)
-**  .reddot-border  带边框红点基本样式(默认边框为白色，覆盖改变border-color颜色即可)
-**  .reddot-s   小尺寸红点（6 * 6）
-**  .reddot-lg  大尺寸红点（8 * 8）
+**  .ui-reddot 默认红点基本样式(边框为透明色)
+**  .ui-reddot-border  带边框红点基本样式(默认边框为白色，覆盖改变border-color颜色即可)
+**  .ui-reddot-s   小尺寸红点（6 * 6）
+**  .ui-reddot-lg  大尺寸红点（8 * 8）
 **
 ***************************************/
 
@@ -50,21 +50,21 @@ $reddot-s-top:-3px;
 $reddot-s-right:-3px;
 /*    红点初始化   end     */
 
-.reddot{
+.ui-reddot{
     @include reddot($reddot-bc,$reddot-bg);
 }
 
-.reddot-border{
+.ui-reddot-border{
     @include reddot(#fff,$reddot-bg);
 }
 
-.reddot-s{
+.ui-reddot-s{
     &::after{
         @include reddot-size($reddot-s-width,$reddot-s-height,$reddot-s-top,$reddot-s-right);
     }
 }
 
-.reddot-lg{
+.ui-reddot-lg{
     &::after{
         @include reddot-size($reddot-lg-width,$reddot-lg-height,$reddot-lg-top,$reddot-lg-right);
     }
@@ -76,19 +76,19 @@ $reddot-s-right:-3px;
                     ex：
                     <br/>
                     <pre class="html/css" v-highlight>
-&lt;div class="reddot reddot-lg"&gt;我是大红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦&lt;/div&gt;
+&lt;div class="ui-reddot ui-reddot-lg"&gt;我是大红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦&lt;/div&gt;
                     </pre>
-                    <div class="reddot reddot-lg">我是大红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦</div>
+                    <div class="ui-reddot ui-reddot-lg">我是大红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦</div>
                     <br/>
                     <pre class="html/css" v-highlight>
-&lt;div class="reddot-border reddot-lg"&gt;我是大红点且带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦&lt;/div&gt;
+&lt;div class="ui-reddot-border ui-reddot-lg"&gt;我是大红点且带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦&lt;/div&gt;
                     </pre>
-                    <div class="reddot-border reddot-lg">我是大红点且带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦</div>
+                    <div class="ui-reddot-border ui-reddot-lg">我是大红点且带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦</div>
                     <br/>
                     <pre class="html/css" v-highlight>
-&lt;div class="reddot reddot-s"&gt;我是小红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦&lt;/div&gt;
+&lt;div class="ui-reddot ui-reddot-s"&gt;我是小红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦&lt;/div&gt;
                     </pre>
-                    <div class="reddot reddot-s">我是小红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦</div>
+                    <div class="ui-reddot ui-reddot-s">我是小红点且不带边框。听说红点和标签最配！在有可能加红点的文本用标签包起来最好哦</div>
                 </div>
             </div>
         </examples>
