@@ -23,6 +23,7 @@ import Dialog from './ui_compoents/dialog.vue'
 import ActionSheet from './ui_compoents/actionSheet.vue'
 import Tab from './ui_compoents/tab.vue'
 import Pagefooter from './ui_compoents/pagefooter.vue'
+import Layout from './ui_compoents/layout.vue'
 
 
 
@@ -51,5 +52,6 @@ export default [
     { path: '/dialog', name: 'dialog', component: Dialog },
     { path: '/actionSheet', name: 'actionSheet', component: ActionSheet },
     { path: '/tab', name: 'tab', component: Tab },
-    { path: '/pagefooter', name: 'pagefooter', component: Pagefooter }
+    { path: '/pagefooter', name: 'pagefooter', component: Pagefooter },
+    { path: '/layout', name: 'layout', component: Layout }
 ]
