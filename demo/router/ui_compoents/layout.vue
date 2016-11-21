@@ -3,7 +3,20 @@
         <examples name="布局">
             <div class="con">
                 <div class="main">
-                    <a href="/views/layout.html" target="view_window">布局</a>
+                    <a href="/demo/layouts.html" target="_blank">布局</a>
+                    <pre class="html" v-highlight>
+&lt;div id="ui-header"&gt;
+    &lt;div class="ui-header-wrap"&gt;我是头部&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="ui-wrap"&gt;
+    &lt;div class="ui-wrap-top"&gt;我是内容中固定&lt;/div&gt;
+    &lt;div class="ui-main"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="ui-footer"&gt;
+    &lt;nav&gt;我是底部导航&lt;/nav&gt;
+&lt;/div&gt;
+                    </pre>
                 </div>
             </div>
         </examples>

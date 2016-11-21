@@ -116,3 +116,37 @@ input::-webkit-inner-spin-button {
 input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
+html,body,#ui-wrap,#ui-main{
+	height:100%;
+	position: relative;
+}
+#ui-wrapper,#ui-wrap,#ui-main{
+	overflow-y: auto;
+}
+#ui-header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+.ui-header-wrap{
+}
+#ui-wrap{
+}
+#ui-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#ui-footer nav{
+}
+.ui-wrap-top{
+	position: absolute;
+	width:100%;
+	z-index: 100;
+}
+.ui-main{
+	height: 100%;
+	position: relative;
+	overflow-y: auto;
+}
