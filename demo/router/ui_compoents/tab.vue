@@ -8,6 +8,11 @@
                         <div class="jz-flex-col tc border">Tab2</div>
                         <div class="jz-flex-col tc border">Tab3</div>
                     </div>
+                    <ul>    
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </examples>
