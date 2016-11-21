@@ -4,9 +4,9 @@ var $ = require("jquery");
 module.exports = {
     entry: "./demo/index.js",
     output: {
-        path: 'static/',
-        publicPath: '/static/',
-        filename: "index.js"
+        path: './static/',
+        publicPath: './static/',
+        filename: "./static/index.js"
     },
     module: {
         loaders: [
