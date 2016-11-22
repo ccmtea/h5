@@ -10,10 +10,6 @@ $lc-ptb:10px;
 
 .ui-cells{
     padding-left:$lc-plr;
-    &::before{
-        border-left:none;
-        border-right:none;
-    }
     .ui-cell{
         padding-left:0;
     }
@@ -22,7 +18,6 @@ $lc-ptb:10px;
     padding:$lc-ptb $lc-plr;
     color: inherit;
     &::before{
-        border:none;
         border-bottom:1px solid $border-color;
     }
     &:first-child::before{

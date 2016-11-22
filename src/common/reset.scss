@@ -130,8 +130,10 @@ html,body,#ui-wrap,#ui-main{
 	z-index: 100;
 }
 .ui-header-wrap{
+	height:45px;
 }
 #ui-wrap{
+	padding:45px 0 57px;
 }
 #ui-footer{
 	position: absolute;
@@ -139,6 +141,7 @@ html,body,#ui-wrap,#ui-main{
 	width: 100%;
 }
 #ui-footer nav{
+	height:57px;
 }
 .ui-wrap-top{
 	position: absolute;

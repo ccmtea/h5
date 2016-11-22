@@ -71,6 +71,7 @@ $btn-warning-bg:#d9534f;
         border-color:#adadad;
     }
     &::before{
+        border:1px solid $border-color;
         border-radius: $br-base;
     }
 }

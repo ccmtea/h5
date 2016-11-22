@@ -86,7 +86,7 @@ $ui-dialog-btnp-color:#5edd9e;   //弹窗底部主要按钮字体颜色
     &lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <button class="btn btn-default border showDialog1">弹窗1</button>
+                    <button class="ui-btn ui-btn-default border showDialog1">弹窗1</button>
                     <div class="js-dialog" id="dialog1" style = "display:none">
                         <div class="ui-mask"></div>
                         <div class="ui-dialog ui-dialog1">
@@ -111,7 +111,7 @@ $ui-dialog-btnp-color:#5edd9e;   //弹窗底部主要按钮字体颜色
     &lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <button class="btn btn-default border showDialog2">弹窗2</button>
+                    <button class="ui-btn ui-btn-default border showDialog2">弹窗2</button>
                     <div class="js-dialog" id="dialog2" style = "display:none">
                         <div class="ui-mask"></div>
                         <div class="ui-dialog  ui-dialog2">

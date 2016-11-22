@@ -24,6 +24,7 @@ import ActionSheet from './ui_compoents/actionSheet.vue'
 import Tab from './ui_compoents/tab.vue'
 import Pagefooter from './ui_compoents/pagefooter.vue'
 import Layout from './ui_compoents/layout.vue'
+import Toast from './ui_compoents/toast.vue'
 
 
 
@@ -53,5 +54,6 @@ export default [
     { path: '/actionSheet', name: 'actionSheet', component: ActionSheet },
     { path: '/tab', name: 'tab', component: Tab },
     { path: '/pagefooter', name: 'pagefooter', component: Pagefooter },
-    { path: '/layout', name: 'layout', component: Layout }
+    { path: '/layout', name: 'layout', component: Layout },
+    { path: '/toast', name: 'toast', component: Toast }
 ]

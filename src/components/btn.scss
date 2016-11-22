@@ -27,6 +27,7 @@ $btn-warning-bg:#d9534f;
 
 .ui-btn{
     display: inline-block;
+    text-align: center;
     cursor: pointer;
     @include btn-size($btn-width,$btn-height,$fs-base,$br-base);
 }
@@ -38,6 +39,7 @@ $btn-warning-bg:#d9534f;
         border-color:#adadad;
     }
     &::before{
+        border:1px solid $border-color;
         border-radius: $br-base;
     }
 }
