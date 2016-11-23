@@ -14,7 +14,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="ui-footer"&gt;
-    &lt;nav&gt;我是底部导航&lt;/nav&gt;
+    &lt;nav class="ui-footer-wrap" &gt;我是底部导航&lt;/nav&gt;
 &lt;/div&gt;
                     </pre>
                 </div>

@@ -9,6 +9,7 @@ import Justify from './basis/justify.vue'
 import Img_pre_seat from './basis/img_pre_seat.vue'
 import Text from './basis/text.vue'
 import Flex from './basis/flex.vue'
+import Whitespace from './basis/whitespace.vue'
 import Buttons from './ui_compoents/buttons.vue'
 import Avatar from './ui_compoents/avatar.vue'
 import Reddot from './ui_compoents/reddot.vue'
@@ -25,6 +26,8 @@ import Tab from './ui_compoents/tab.vue'
 import Pagefooter from './ui_compoents/pagefooter.vue'
 import Layout from './ui_compoents/layout.vue'
 import Toast from './ui_compoents/toast.vue'
+import Nav from './ui_compoents/nav.vue'
+import Progress from './ui_compoents/progress.vue'
 
 
 
@@ -39,7 +42,8 @@ export default [
     { path: '/justify', name: 'justify', component: Justify },
     { path: '/img_pre_seat', name: 'img_pre_seat', component: Img_pre_seat },
     { path: '/text', name: 'text', component: Text },
-    { path: '/flex', name: 'flex', component: Flex },
+    { path: '/flex', name: 'flex', component: Flex },,
+    { path: '/whitespace', name: 'whitespace', component: Whitespace },
     { path: '/buttons', name: 'buttons', component: Buttons },
     { path: '/avatar', name: 'avatar', component: Avatar },
     { path: '/reddot', name: 'reddot', component: Reddot },
@@ -55,5 +59,7 @@ export default [
     { path: '/tab', name: 'tab', component: Tab },
     { path: '/pagefooter', name: 'pagefooter', component: Pagefooter },
     { path: '/layout', name: 'layout', component: Layout },
-    { path: '/toast', name: 'toast', component: Toast }
+    { path: '/toast', name: 'toast', component: Toast },
+    { path: '/nav', name: 'nav', component: Nav },
+    { path: '/progress', name: 'progress', component: Progress }
 ]

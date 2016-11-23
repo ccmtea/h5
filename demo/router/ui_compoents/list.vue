@@ -3,37 +3,7 @@
         <examples name = "列表">
             <div class="con">
                 <div class="main">
-                    from：list.scss && variate.scss
-                    <pre class="css" v-highlight>
-$lc-plr:15px;
-$lc-ptb:10px;
-
-.ui-cells{
-    padding-left:$lc-plr;
-    .ui-cell{
-        padding-left:0;
-    }
-}
-.ui-cell{
-    padding:$lc-ptb $lc-plr;
-    color: inherit;
-    &::before{
-        border-bottom:1px solid $border-color;
-    }
-    &:first-child::before{
-        border-top:1px solid $border-color;
-    }
-    .ui-cell-hd{
-        width:20px;
-        height:20px;
-        margin-right: 5px;
-        background:#ccc;
-    }
-    .ui-cell-bd{
-        position:relative;
-    }
-}
-                    </pre>
+                    css from：list.scss && variate.scss<br/>
                     ex:
                     <pre class="html" v-highlight>
 &lt;div class="ui-cells border"&gt;

@@ -3,76 +3,7 @@
         <examples name="红点">
             <div class="con">
                 <div class="main">
-                    from：mixin.scss && reddot.scss
-                    <pre class="css" v-highlight>
-/*    红点    start*/
-@mixin reddot-variant($border-color){
-    position: relative;
-    &::after{
-        content:"";
-        position: absolute;
-        border:1px solid $border-color;
-        border-radius: 50%;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-    }
-}
-
-@mixin reddot-size($width,$height,$top,$right){
-    width:$width;
-    height:$height;
-    top:$top;
-    right:$right;
-}
-/*    红点    end*/
-
-/***************************************
-**
-**  .ui-reddot 默认红点基本样式(边框为透明色)
-**  .ui-reddot-border  带边框红点基本样式(默认边框为白色，覆盖改变border-color颜色即可)
-**  .ui-reddot-s   小尺寸红点（6 * 6）
-**  .ui-reddot-lg  大尺寸红点（8 * 8）
-**
-***************************************/
-
-/*    红点初始化   start     */
-$reddot-bc:transparent;   //带边框红点边框默认颜色
-$reddot-bg:#f74c31;
-
-$reddot-lg-width:8px;
-$reddot-lg-height:8px;
-$reddot-lg-top:-4px;
-$reddot-lg-right:-6px;
-
-$reddot-s-width:6px;
-$reddot-s-height:6px;
-$reddot-s-top:-3px;
-$reddot-s-right:-3px;
-/*    红点初始化   end     */
-
-.ui-reddot{
-    @include reddot($reddot-bc,$reddot-bg);
-}
-
-.ui-reddot-border{
-    @include reddot(#fff,$reddot-bg);
-}
-
-.ui-reddot-s{
-    &::after{
-        @include reddot-size($reddot-s-width,$reddot-s-height,$reddot-s-top,$reddot-s-right);
-    }
-}
-
-.ui-reddot-lg{
-    &::after{
-        @include reddot-size($reddot-lg-width,$reddot-lg-height,$reddot-lg-top,$reddot-lg-right);
-    }
-}
-
-
-
-                    </pre>
+                    css from：mixin.scss && reddot.scss<br/>
                     ex：
                     <br/>
                     <pre class="html/css" v-highlight>

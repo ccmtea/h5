@@ -18,9 +18,7 @@
                     <router-link :class="{ cur: store.routerName === 'img_pre_seat' }" :to="{ name: 'img_pre_seat'}">预留图片位置</router-link>
                     <router-link :class="{ cur: store.routerName === 'text' }" :to="{ name: 'text'}">文本</router-link>
                     <router-link :class="{ cur: store.routerName === 'flex' }" :to="{ name: 'flex'}">弹性布局</router-link>
-                    <a href="#">两端留白</a>
-                    <!--<a href="#">毛玻璃</a>
-                    <a href="#">弹层背景虚化</a>-->
+                    <router-link :class="{ cur: store.routerName === 'whitespace' }" :to="{ name: 'whitespace'}">两端留白</router-link>
                 </div>
             </li>
             <li>
@@ -42,8 +40,8 @@
                     <router-link :class="{ cur: store.routerName === 'pagefooter' }" :to="{ name: 'pagefooter'}">页脚</router-link>
                     <router-link :class="{ cur: store.routerName === 'layout' }" :to="{ name: 'layout'}">布局</router-link>
                     <router-link :class="{ cur: store.routerName === 'toast' }" :to="{ name: 'toast'}">弹出式提示</router-link>
-                    <a href="#">导航</a>
-                    <a href="#">加载中</a>
+                    <router-link :class="{ cur: store.routerName === 'nav' }" :to="{ name: 'nav'}">导航</router-link>
+                    <router-link :class="{ cur: store.routerName === 'progress' }" :to="{ name: 'progress'}">进度条</router-link>
                 </div>
             </li>
             <li>

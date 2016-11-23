@@ -1,0 +1,65 @@
+/**
+**   ui-msg-mode 弹出式文字提示
+**   ui-loading-mode   弹出式加载提示
+**/
+
+.ui-msg-mode{
+    position: fixed;
+    width:82%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%);
+    z-index:100;
+    .ui-msg-text{
+        padding:15px;
+        color:#fff;
+        background-color: rgba(51, 51, 51, 0.9);
+    }
+}
+
+.ui-loading-mode{
+    position:fixed;
+    left:50%;
+    top:30%;
+    transform:translate(0,-50%);
+    padding:10px;
+    background:rgba(0,0,0,.38);
+    border-radius:4px;
+    z-index:100;
+}
+.ui-spinner{
+    width:20px;
+    height:20px;
+    position:relative}
+.ui-spinner .ui-spinner-container{
+    position:absolute;
+    width:100%;
+    height:100%}
+.ui-spinner-container1>div,.ui-spinner-container2>div,.ui-spinner-container3>div{
+    width:5px;
+    height:5px;
+    background-color:#fff;
+    border-radius:100%;
+    position:absolute;
+    -webkit-animation:bouncedelay 1.2s infinite ease-in-out;
+    animation:bouncedelay 1.2s infinite ease-in-out;
+    -webkit-animation-fill-mode:both;animation-fill-mode:both;}
+.ui-spinner-container2{-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.ui-spinner-container3{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+.ui-circle1{top:0;left:0;}
+.ui-circle2{top:0;right:0}
+.ui-circle3{right:0;bottom:0}
+.ui-circle4{left:0;bottom:0}
+.ui-spinner-container2 .ui-circle1{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
+.ui-spinner-container3 .ui-circle1{-webkit-animation-delay:-1s;animation-delay:-1s}
+.ui-spinner-container1 .ui-circle2{-webkit-animation-delay:-.9s;animation-delay:-.9s}
+.ui-spinner-container2 .ui-circle2{-webkit-animation-delay:-.8s;animation-delay:-.8s}
+.ui-spinner-container3 .ui-circle2{-webkit-animation-delay:-.7s;animation-delay:-.7s}
+.ui-spinner-container1 .ui-circle3{-webkit-animation-delay:-.6s;animation-delay:-.6s}
+.ui-spinner-container2 .ui-circle3{-webkit-animation-delay:-.5s;animation-delay:-.5s}
+.ui-spinner-container3 .ui-circle3{-webkit-animation-delay:-.4s;animation-delay:-.4s}
+.ui-spinner-container1 .ui-circle4{-webkit-animation-delay:-.3s;animation-delay:-.3s}
+.ui-spinner-container2 .ui-circle4{-webkit-animation-delay:-.2s;animation-delay:-.2s}
+.ui-spinner-container3 .ui-circle4{-webkit-animation-delay:-.1s;animation-delay:-.1s}
+@-webkit-keyframes bouncedelay{0%,80%,to{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}
+@keyframes bouncedelay{0%,80%,to{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}

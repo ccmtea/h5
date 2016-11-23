@@ -3,75 +3,7 @@
         <examples>
             <div class="con">
                 <div class="main">
-                    <pre class="css" v-highlight>
-$ui-dialog-w:94%; //弹窗宽度
-$ui-dialog-b:4px; //弹窗圆角
-
-$ui-dialog-hd-fs:20px;  //弹窗标题字体大小
-$ui-dialog-hd-color:#313131;   //弹窗标题颜色
- 
-$ui-dialog-bd-fs:16px;  //弹窗主体字体大小
-$ui-dialog-bd-color:#858585;   //弹窗主体字体颜色
-
-$ui-dialog-fd-h:38px;  //弹窗底部高度
-
-$ui-dialog-btn-fs:14px;  //弹窗底部字体大小
-$ui-dialog-btna-color:#313131;   //弹窗底部辅助按钮字体颜色
-$ui-dialog-btnp-color:#5edd9e;   //弹窗底部主要按钮字体颜色
-
-
-.ui-mask{
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index: 10;
-    background: rgba(0,0,0,.7);
-}
-.ui-dialog{
-    position:fixed;
-    width:$ui-dialog-w;
-    max-width:300px;
-    top:50%;
-    left:50%;
-    padding:15px 0 0;
-    z-index: 500;
-
-    transform: translate(-50%, -50%);
-    background:#fff;
-    border-radius:$ui-dialog-b;
-    .ui-dialog-hd{
-        font-size:$ui-dialog-hd-fs;
-        color:$ui-dialog-hd-color;
-    }
-    .ui-dialog-bd{
-        font-size:$ui-dialog-bd-fs;
-        color:$ui-dialog-bd-color;
-    }
-    .ui-dialog-fd{
-        height:$ui-dialog-fd-h;
-        line-height:$ui-dialog-fd-h;
-        &::before{
-            border:none;
-            border-top:1px solid #ececec;
-        }
-    }
-    .ui-dialog-btn{
-        font-size:$ui-dialog-btn-fs;
-    }
-    .ui-dialog-btn-assist{
-        color:$ui-dialog-btna-color;
-    }
-    .ui-dialog-btn-primary{
-        color:$ui-dialog-btnp-color;
-        &::before{
-            border:none;
-            border-left:1px solid #ececec;
-        }
-    }
-}
-                    </pre>
+                    css from：mixin.scss && btn.scss<br/>
                     ex：
                     <pre class="html" v-highlight>
 &lt;div class="js-dialog" id="dialog1" style = "display:none"&gt;

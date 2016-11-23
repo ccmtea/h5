@@ -3,42 +3,7 @@
         <examples name="菜单">
             <div class="con">
                 <div class="main">
-                    <pre class="css" v-highlight>
-$actionsheet-bg:#EFEFF4;   //菜单背景颜色
-$actionsheet-menu-bg:#fff;  //菜单主体内容背景颜色
-$actionsheet-action-bg:#fff; //底部按钮背景颜色
-$actionsheet-cell-fs:16px;   //菜单字体大小
-
-.ui-actionsheet {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    transform: translate(0, 100%);
-    backface-visibility: hidden;
-    z-index: 11;
-    width: 100%;
-    background-color: $ui-actionsheet-bg;
-    transition: transform .3s;
-}
-.ui-actionsheet-menu{
-    background-color: $ui-actionsheet-menu-bg;
-}
-.ui-actionsheet-action {
-    background-color: $ui-actionsheet-action-bg;
-}
-.ui-actionsheet-cell {
-    position: relative;
-    padding: 10px 0;
-    font-size:$ui-actionsheet-cell-fs;
-    &::before{
-        border:none;
-        border-bottom:1px solid #ececec;
-    }
-}
-.ui-actionsheet-toggle{
-    transform: translate(0, 0);
-}
-                    </pre>
+                    css from：actionSheet.scss<br/>
                     ex:
                     <pre class="html" v-highlight>
 &lt;div&gt;
