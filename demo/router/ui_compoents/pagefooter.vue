@@ -9,8 +9,8 @@
     &lt;div class="ui-header-wrap"&gt;我是头部&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="ui-wrap pb0"&gt;
-    &lt;div class="jz-flex-column minh"&gt;
-        &lt;div class="jz-flex-col"&gt;
+    &lt;div class="ui-flex-column minh"&gt;
+        &lt;div class="ui-flex-col"&gt;
         &lt;/div&gt;
         &lt;div&gt;我是流动性页脚&lt;/div&gt;
     &lt;/div&gt;

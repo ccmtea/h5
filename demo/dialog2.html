@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;
+            box-sizing:border-box;}
+            body {
+                height: 100%;
+                -webkit-font-smoothing: antialiased;
+                -webkit-text-size-adjust: none;
+                -ms-text-size-adjust: none;
+                text-size-adjust: none;
+                font-size: 14px;
+                line-height: 1.4;
+                font-family: "\9ED\4F53", "Hiragino Sans GB", "Hiragino Sans GB W3", "Droid Sans", "Kalinga", sans-serif;
+            }
+            a {
+                -webkit-text-decoration-skip: objects;
+                -webkit-touch-callout: none;
+                text-decoration: none;
+                color: #5edd9e;
+            }
+            .tc {
+                text-align: center;
+            }
+            .tl {
+                text-align: left;
+            }
+            .tr {
+                text-align: right;
+            }
+            .plr15 {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .plr10 {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            .dib {
+                display: inline-block;
+            }
+            .pd15 {
+                padding: 15px;
+            }
+            .border {
+                position: relative;
+            }
+            .border > a, a.border {
+                position: relative;
+            }
+            .border::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: left top;
+                -ms-transform-origin: left top;
+                transform-origin: left top;
+                pointer-events: none;
+            }
+            .ui-flex-row {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+            .ui-flex-col {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -moz-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+        .ui-mask {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .ui-dialog {
+            position: fixed;
+            width: 94%;
+            max-width: 300px;
+            top: 50%;
+            left: 50%;
+            padding: 15px 0 0;
+            z-index: 500;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border-radius: 4px;
+        }
+        .ui-dialog .ui-dialog-hd {
+            font-size: 20px;
+            color: #313131;
+        }
+        .ui-dialog .ui-dialog-bd {
+            font-size: 16px;
+            color: #858585;
+        }
+        .ui-dialog .ui-dialog-fd {
+            height: 38px;
+            line-height: 38px;
+        }
+        .ui-dialog .ui-dialog-btn-assist {
+            color: #313131;
+        }
+        .ui-dialog .ui-dialog-btn {
+            font-size: 14px;
+        }
+        .ui-dialog .ui-dialog-fd::before {
+            border: none;
+            border-top: 1px solid #ececec;
+        }
+        .ui-dialog .ui-dialog-btn-assist {
+            color: #313131;
+        }
+        .ui-dialog .ui-dialog-btn-primary {
+            color: #5edd9e;
+        }
+        .ui-dialog .ui-dialog-btn-primary::before {
+            border: none;
+            border-left: 1px solid #ececec;
+        }
+    </style>
+</head>
+<body>
+    <div class="js-dialog" id="dialog2">
+        <div class="ui-mask"></div>
+        <div class="ui-dialog  ui-dialog2">
+            <div class="ui-dialog-hd tl plr15"><span class="ui-dhd-title">我是弹窗标题</span></div>
+            <div class="ui-dialog-bd tl pd15">我是弹窗类容我是弹窗类容我是弹窗类容我是弹窗类容我是弹窗类容</div>
+            <div class="ui-dialog-fd tr mt10 border plr15">
+                <a href="javascript:;" class="ui-dialog-btn ui-dialog-btn-assist plr10 dib">辅助操作</a>
+                <a href="javascript:;" class="ui-dialog-btn ui-dialog-btn-primary plr10 dib">主操作</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

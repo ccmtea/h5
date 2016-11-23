@@ -3,40 +3,8 @@
         <examples name="预留图片位置">
             <div class="con">
                 <div class="main">
-                    <pre class="css" v-highlight>
-/*    预留图片位置    start*/
-/**
-** img-square 图片为正方形
-** img-rectangle 图片为长方形
-**/
-@mixin img-square($parentW,$childW){
-    position: relative;
-    width:$parentW;
-    height:0;
-    padding-bottom:$parentW;
-    > img{
-        position: absolute;
-        left:0;
-        width:$childW;
-        height:$childW;
-    }
-}
-@mixin img-rectangle($imgW,$imgH,$parentW,$childW){
-    position: relative;
-    width:percentage($parentW);
-    height:0;
-    padding-bottom:percentage(round($imgH / $imgW * 100) / (100 / $parentW));
-    > img{
-        position: absolute;
-        left:0;
-        width:$childW;
-        height:$childW;
-    }
-}
-/*    预留图片位置    end*/
-                    </pre>
+                    css from mixin.scss<br/>
                     ex:
-
                     <pre class="html/css" v-highlight>
 &lt;div class="img"&gt;
     &lt;img src="/img/img1.png" alt=""&gt;

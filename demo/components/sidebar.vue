@@ -44,7 +44,7 @@
                     <router-link :class="{ cur: store.routerName === 'progress' }" :to="{ name: 'progress'}">进度条</router-link>
                 </div>
             </li>
-            <li>
+            <!--<li>
                 <h6 @click="showTab3 = !showTab3" :class = "{arrow: showTab3}">JS插件</h6>
                 <div v-if="showTab3" class="sidebar-a">
                     <a href="#">3333333</a>
@@ -55,7 +55,7 @@
                 <div v-if="showTab4" class="sidebar-a">
                     <a href="#">字体图标</a>
                 </div>
-            </li>
+            </li>-->
         </ul>
     </div>
 </template>

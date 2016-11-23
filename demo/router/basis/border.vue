@@ -3,46 +3,7 @@
         <examples name="border 1px">
             <div class="con">
                 <div class="main">
-                    from：constant.scss  &&  variate.scss
-                    <pre class="css" v-highlight>
-$border-width: 1px;
-$border-color:#ececec;
-
-/*   边框1px    start*/
-.border{
-    position: relative;
-}
-.border > a,a.border{
-	position: relative;
-}
-.border::before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-	border:$border-width solid $border-color;
-	transform: scale(1);
-	-webkit-transform-origin: left top;
-	transform-origin: left top;
-	pointer-events: none;}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5){
-	.border::before{
-		width: 200%;
-		height: 200%;
-		transform: scale(0.5);
-	}
-}
-@media only screen and (-webkit-min-device-pixel-ratio:3){
-	.border::before{
-		width: 300%;
-		height: 300%;
-		transform: scale(0.333333);
-	}
-}
-                    </pre>
+                    from：constant.scss<br/>
                     ex：
                     <pre class="html/css" v-highlight>   
 .b-around::before{
