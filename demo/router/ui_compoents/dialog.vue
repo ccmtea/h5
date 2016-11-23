@@ -18,7 +18,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <a href="demo/dialog1.html"  target="_blank" class="ui-btn ui-btn-default border showDialog1">弹窗1</a>
+                    <a href="/h5/demo/dialog1.html"  target="_blank" class="ui-btn ui-btn-default border showDialog1">弹窗1</a>
                     <pre class="html" v-highlight>
 &lt;div class="js-dialog" id="dialog2" style = "display:none"&gt;
     &lt;div class="ui-mask"&gt;&lt;/div&gt;
@@ -32,7 +32,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <a href="demo/dialog2.html"  target="_blank" class="ui-btn ui-btn-default border showDialog2">弹窗2</a>
+                    <a href="/h5/demo/dialog2.html"  target="_blank" class="ui-btn ui-btn-default border showDialog2">弹窗2</a>
                 </div>
             </div>
         </examples>
