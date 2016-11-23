@@ -3,7 +3,7 @@
         <examples>
             <div class="con">
                 <div class="main">
-                    css from：mixin.scss<br/>
+                    css from：constant.scss<br/>
                     ex：
                     <pre class="html" v-highlight>
 &lt;div class="ui-flex-row flex"&gt;
