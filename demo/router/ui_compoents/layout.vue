@@ -3,7 +3,7 @@
         <examples name="布局">
             <div class="con">
                 <div class="main">
-                    <a href="./demo/layouts.html" target="_blank" class="ui-btn ui-btn-default border text-center">布局</a>
+                    <a href="../demo/layouts.html" target="_blank" class="ui-btn ui-btn-default border text-center">布局</a>
                     <pre class="html" v-highlight>
 &lt;div id="ui-header"&gt;
     &lt;div class="ui-header-wrap"&gt;我是头部&lt;/div&gt;
