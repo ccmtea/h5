@@ -3,7 +3,7 @@
         <examples name="三角符号">
             <div class="con">
                 <div class="main">
-                    from：constant.scss<br/>
+                    css from：constant.scss<br/>
                     ex：
                     <pre class="html/css" v-highlight>
 &lt;span class="caret-solid"&gt;&lt;/span&gt;
