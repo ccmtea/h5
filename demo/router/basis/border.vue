@@ -3,7 +3,7 @@
         <examples name="border 1px">
             <div class="con">
                 <div class="main">
-                    from：constant.scss<br/>
+                    css from：constant.scss<br/>
                     ex：
                     <pre class="html/css" v-highlight>   
 .b-around::before{
