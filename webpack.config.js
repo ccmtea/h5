@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: './static/',
         publicPath: './static/',
-        filename: "./static/index.js"
+        filename: "./index.js"
     },
     module: {
         loaders: [
