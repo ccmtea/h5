@@ -32,6 +32,11 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery'
         }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        }),
     ],
     vue: {
         loaders: {
