@@ -13220,7 +13220,7 @@
 	    staticClass: "img"
 	  }, [_h('img', {
 	    attrs: {
-	      "src": "/img/img1.jpg",
+	      "src": "img/img1.jpg",
 	      "alt": ""
 	    }
 	  })])
@@ -13231,7 +13231,7 @@
 	    staticClass: "img2"
 	  }, [_h('img', {
 	    attrs: {
-	      "src": "/img/img2.jpg",
+	      "src": "img/img2.jpg",
 	      "alt": ""
 	    }
 	  })])
@@ -26317,7 +26317,7 @@
 	  return _h('a', {
 	    staticClass: "ui-btn ui-btn-default border showDialog1",
 	    attrs: {
-	      "href": "demo/dialog1.html",
+	      "href": "/h5/demo/dialog1.html",
 	      "target": "_blank"
 	    }
 	  }, ["弹窗1"])
@@ -26325,7 +26325,7 @@
 	  return _h('a', {
 	    staticClass: "ui-btn ui-btn-default border showDialog2",
 	    attrs: {
-	      "href": "demo/dialog2.html",
+	      "href": "/h5/demo/dialog2.html",
 	      "target": "_blank"
 	    }
 	  }, ["弹窗2"])
@@ -26914,7 +26914,7 @@
 	  return _h('a', {
 	    staticClass: "ui-btn ui-btn-default border text-center",
 	    attrs: {
-	      "href": "/demo/layouts.html",
+	      "href": "/h5/demo/layouts.html",
 	      "target": "_blank"
 	    }
 	  }, ["布局"])
