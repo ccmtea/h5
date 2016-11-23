@@ -14,7 +14,7 @@
 }
                     </pre>
                     <div class="img">
-                        <img src="/img/img1.jpg" alt="">
+                        <img src="img/img1.jpg" alt="">
                     </div>
                     <p>我是正方形的图片</p>
                     <pre class="html/css" v-highlight>
@@ -27,7 +27,7 @@
 }
                     </pre>
                     <div class="img2">
-                        <img src="/img/img2.jpg" alt="">
+                        <img src="img/img2.jpg" alt="">
                     </div>
                     <p>我是非正方形</p>
                 </div>
