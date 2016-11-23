@@ -3,23 +3,45 @@
         <examples>
             <div class="con">
                 <div class="main">
-                    <div class="jz-flex-row flex">
-                        <div class="jz-flex-col">hi</div>
+                    css from：mixin.scss<br/>
+                    ex：
+                    <pre class="html" v-highlight>
+&lt;div class="ui-flex-row flex"&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ui-flex-row flex"&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ui-flex-row flex"&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+&lt;/div&gt;
+    &lt;div class="ui-flex-row flex"&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+    &lt;div class="ui-flex-col"&gt;hi&lt;/div&gt;
+&lt;/div&gt;
+                    </pre>
+                    <div class="ui-flex-row flex">
+                        <div class="ui-flex-col">hi</div>
                     </div>
-                    <div class="jz-flex-row flex">
-                        <div class="jz-flex-col">hi</div>
-                        <div class="jz-flex-col">hi</div>
+                    <div class="ui-flex-row flex">
+                        <div class="ui-flex-col">hi</div>
+                        <div class="ui-flex-col">hi</div>
                     </div>
-                    <div class="jz-flex-row flex">
-                        <div class="jz-flex-col">hi</div>
-                        <div class="jz-flex-col">hi</div>
-                        <div class="jz-flex-col">hi</div>
+                    <div class="ui-flex-row flex">
+                        <div class="ui-flex-col">hi</div>
+                        <div class="ui-flex-col">hi</div>
+                        <div class="ui-flex-col">hi</div>
                     </div>
-                     <div class="jz-flex-row flex">
-                        <div class="jz-flex-col">hi</div>
-                        <div class="jz-flex-col">hi</div>
-                        <div class="jz-flex-col">hi</div>
-                        <div class="jz-flex-col">hi</div>
+                     <div class="ui-flex-row flex">
+                        <div class="ui-flex-col">hi</div>
+                        <div class="ui-flex-col">hi</div>
+                        <div class="ui-flex-col">hi</div>
+                        <div class="ui-flex-col">hi</div>
                     </div>
                 </div>
             </div>

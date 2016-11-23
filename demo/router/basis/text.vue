@@ -3,33 +3,7 @@
         <examples name = "文本">
             <div class="con">
                 <div class="main">
-                    from:constant.vue
-                    <pre class="css" v-highlight>
-/**
-**  不同状态文本颜色
-**  ui-txt-default  主要内容色
-**  ui-txt-info 次要内容色
-**  ui-txt-muted 不可点击状态文本色
-**  ui-txt-warning  警示
-**  ui-txt-highlight  关键词高亮颜色
-**  链接文本候默认色
-**/
-.ui-txt-default{
-	color:#3c3c3c;
-}
-.ui-txt-info{
-	color:#a7a7a7;
-}
-.ui-txt-muted{
-	color:#bbb;
-}
-.ui-txt-warning{
-	color:#ff4222;
-}
-.ui-txt-highlight{
-	color:#ff9a33;
-}
-                    </pre>
+                    css  from:constant.vue<br/>
                     ex：
                     <pre class="html/css" v-highlight>
 &lt;p class="ui-txt-default"&gt;主要内容的时候，我是这个颜色&lt;/p&gt;

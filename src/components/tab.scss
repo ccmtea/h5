@@ -1,0 +1,22 @@
+$tab-height:38px; //tab高度
+$tab-bordercolor:#ccc;   //tab默认边框颜色
+$tab-bordercolor-cur:red;  //tab当前边框颜色
+.ui-tab{
+    height:$tab-height;
+    line-height: $tab-height;
+    &::before{
+        border:none;
+        border-bottom:1px solid $tab-bordercolor;
+    }
+    &>.border{
+        &::before{
+            border:none;
+        }
+    }
+    &>.ui-tab-cur{
+        &::before{
+            border:none;
+            border-bottom:2px solid $tab-bordercolor-cur;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+$progressH:2px;  //进度条高度
+$progressbg:#e2e2e2;  //进度条背景颜色
+$progressSbg:#65d521;  //进度条进行中背景颜色
+.ui-progress{
+    overflow: hidden;
+    width: 100%;
+    height: $progressH;
+    font-size: 0;
+    background-color: $progressbg;
+    span{
+        display: block;
+        width: 0;
+        background: $progressSbg;
+        height: 100%;
+        font-size: 0;
+    }
+}

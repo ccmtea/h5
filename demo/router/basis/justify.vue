@@ -3,25 +3,7 @@
         <examples name="两端对齐">
             <div class="con">
                 <div class="main">
-                    from：constant.scss
-                    <pre class="css" v-highlight>
-/*   两端对齐    start*/
-.ui-justify{
-	text-align: justify;
-	font-size:0;
-	&:after{
-		content:"";
-		display: inline-block;
-		width:100%;
-		height:0;
-		overflow: hidden;
-	}
-	>*{
-		display: inline-block;
-	}
-}
-/*   两端对齐    end*/
-                </pre>
+                css   from：constant.scss<br/>
                 ex:
                 <pre class="html/css" v-highlight>
 &lt;ul class="ui-justify"&gt;

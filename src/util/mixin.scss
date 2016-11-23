@@ -47,6 +47,7 @@
 @mixin btn-size($width, $height, $fs, $br){
     width:$width;
     height:$height;
+    line-height: $height;
     font-size:$fs;
     border-radius: $br;
 }

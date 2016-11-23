@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;color:#333;
+            box-sizing:border-box;}
+        html,body,.ui-wrap{
+            height:100%;
+            position: relative;
+        }
+        .ui-wrap{
+            overflow-y: auto;
+        }
+        #ui-header{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        .ui-header-wrap{
+            height:45px;
+        }
+        .ui-wrap{
+            padding:45px 0 57px;
+        }
+        #ui-footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        #ui-footer nav{
+            height:57px;
+        }
+        .ui-wrap-top{
+            position: absolute;
+            width:100%;
+            z-index: 100;
+        }
+        .ui-main{
+            height: 100%;
+            position: relative;
+            overflow-y: auto;
+        }
+        .minh{
+            min-height:100%;
+        }
+        .maxh{
+            max-height:100%;
+        }
+        .minw{
+            min-width:100%;
+        }
+        .maxw{
+            max-width:100%;
+        }
+        /*水平等宽分布*/
+        .ui-flex-row {
+            display: flex;
+        }
+        /*垂直等高分布*/
+        .ui-flex-column {
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -o-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        .ui-flex-col {
+            flex: 1;
+        }
+        .pb0{
+            padding-bottom:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="ui-header" style="background: #fff;">
+        <div class="ui-header-wrap" style="background: green;">我是头部</div>
+    </div>
+    <div class="ui-wrap pb0">
+        <div class="ui-flex-column minh">
+            <div class="ui-flex-col" style="font-size:12px;padding:0 15px;">
+                <p style="padding:30px 0 20px;font-size:14px;color:#a02d2d">很多时候会有设计稿要求一个按钮或者一段说明一直在底部，当页面内容足够长的时候，这个页脚一切正常，但当页面较短时，就会出现问题！( 标签style样式仅因模拟临时添加,若需要，根据自需再另行设置)</p>
+                <ul>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                    <li>我是为了测试页脚的</li>
+                </ul>
+            </div>
+            <div style="margin-bottom:20px;text-align:center">我是流动性页脚</div>
+        </div>
+    </div>
+</body>
+</html>

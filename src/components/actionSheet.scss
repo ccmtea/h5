@@ -25,7 +25,6 @@ $actionsheet-cell-fs:16px;   //菜单字体大小
     padding: 10px 0;
     font-size:$actionsheet-cell-fs;
     &::before{
-        border:none;
         border-bottom:1px solid #ececec;
     }
 }

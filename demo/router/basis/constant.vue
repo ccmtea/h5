@@ -3,6 +3,162 @@
         <examples name="constant">
             <div class="pre">
                 <pre class="css" v-highlight>
+/*   页面最大最小宽高    start*/
+.minh{
+	min-height:100%;
+}
+.maxh{
+	max-height:100%;
+}
+.minw{
+	min-width:100%;
+}
+.maxw{
+	max-width:100%;
+}
+/*   页面最大最小宽高    end*/
+/*   display    start*/
+.db{
+	display: block;
+}
+.dib{
+	display: inline-block;
+}
+.dn{
+	display: none;
+}
+/*   display    end*/
+/*   边距    start*/
+.mt5{
+	margin-top:5px;
+}
+.mt8{
+	margin-top:8px;
+}
+.mt10{
+	margin-top:5px;
+}
+.mt15{
+	margin-top:15px;
+}
+.mt20{
+	margin-top:20px;
+}
+.mt25{
+	margin-top:25px;
+}
+.mt30{
+	margin-top:30px;
+}
+
+.ml5{
+	margin-left:5px;
+}
+.ml8{
+	margin-left:8px;
+}
+.ml10{
+	margin-left:10px;
+}
+.ml15{
+	margin-left:15px;
+}
+.ml20{
+	margin-left:20px;
+}
+.ml25{
+	margin-left:25px;
+}
+.ml30{
+	margin-left:30px;
+}
+
+.mr5{
+	margin-right:5px;
+}
+.mr8{
+	margin-right:8px;
+}
+.mr10{
+	margin-right:10px;
+}
+.mr15{
+	margin-right:15px;
+}
+.mr20{
+	margin-right:20px;
+}
+.mr25{
+	margin-right:25px;
+}
+.mr30{
+	margin-right:30px;
+}
+
+.pt0{
+	padding-top:0;
+}
+.pr0{
+	padding-right:0;
+}
+.pb0{
+	padding-bottom:0;
+}
+.pl0{
+	padding-left:0;
+}
+.pl5{
+	padding-left:5px;
+}
+.pl10{
+	padding-left:10px;
+}
+.pl15{
+	padding-left:15px;
+}
+
+.ptb5{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.ptb6{
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+
+.plr0{
+	padding-right:0;
+	padding-left:0;
+}
+.plr5{
+	padding-right:5px;
+	padding-left:5px;
+}
+.plr6{
+	padding-right:6px;
+	padding-left:6px;
+}
+.plr8{
+	padding-right:8px;
+	padding-left:8px;
+}
+.plr10{
+	padding-right:10px;
+	padding-left:10px;
+}
+.plr15{
+	padding-right:15px;
+	padding-left:15px;
+}
+.plr30{
+	padding-right:30px;
+	padding-left:30px;
+}
+.pd15{
+	padding:15px;
+}
+/*   边距    end*/
 /*   文字定位    start*/
 .tl{
     text-align: left;
@@ -29,9 +185,6 @@
 }
 /*   浮动定位      end*/
 /*   文字颜色    start*/
-.c-6{
-	color:#666;
-}
 .c-orange {
 	color: #ffa74d;
 }
@@ -42,7 +195,7 @@
 	color: #666;
 }
 .c-da {
-	color: #dadada
+	color: #dadada;
 }
 .c-92 {
 	color: #929292;
@@ -83,14 +236,11 @@
 **  ui-txt-info 次要内容色
 **  ui-txt-muted 不可点击状态文本色
 **  ui-txt-warning  警示
-**  ui-txt-highlight  关键词颜色
+**  ui-txt-highlight  关键词高亮颜色
 **  链接文本候默认色
 **/
 .ui-txt-default{
 	color:#3c3c3c;
-}
-.ui-txt-white{
-
 }
 .ui-txt-info{
 	color:#a7a7a7;
@@ -103,6 +253,9 @@
 }
 .ui-txt-highlight{
 	color:#ff9a33;
+}
+.ui-txt-ok{
+	color:#65d521;
 }
 
 /*   文字颜色      end*/
@@ -186,26 +339,38 @@
 **.caret-solid-right 右
 **/
 .caret-solid{
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px solid;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+    position:relative;
+	&::after{
+		content:"";
+		position:absolute;
+		width: 0;
+		height: 0;
+		top:50%;
+		margin-top:-4px;
+		right: 2px;
+		vertical-align: middle;
+		border-top: 6px solid;
+		border-right: 5px solid transparent;
+		border-left: 5px solid transparent;
+		color:#a6a6a6;
+	}
 }
 .caret-solid-top{
-    transform: rotate(180deg);
+	&::after{
+		transform: rotate(180deg);
+	}
 }
 .caret-solid-left{
-    transform: rotate(90deg);
+	&::after{
+		transform: rotate(90deg);
+	}
 }
 .caret-solid-right{
-    transform: rotate(-90deg);
+	&::after{
+		transform: rotate(-90deg);
+	}
 }
 /*   三角符号    end*/
-/*   三角符号      end*/
 /*   文字截断    start*/
 /**
 **.text-overflow-only 单行
@@ -242,6 +407,42 @@
 	}
 }
 /*   两端对齐    end*/
+
+/*   flex       start*/
+/*水平等宽分布*/
+.ui-flex-row {
+	display: flex;
+}
+/*垂直等高分布*/
+.ui-flex-column {
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.ui-flex-col {
+	flex: 1;
+}
+/*实现文本垂直居中*/
+.ui-flex-vh {
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-o-align-items: center;
+	-ms-align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	-ms-justify-content: center;
+}
+.vh {
+	display: flex;
+	-webkit-box-align: center;
+	box-align: center;
+}
+/*   flex       end*/
 /*   清除浮动    start*/
 .clear::after{
     content:"";
@@ -255,6 +456,18 @@
 	background-color: rgba(0, 0, 0, 0.1);
 }
 /*   列表点击背景    end*/
+/*   弹层背景        start*/
+.ui-mask{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 10;
+    background: rgba(0,0,0,.7);
+}
+/*   弹层背景        end*/
+
                 </pre>
             </div>
             <div class="con">

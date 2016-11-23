@@ -1,3 +1,17 @@
+/*   页面最大最小宽高    start*/
+.minh{
+	min-height:100%;
+}
+.maxh{
+	max-height:100%;
+}
+.minw{
+	min-width:100%;
+}
+.maxw{
+	max-width:100%;
+}
+/*   页面最大最小宽高    end*/
 /*   display    start*/
 .db{
 	display: block;
@@ -14,44 +28,44 @@
 	margin-top:5px;
 }
 .mt8{
-	margin-top:5px;
+	margin-top:8px;
 }
 .mt10{
 	margin-top:5px;
 }
 .mt15{
-	margin-top:5px;
+	margin-top:15px;
 }
 .mt20{
-	margin-top:5px;
+	margin-top:20px;
 }
 .mt25{
-	margin-top:5px;
+	margin-top:25px;
 }
 .mt30{
-	margin-top:5px;
+	margin-top:30px;
 }
 
 .ml5{
 	margin-left:5px;
 }
 .ml8{
-	margin-left:5px;
+	margin-left:8px;
 }
 .ml10{
-	margin-left:5px;
+	margin-left:10px;
 }
 .ml15{
-	margin-left:5px;
+	margin-left:15px;
 }
 .ml20{
-	margin-left:5px;
+	margin-left:20px;
 }
 .ml25{
-	margin-left:5px;
+	margin-left:25px;
 }
 .ml30{
-	margin-left:5px;
+	margin-left:30px;
 }
 
 .mr5{
@@ -136,7 +150,6 @@
 	padding-right:30px;
 	padding-left:30px;
 }
-
 .pd15{
 	padding:15px;
 }
@@ -294,7 +307,6 @@
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
-	border:$border-width solid $border-color;
 	transform: scale(1);
 	-webkit-transform-origin: left top;
 	transform-origin: left top;
@@ -393,11 +405,11 @@
 
 /*   flex       start*/
 /*水平等宽分布*/
-.jz-flex-row {
+.ui-flex-row {
 	display: flex;
 }
 /*垂直等高分布*/
-.jz-flex-column {
+.ui-flex-column {
 	display: flex;
 	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
@@ -405,11 +417,11 @@
 	-ms-flex-direction: column;
 	flex-direction: column;
 }
-.jz-flex-col {
+.ui-flex-col {
 	flex: 1;
 }
 /*实现文本垂直居中*/
-.jz-flex-vh {
+.ui-flex-vh {
 	-webkit-align-items: center;
 	-moz-align-items: center;
 	-o-align-items: center;
@@ -450,4 +462,3 @@
     background: rgba(0,0,0,.7);
 }
 /*   弹层背景        end*/
-
