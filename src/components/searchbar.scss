@@ -9,16 +9,16 @@ $icon-search-lh:$searchbar-wrapH - ($searchbar-wrap-ptb*2);  //box-sizing:border
 
 $icon-cancel-thin-w:40px;  //取消按钮宽度
 
-.ui-searchbar-wrap{
+.jz-searchbar-wrap{
     position: relative;
     height:$searchbar-wrapH;
     padding:$searchbar-wrap-ptb $searchbar-wrap-plr;
     text-align: center;
     background: $searchbar-wrap-bg;
-    .icon-cancel-thin,.ui-searchbar-cancel,.ui-searchbar-input{
+    .icon-cancel-thin,.jz-searchbar-cancel,.jz-searchbar-input{
         display: none;
     }
-    .ui-searchbar{
+    .jz-searchbar{
         width:100%;
         height:100%;
         position: relative;
@@ -28,7 +28,7 @@ $icon-cancel-thin-w:40px;  //取消按钮宽度
     .icon-search{
         line-height: $icon-search-lh;
     }
-    .ui-searchbar-input{
+    .jz-searchbar-input{
         height:100%;
         padding-right:$icon-cancel-thin-w;
         border-radius: $br-base;
@@ -42,10 +42,10 @@ $icon-cancel-thin-w:40px;  //取消按钮宽度
     &.focus{
         padding-right:0;
         text-align: left;
-        .ui-searchbar-text{
+        .jz-searchbar-text{
             display: none;
         }
-        .ui-searchbar-input,.icon-cancel-thin,.ui-searchbar-cancel{
+        .jz-searchbar-input,.icon-cancel-thin,.jz-searchbar-cancel{
             display: block;
         }
         .icon-search{
@@ -61,7 +61,7 @@ $icon-cancel-thin-w:40px;  //取消按钮宽度
             right:0;
             line-height: $icon-search-lh;
         }
-        .ui-searchbar-cancel{
+        .jz-searchbar-cancel{
             line-height: $icon-search-lh;
         }
     }

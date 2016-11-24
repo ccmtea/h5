@@ -8,36 +8,36 @@
     <style>
         *{margin:0;padding:0;color:#333;
             box-sizing:border-box;}
-        html,body,.ui-wrap,.ui-main{
+        html,body,.jz-wrap,.jz-main{
             height:100%;
             position: relative;
         }
-        #ui-wrapper,.ui-wrap,.ui-main{
+        #jz-wrapper,.jz-wrap,.jz-main{
             overflow-y: auto;
         }
-        #ui-header{
+        #jz-header{
             position: absolute;
             top: 0;
             width: 100%;
             z-index: 100;
         }
-        .ui-header-wrap{
+        .jz-header-wrap{
         }
-        .ui-wrap{
+        .jz-wrap{
         }
-        #ui-footer{
+        #jz-footer{
             position: absolute;
             bottom: 0;
             width: 100%;
         }
-        #ui-footer .ui-footer-wrap{
+        #jz-footer .jz-footer-wrap{
         }
-        .ui-wrap-top{
+        .jz-wrap-top{
             position: absolute;
             width:100%;
             z-index: 100;
         }
-        .ui-main{
+        .jz-main{
             height: 100%;
             position: relative;
             overflow-y: auto;
@@ -48,12 +48,12 @@
     </style>
 </head>
 <body>
-    <div id="ui-header" style="background: #fff;">
-        <div class="ui-header-wrap" style="line-height:45px;background: green;text-align:center;">我是头部</div>
+    <div id="jz-header" style="background: #fff;">
+        <div class="jz-header-wrap" style="line-height:45px;background: green;text-align:center;">我是头部</div>
     </div>
-    <div class="ui-wrap" style="padding:45px 0 57px;">
-        <div class="ui-wrap-top" style="height:20px;background: red;text-align:center;">我是内容中固定</div>
-        <div class="ui-main pdt20">
+    <div class="jz-wrap" style="padding:45px 0 57px;">
+        <div class="jz-wrap-top" style="height:20px;background: red;text-align:center;">我是内容中固定</div>
+        <div class="jz-main pdt20">
             标签style样式仅因模拟临时添加。
             <ul>
                 <li>我是为了测试定位的</li>
@@ -84,8 +84,8 @@
             </ul>
         </div>
     </div>
-    <div id="ui-footer">
-        <nav class="ui-footer-wrap" style="line-height:57px;background: yellow;text-align:center;">我是底部导航</nav>
+    <div id="jz-footer">
+        <nav class="jz-footer-wrap" style="line-height:57px;background: yellow;text-align:center;">我是底部导航</nav>
     </div>
 </body>
 </html>

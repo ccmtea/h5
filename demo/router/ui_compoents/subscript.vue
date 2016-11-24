@@ -8,74 +8,74 @@
                     <ul>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-triangle icon-tag-triangle"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-triangle icon-tag-triangle"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-triangle icon-tag-triangle"></span>
+                            <span class="jz-subscript jz-s-triangle icon-tag-triangle"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-rectObl icon-tag-rectObl"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-rectObl icon-tag-rectObl"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-rectObl icon-tag-rectObl"></span>
+                            <span class="jz-subscript jz-s-rectObl icon-tag-rectObl"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-irregular icon-tag-irregular"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-irregular icon-tag-irregular"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-irregular icon-tag-irregular"></span>
+                            <span class="jz-subscript jz-s-irregular icon-tag-irregular"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-singleFillet icon-tag-singleFillet"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-singleFillet icon-tag-singleFillet"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-singleFillet icon-tag-singleFillet"></span>
+                            <span class="jz-subscript jz-s-singleFillet icon-tag-singleFillet"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-concave icon-tag-concave"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-concave icon-tag-concave"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-concave icon-tag-concave"></span>
+                            <span class="jz-subscript jz-s-concave icon-tag-concave"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-bulge icon-tag-bulge"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-bulge icon-tag-bulge"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-bulge icon-tag-bulge"></span>
+                            <span class="jz-subscript jz-s-bulge icon-tag-bulge"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-flatConcave icon-tag-flatConcave"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-flatConcave icon-tag-flatConcave"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-flatConcave icon-tag-flatConcave"></span>
+                            <span class="jz-subscript jz-s-flatConcave icon-tag-flatConcave"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-doubleRounded icon-tag-doubleRounded"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-doubleRounded icon-tag-doubleRounded"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
                         <li>
-                            <span class="ui-subscript ui-s-doubleRounded icon-tag-doubleRounded"></span>
+                            <span class="jz-subscript jz-s-doubleRounded icon-tag-doubleRounded"></span>
                         </li>
                         <pre class="html/css" v-highlight>
 &lt;li&gt;
-    &lt;span class="ui-subscript ui-s-rect"&gt;&lt;/span&gt;
+    &lt;span class="jz-subscript jz-s-rect"&gt;&lt;/span&gt;
 &lt;/li&gt;
                         </pre>
-                        <li class="ui-subscript ui-s-rect">
+                        <li class="jz-subscript jz-s-rect">
                         </li>
                     </ul>
                 </div>

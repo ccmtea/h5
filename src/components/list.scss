@@ -1,13 +1,13 @@
 $lc-plr:15px;
 $lc-ptb:10px;
 
-.ui-cells{
+.jz-cells{
     padding-left:$lc-plr;
-    .ui-cell{
+    .jz-cell{
         padding-left:0;
     }
 }
-.ui-cell{
+.jz-cell{
     padding:$lc-ptb $lc-plr;
     color: inherit;
     align-items: center;
@@ -17,12 +17,12 @@ $lc-ptb:10px;
     &:first-child::before{
         border-top:1px solid $border-color;
     }
-    .ui-cell-hd,.ui-cell-fd{
+    .jz-cell-hd,.jz-cell-fd{
         >*{
             display:block;
         }
     }
-    .ui-cell-bd{
+    .jz-cell-bd{
         position:relative;
     }
 }

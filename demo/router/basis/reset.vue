@@ -121,39 +121,39 @@ input::-webkit-inner-spin-button {
 input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
-html,body,#ui-wrap,#ui-main{
+html,body,#jz-wrap,#jz-main{
 	height:100%;
 	position: relative;
 }
-#ui-wrapper,#ui-wrap,#ui-main{
+#jz-wrapper,#jz-wrap,#jz-main{
 	overflow-y: auto;
 }
-#ui-header{
+#jz-header{
 	position: absolute;
 	top: 0;
 	width: 100%;
 	z-index: 100;
 }
-.ui-header-wrap{
+.jz-header-wrap{
 	height:45px;
 }
-#ui-wrap{
+#jz-wrap{
 	padding:45px 0 57px;
 }
-#ui-footer{
+#jz-footer{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 }
-#ui-footer .ui-footer-wrap{
+#jz-footer .jz-footer-wrap{
 	height:57px;
 }
-.ui-wrap-top{
+.jz-wrap-top{
 	position: absolute;
 	width:100%;
 	z-index: 100;
 }
-.ui-main{
+.jz-main{
 	height: 100%;
 	position: relative;
 	overflow-y: auto;

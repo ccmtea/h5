@@ -160,13 +160,14 @@ tr:first-child{
         float:left;
         width:20%;
         padding:10px 0;
-        &::before{
-            border:none;
-            border-right:1px solid #333;
-        }
-        &:first-child::before{
-            border-left:1px solid #333;
-        }
+    }
+    
+    ul li::before{
+        border:none;
+        border-right:1px solid #333;
+    }
+    ul li:first-child::before{
+        border-left:1px solid #333;
     }
     table{
         width:100%;
@@ -174,19 +175,17 @@ tr:first-child{
     }
     td{
         padding:20px;
-        &::before{
-            border:1px solid #333;
-            border-left:none;
-            border-top:none;
-        }
-        &:first-child::before{
-            border-left:1px solid #333;
-        }
     }
-    tr:first-child{
-        td::before{
-            border-top:1px solid #333;
-        }
+    td::before{
+        border:1px solid #333;
+        border-left:none;
+        border-top:none;
+    }
+    td:first-child::before{
+        border-left:1px solid #333;
+    }
+    tr:first-child td::before{
+        border-top:1px solid #333
     }
 </style>
 <script>

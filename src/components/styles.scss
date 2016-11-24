@@ -9,7 +9,7 @@
   }
   @return ($px / $base-font-size) * 1rem;
 }
- body, html,#mo-wrapper, #ui-main{
+ body, html,#mo-wrapper, #jz-main{
     height: 100%;
     position: relative;
 }
@@ -17,25 +17,25 @@ body{
     max-width:10rem;
     margin:auto;
 }
-#ui-header,#ui-footer{
+#jz-header,#jz-footer{
     position: $pa;
     width:100%;
 }
-#ui-header{
+#jz-header{
     top:0;
     left:0;
     right:0;
-    .ui-header-con{
+    .jz-header-con{
         width:100%;
         height: px2rem(72);
         background: #ffa74d;
     }
 }
-#ui-footer{
+#jz-footer{
     bottom:px2rem(-1);
     left:0;
     right:0;
-    .ui-footer-con{
+    .jz-footer-con{
         width:100%;
         display: flex;
         height:px2rem(90);
@@ -51,7 +51,7 @@ body{
         }
     }
 }
-#mo-wrapper,#ui-main{
+#mo-wrapper,#jz-main{
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;
 }
@@ -59,17 +59,17 @@ body{
     width:100%;
     overflow: hidden;
 }
-#ui-main{
+#jz-main{
     padding:px2rem(72) 0 px2rem(90);
 }
-#ui-header,#ui-footer,#ui-main-ab{
+#jz-header,#jz-footer,#jz-main-ab{
     z-index:$zi100;
 }
 
 
 
 
-.ui-nav{
+.jz-nav{
     position:absolute;
     width:100%;
     height:px2rem(60);
@@ -79,13 +79,13 @@ body{
     background: #ded5d5;
     z-index: 100;
 }
-.ui-scroll{
+.jz-scroll{
     height:100%;
     padding-top:px2rem(60);
     overflow-y: auto;
 }
-.ui-tab-con{
-    .ui-tc{
+.jz-tab-con{
+    .jz-tc{
         li{
            border-bottom:1px solid $bc;
            a{

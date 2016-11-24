@@ -1,7 +1,8 @@
+@import './util/mixin.scss';
 /*******************
 **
-**  .ui-label  初始化标签
-**  .ui-label-bg  有背景颜色的标签
+**  .jz-label  初始化标签
+**  .jz-label-bg  有背景颜色的标签
 **
 *******************/
 
@@ -16,7 +17,7 @@ $label-bg:transparent;
 $label-br:2px;
 /*    标签初始化   end     */
 
-.ui-label,.ui-label-bg{
+.jz-label,.jz-label-bg{
     margin-left:5px;
     @include pendant($label-height,$label-mWidth,$label-plr,$label-bg,$label-fs,$label-fc,$label-bc,$label-br);
     &:first-child{
@@ -24,6 +25,6 @@ $label-br:2px;
     }
 }
 
-.ui-label-bg{
+.jz-label-bg{
     background-color: #ccc;
 }

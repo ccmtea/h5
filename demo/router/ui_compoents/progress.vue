@@ -6,11 +6,11 @@
                     css from：progress.scss<br>
                     ex：
                     <pre class="html" v-highlight>
-&lt;div class="ui-progress"&gt;
+&lt;div class="jz-progress"&gt;
     &lt;span style="width:50%"&gt;&lt;/span&gt;
 &lt;/div&gt;
                     </pre>
-                    <div class="ui-progress">
+                    <div class="jz-progress">
                         <span style="width:50%"></span>
                     </div>
                 </div>

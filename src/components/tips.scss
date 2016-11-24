@@ -1,22 +1,22 @@
 /**
-**  ui-tips 普通提示
-**  ui-tooltips  工具提示
+**  jz-tips 普通提示
+**  jz-tooltips  工具提示
 **/
 
-$ui-tooltips-h:35px;
-$ui-tc-right-w:40px;
-$ui-tooltips-bg:#fff2ba;
+$jz-tooltips-h:35px;
+$jz-tc-right-w:40px;
+$jz-tooltips-bg:#fff2ba;
 
 
-.ui-tooltips{
+.jz-tooltips{
     position: relative;
     max-width:100%;
-    padding:0 $ui-tc-right-w 0 15px;
+    padding:0 $jz-tc-right-w 0 15px;
     line-height: 35px;
-    background: $ui-tooltips-bg;
-    .ui-tc-right{
+    background: $jz-tooltips-bg;
+    .jz-tc-right{
         position: absolute;
-        width:$ui-tc-right-w;
+        width:$jz-tc-right-w;
         top:0;
         right:0;
         font-size:14px;

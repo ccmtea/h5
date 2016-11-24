@@ -70,21 +70,21 @@
                 transform-origin: left top;
                 pointer-events: none;
             }
-            .ui-flex-row {
+            .jz-flex-row {
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -moz-box;
                 display: -ms-flexbox;
                 display: flex;
             }
-            .ui-flex-col {
+            .jz-flex-col {
                 -webkit-box-flex: 1;
                 -webkit-flex: 1;
                 -moz-box-flex: 1;
                 -ms-flex: 1;
                 flex: 1;
             }
-        .ui-mask {
+        .jz-mask {
             position: fixed;
             top: 0;
             left: 0;
@@ -93,7 +93,7 @@
             z-index: 10;
             background: rgba(0, 0, 0, 0.7);
         }
-        .ui-dialog {
+        .jz-dialog {
             position: fixed;
             width: 94%;
             max-width: 300px;
@@ -107,35 +107,35 @@
             background: #fff;
             border-radius: 4px;
         }
-        .ui-dialog .ui-dialog-hd {
+        .jz-dialog .jz-dialog-hd {
             font-size: 20px;
             color: #313131;
         }
-        .ui-dialog .ui-dialog-bd {
+        .jz-dialog .jz-dialog-bd {
             font-size: 16px;
             color: #858585;
         }
-        .ui-dialog .ui-dialog-fd {
+        .jz-dialog .jz-dialog-fd {
             height: 38px;
             line-height: 38px;
         }
-        .ui-dialog .ui-dialog-btn-assist {
+        .jz-dialog .jz-dialog-btn-assist {
             color: #313131;
         }
-        .ui-dialog .ui-dialog-btn {
+        .jz-dialog .jz-dialog-btn {
             font-size: 14px;
         }
-        .ui-dialog .ui-dialog-fd::before {
+        .jz-dialog .jz-dialog-fd::before {
             border: none;
             border-top: 1px solid #ececec;
         }
-        .ui-dialog .ui-dialog-btn-assist {
+        .jz-dialog .jz-dialog-btn-assist {
             color: #313131;
         }
-        .ui-dialog .ui-dialog-btn-primary {
+        .jz-dialog .jz-dialog-btn-primary {
             color: #5edd9e;
         }
-        .ui-dialog .ui-dialog-btn-primary::before {
+        .jz-dialog .jz-dialog-btn-primary::before {
             border: none;
             border-left: 1px solid #ececec;
         }
@@ -143,13 +143,13 @@
 </head>
 <body>
     <div class="js-dialog" id="dialog1">
-    <div class="ui-mask"></div>
-    <div class="ui-dialog ui-dialog1">
-        <div class="ui-dialog-hd tc"><span class="ui-dhd-title">我是弹窗标题</span></div>
-        <div class="ui-dialog-bd tc pd15">我是弹窗类容我是弹窗类容我是弹窗类容我是弹窗类容我是弹窗类容</div>
-        <div class="ui-dialog-fd ui-flex-row tc mt10 border">
-            <a href="javascript:;" class="ui-dialog-btn ui-dialog-btn-assist ui-flex-col">辅助操作</a>
-            <a href="javascript:;" class="ui-dialog-btn ui-dialog-btn-primary ui-flex-col border">主操作</a>
+    <div class="jz-mask"></div>
+    <div class="jz-dialog jz-dialog1">
+        <div class="jz-dialog-hd tc"><span class="jz-dhd-title">我是弹窗标题</span></div>
+        <div class="jz-dialog-bd tc pd15">我是弹窗类容我是弹窗类容我是弹窗类容我是弹窗类容我是弹窗类容</div>
+        <div class="jz-dialog-fd jz-flex-row tc mt10 border">
+            <a href="javascript:;" class="jz-dialog-btn jz-dialog-btn-assist jz-flex-col">辅助操作</a>
+            <a href="javascript:;" class="jz-dialog-btn jz-dialog-btn-primary jz-flex-col border">主操作</a>
         </div>
     </div>
 </div>

@@ -6,14 +6,14 @@
                     css from：constant.scss<br/>
                     ex：
                     <pre class="html" v-highlight>
-&lt;ul class="ui-whitespace plr15"&gt;
-    &lt;li class="ui-w-col" style="background:#ccc;"&gt;&lt;/li&gt;
-    &lt;li class="ui-w-col" style="background:#ccc;"&gt;&lt;/li&gt;
+&lt;ul class="jz-whitespace plr15"&gt;
+    &lt;li class="jz-w-col" style="background:#ccc;"&gt;&lt;/li&gt;
+    &lt;li class="jz-w-col" style="background:#ccc;"&gt;&lt;/li&gt;
 &lt;/ul&gt;
                     </pre>
-                    <ul class="ui-whitespace plr15">
-                        <li class="ui-w-col" style="background:#ccc;"></li>
-                        <li class="ui-w-col" style="background:#ccc;"></li>
+                    <ul class="jz-whitespace plr15">
+                        <li class="jz-w-col" style="background:#ccc;"></li>
+                        <li class="jz-w-col" style="background:#ccc;"></li>
                     </ul>
                 </div>
             </div>
@@ -21,10 +21,10 @@
     </div>
 </template>
 <style scoped lang="scss">
-.ui-whitespace{
+.jz-whitespace{
     display: block;
     overflow: hidden;
-    .ui-w-col{
+    .jz-w-col{
         float:left;
         width:50%;
         padding:5px;

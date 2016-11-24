@@ -4,58 +4,58 @@
             <div class="con">
                 <div class="main">
                     <pre class="html" v-highlight>
-&lt;div class="ui-msg-mode" style="display: none;"&gt;
-    &lt;div class="ui-msg-text tc"&gt;我是提示&lt;/div&gt;
+&lt;div class="jz-msg-mode" style="display: none;"&gt;
+    &lt;div class="jz-msg-text tc"&gt;我是提示&lt;/div&gt;
 &lt;/div&gt;
                     </pre>
-                    <button href="#" class="ui-btn ui-btn-default border ui-btn-block toast-btn1">提示</button>
+                    <button href="#" class="jz-btn jz-btn-default border jz-btn-block toast-btn1">提示</button>
                     <pre class="html" v-highlight>
-&lt;div class="ui-loading-mode" style="display: none;"&gt;
-    &lt;div class="ui-spinner"&gt;
-        &lt;div class="ui-spinner-container ui-spinner-container1"&gt;
-            &lt;div class="ui-circle1"&gt;&lt;/div&gt;
-            &lt;div class="ui-circle2"&gt;&lt;/div&gt; 
-            &lt;div class="ui-circle3"&gt;&lt;/div&gt; 
-            &lt;div class="ui-circle4"&gt;&lt;/div&gt; 
+&lt;div class="jz-loading-mode" style="display: none;"&gt;
+    &lt;div class="jz-spinner"&gt;
+        &lt;div class="jz-spinner-container jz-spinner-container1"&gt;
+            &lt;div class="jz-circle1"&gt;&lt;/div&gt;
+            &lt;div class="jz-circle2"&gt;&lt;/div&gt; 
+            &lt;div class="jz-circle3"&gt;&lt;/div&gt; 
+            &lt;div class="jz-circle4"&gt;&lt;/div&gt; 
         &lt;/div&gt; 
-        &lt;div class="ui-spinner-container ui-spinner-container2"&gt; 
-            &lt;div class="ui-circle1"&gt;&lt;/div&gt; 
-            &lt;div class="ui-circle2"&gt;&lt;/div&gt;
-            &lt;div class="ui-circle3"&gt;&lt;/div&gt; 
-            &lt;div class="ui-circle4"&gt;&lt;/div&gt;
+        &lt;div class="jz-spinner-container jz-spinner-container2"&gt; 
+            &lt;div class="jz-circle1"&gt;&lt;/div&gt; 
+            &lt;div class="jz-circle2"&gt;&lt;/div&gt;
+            &lt;div class="jz-circle3"&gt;&lt;/div&gt; 
+            &lt;div class="jz-circle4"&gt;&lt;/div&gt;
         &lt;/div&gt; 
-        &lt;div class="ui-spinner-container ui-spinner-container3"&gt; 
-            &lt;div class="ui-circle1"&gt;&lt;/div&gt; 
-            &lt;div class="ui-circle2"&gt;&lt;/div&gt; 
-            &lt;div class="ui-circle3"&gt;&lt;/div&gt; 
-            &lt;div class="ui-circle4"&gt;&lt;/div&gt; 
+        &lt;div class="jz-spinner-container jz-spinner-container3"&gt; 
+            &lt;div class="jz-circle1"&gt;&lt;/div&gt; 
+            &lt;div class="jz-circle2"&gt;&lt;/div&gt; 
+            &lt;div class="jz-circle3"&gt;&lt;/div&gt; 
+            &lt;div class="jz-circle4"&gt;&lt;/div&gt; 
         &lt;/div&gt; 
     &lt;/div&gt;
 &lt;/div&gt;                      
                     </pre>
-                    <button href="#" class="ui-btn ui-btn-default border ui-btn-block mt15 toast-btn2">加载中提示</button>
-                    <div class="ui-msg-mode" style="display: none;">
-                        <div class="ui-msg-text tc">我是提示</div>
+                    <button href="#" class="jz-btn jz-btn-default border jz-btn-block mt15 toast-btn2">加载中提示</button>
+                    <div class="jz-msg-mode" style="display: none;">
+                        <div class="jz-msg-text tc">我是提示</div>
                     </div>
-                    <div class="ui-loading-mode" style="display: none;"> 
-                        <div class="ui-spinner"> 
-                            <div class="ui-spinner-container ui-spinner-container1"> 
-                                <div class="ui-circle1"></div> 
-                                <div class="ui-circle2"></div> 
-                                <div class="ui-circle3"></div> 
-                                <div class="ui-circle4"></div> 
+                    <div class="jz-loading-mode" style="display: none;"> 
+                        <div class="jz-spinner"> 
+                            <div class="jz-spinner-container jz-spinner-container1"> 
+                                <div class="jz-circle1"></div> 
+                                <div class="jz-circle2"></div> 
+                                <div class="jz-circle3"></div> 
+                                <div class="jz-circle4"></div> 
                             </div> 
-                            <div class="ui-spinner-container ui-spinner-container2" > 
-                                <div class="ui-circle1"></div> 
-                                <div class="ui-circle2"></div> 
-                                <div class="ui-circle3"></div> 
-                                <div class="ui-circle4"></div> 
+                            <div class="jz-spinner-container jz-spinner-container2" > 
+                                <div class="jz-circle1"></div> 
+                                <div class="jz-circle2"></div> 
+                                <div class="jz-circle3"></div> 
+                                <div class="jz-circle4"></div> 
                             </div> 
-                            <div class="ui-spinner-container ui-spinner-container3"> 
-                                <div class="ui-circle1"></div> 
-                                <div class="ui-circle2"></div> 
-                                <div class="ui-circle3"></div> 
-                                <div class="ui-circle4"></div> 
+                            <div class="jz-spinner-container jz-spinner-container3"> 
+                                <div class="jz-circle1"></div> 
+                                <div class="jz-circle2"></div> 
+                                <div class="jz-circle3"></div> 
+                                <div class="jz-circle4"></div> 
                             </div> 
                         </div> 
                     </div>
@@ -68,7 +68,7 @@
 </style>
 <script>
     $(function(){
-        var msgToast = $('.ui-msg-mode');
+        var msgToast = $('.jz-msg-mode');
         $('.toast-btn1').on('click', function(){
             if (msgToast.css('display') != 'none') return;
             msgToast.fadeIn(100);
@@ -78,7 +78,7 @@
         });
     });
     $(function(){
-        var loadingToast = $('.ui-loading-mode');
+        var loadingToast = $('.jz-loading-mode');
         $('.toast-btn2').on('click', function(){
             if (loadingToast.css('display') != 'none') return;
             loadingToast.fadeIn(100);

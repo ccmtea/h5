@@ -1,3 +1,4 @@
+@import './util/mixin.scss';
 /************************
 **
 **  avatar-default 100*100
@@ -24,7 +25,7 @@ $avatar-lg-fs:36px;
 /*    头像初始化   end     */
 
 
-.ui-avatar{
+.jz-avatar{
     @include avatar($avatar-color,$avatar-bg);
     >img{
         display: inline-block;
@@ -37,21 +38,21 @@ $avatar-lg-fs:36px;
     }
 }
 
-.ui-avatar-default{
+.jz-avatar-default{
     @include avatar-size($avatar-default-width,$avatar-default-height);
     >[class^="icon-"]{
         font-size:$avatar-default-fs;
     }
 }
 
-.ui-avatar-s{
+.jz-avatar-s{
     @include avatar-size($avatar-s-width,$avatar-s-height);
     >[class^="icon-"]{
         font-size:$avatar-s-fs;
     }
 }
 
-.ui-avatar-lg{
+.jz-avatar-lg{
     @include avatar-size($avatar-lg-width,$avatar-lg-height);
     >[class^="icon-"]{
         font-size:$avatar-lg-fs;

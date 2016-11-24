@@ -6,29 +6,29 @@
                     css from：mixin.scss && btn.scss<br/>
                     ex：
                     <pre class="html" v-highlight>
-&lt;button class="ui-btn ui-btn-default border"&gt;default&lt;/button&gt;
+&lt;button class="jz-btn jz-btn-default border"&gt;default&lt;/button&gt;
                     </pre>
-                    <button class="ui-btn ui-btn-default border">default</button>
+                    <button class="jz-btn jz-btn-default border">default</button>
                     <pre class="html" v-highlight>
-&lt;button class="ui-btn ui-btn-primary"&gt;primary&lt;/button&gt;
+&lt;button class="jz-btn jz-btn-primary"&gt;primary&lt;/button&gt;
                     </pre>
-                    <button class="ui-btn ui-btn-primary">primary</button>
+                    <button class="jz-btn jz-btn-primary">primary</button>
                     <pre class="html" v-highlight>
-&lt;button class="ui-btn ui-btn-secondary"&gt;secondary&lt;/button&gt;
+&lt;button class="jz-btn jz-btn-secondary"&gt;secondary&lt;/button&gt;
                     </pre>
-                    <button class="ui-btn ui-btn-secondary">secondary</button>
+                    <button class="jz-btn jz-btn-secondary">secondary</button>
                     <pre class="html" v-highlight>
-&lt;button class="ui-btn ui-btn-warning"&gt;warning&lt;/button&gt;
+&lt;button class="jz-btn jz-btn-warning"&gt;warning&lt;/button&gt;
                     </pre>
-                    <button class="ui-btn ui-btn-warning">warning</button>
+                    <button class="jz-btn jz-btn-warning">warning</button>
                     <pre class="html" v-highlight>
-&lt;button class="ui-btn ui-btn-primary ui-btn-block" disabled &gt;disabled(我是禁用状态，标签在中添加“disabled”)&lt;/button&gt;
+&lt;button class="jz-btn jz-btn-primary jz-btn-block" disabled &gt;disabled(我是禁用状态，标签在中添加“disabled”)&lt;/button&gt;
                     </pre>                   
-                    <button class="ui-btn ui-btn-primary ui-btn-block" disabled>disabled(我是禁用状态，标签在中添加“disabled”)</button>
+                    <button class="jz-btn jz-btn-primary jz-btn-block" disabled>disabled(我是禁用状态，标签在中添加“disabled”)</button>
                     <pre class="html" v-highlight>
-&lt;button class="ui-btn ui-btn-primary ui-btn-block"&gt;primary(我是块级按钮，只需添加“btn-block”)&lt;/button&gt;
+&lt;button class="jz-btn jz-btn-primary jz-btn-block"&gt;primary(我是块级按钮，只需添加“btn-block”)&lt;/button&gt;
                     </pre>
-                    <button class="ui-btn ui-btn-primary ui-btn-block">primary(我是块级按钮，只需添加“btn-block”)</button>
+                    <button class="jz-btn jz-btn-primary jz-btn-block">primary(我是块级按钮，只需添加“btn-block”)</button>
                 </div>
             </div>
         </examples>

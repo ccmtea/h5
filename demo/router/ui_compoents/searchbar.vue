@@ -6,28 +6,28 @@
                     css from：searchbar.scss<br/>
                     ex：
                     <pre class="html" v-highlight>
-&lt;div class="ui-searchbar-wrap ui-flex-row"&gt;
-    &lt;div class="ui-searchbar ui-flex-col"&gt;
+&lt;div class="jz-searchbar-wrap jz-flex-row"&gt;
+    &lt;div class="jz-searchbar jz-flex-col"&gt;
         &lt;i class = "icon-search pdl15"&gt;&lt;/i&gt;
-        &lt;div class="ui-searchbar-text dib"&gt;搜索&lt;/div&gt;
-        &lt;div class="ui-searchbar-input"&gt;
+        &lt;div class="jz-searchbar-text dib"&gt;搜索&lt;/div&gt;
+        &lt;div class="jz-searchbar-input"&gt;
             &lt;input type="text" placeholder="搜索产品"&gt;
         &lt;/div&gt;
         &lt;i class="icon-cancel-thin tc"&gt;&lt;/i&gt;
     &lt;/div&gt;
-    &lt;div class="ui-searchbar-cancel plr15"&gt;取消&lt;/div&gt;
+    &lt;div class="jz-searchbar-cancel plr15"&gt;取消&lt;/div&gt;
 &lt;/div&gt; 
                     </pre>
-                    <div class="ui-searchbar-wrap ui-flex-row">
-                        <div class="ui-searchbar ui-flex-col">
+                    <div class="jz-searchbar-wrap jz-flex-row">
+                        <div class="jz-searchbar jz-flex-col">
                             <i class = "icon-search pdl15"></i>
-                            <div class="ui-searchbar-text dib">搜索</div>
-                            <div class="ui-searchbar-input">
+                            <div class="jz-searchbar-text dib">搜索</div>
+                            <div class="jz-searchbar-input">
                                 <input type="text" placeholder="搜索产品">
                             </div>
                             <i class="icon-cancel-thin tc"></i>
                         </div>
-                        <div class="ui-searchbar-cancel plr15">取消</div>
+                        <div class="jz-searchbar-cancel plr15">取消</div>
                     </div>
                 </div>
             </div>
@@ -59,12 +59,12 @@
         
     }
     $(function(){
-        $('.ui-searchbar').click(function(){
-            $('.ui-searchbar-wrap').addClass('focus');
-            $('.ui-searchbar-input input').focus();
+        $('.jz-searchbar').click(function(){
+            $('.jz-searchbar-wrap').addClass('focus');
+            $('.jz-searchbar-input input').focus();
         });
-        $('.ui-searchbar-cancel').click(function(){
-            $('.ui-searchbar-wrap').removeClass('focus');
+        $('.jz-searchbar-cancel').click(function(){
+            $('.jz-searchbar-wrap').removeClass('focus');
         });
     })
 </script>

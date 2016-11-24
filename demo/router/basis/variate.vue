@@ -16,9 +16,9 @@ $br-base:4px;
 $border-width: 1px;
 $border-color:#ececec;
 
-$ui-default-color:#5edd9e;
-$ui-disable-color:#e5e5e5;
-$ui-disable-color:#e5e5e5;
+$jz-default-color:#5edd9e;
+$jz-disable-color:#e5e5e5;
+$jz-disable-color:#e5e5e5;
                 </pre>
             </div>
         </examples>

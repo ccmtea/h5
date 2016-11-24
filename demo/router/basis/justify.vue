@@ -6,7 +6,7 @@
                 css   from：constant.scss<br/>
                 ex:
                 <pre class="html/css" v-highlight>
-&lt;ul class="ui-justify"&gt;
+&lt;ul class="jz-justify"&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
@@ -20,7 +20,7 @@
     &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
                     </pre>
-                    <ul  class="ui-justify">
+                    <ul  class="jz-justify">
                         <li></li>
                         <li></li>
                         <li></li>

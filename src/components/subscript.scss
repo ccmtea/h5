@@ -1,4 +1,4 @@
-.ui-subscript{
+.jz-subscript{
     &::before,&::after{
         position: absolute;
     }
@@ -9,20 +9,20 @@
     }
 }
 
-.ui-s-triangle,.ui-s-concave,.ui-s-irregular,.ui-s-rectObl,.ui-s-bulge,.ui-s-flatConcave,.ui-s-doubleRounded{
+.jz-s-triangle,.jz-s-concave,.jz-s-irregular,.jz-s-rectObl,.jz-s-bulge,.jz-s-flatConcave,.jz-s-doubleRounded{
     &:before{
         top:0;
         line-height: 29px;
         font-size:32px;
     }
 }
-.ui-s-triangle{
+.jz-s-triangle{
     &::after{
         content:"新";
         padding: 1px 0 0 3px;
     }
 }
-.ui-s-rectObl{
+.jz-s-rectObl{
     &::before{
 
     }
@@ -33,7 +33,7 @@
         top:4px
     }
 }
-.ui-s-irregular{
+.jz-s-irregular{
     &::before{
 
     }
@@ -43,7 +43,7 @@
         top:2px;
     }
 }
-.ui-s-singleFillet{
+.jz-s-singleFillet{
     &::before{
         left:3px;
         font-size:15px;
@@ -53,7 +53,7 @@
         padding: 2px 0 0 5px;
     }
 }
-.ui-s-concave{
+.jz-s-concave{
     &::before{
         left:-2px;
     }
@@ -63,7 +63,7 @@
         top:5px;
     }
 }
-.ui-s-bulge{
+.jz-s-bulge{
     &::before{
         line-height: 27px;
     }
@@ -73,7 +73,7 @@
         top:4px;
     }
 }
-.ui-s-flatConcave{
+.jz-s-flatConcave{
     &::before{
 
     }
@@ -83,7 +83,7 @@
         top:1px;
     }
 }
-.ui-s-doubleRounded{
+.jz-s-doubleRounded{
     &::before{
         font-size:15px;
         line-height:14px;
@@ -93,7 +93,7 @@
         padding: 0 0 0 7px;
     }
 }
-.ui-s-rect{
+.jz-s-rect{
     &::before{
         content:"免费";
         position: absolute;

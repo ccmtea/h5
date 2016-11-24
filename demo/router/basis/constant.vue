@@ -232,29 +232,29 @@
 }
 /**
 **  不同状态文本颜色
-**  ui-txt-default  主要内容色
-**  ui-txt-info 次要内容色
-**  ui-txt-muted 不可点击状态文本色
-**  ui-txt-warning  警示
-**  ui-txt-highlight  关键词高亮颜色
+**  jz-txt-default  主要内容色
+**  jz-txt-info 次要内容色
+**  jz-txt-muted 不可点击状态文本色
+**  jz-txt-warning  警示
+**  jz-txt-highlight  关键词高亮颜色
 **  链接文本候默认色
 **/
-.ui-txt-default{
+.jz-txt-default{
 	color:#3c3c3c;
 }
-.ui-txt-info{
+.jz-txt-info{
 	color:#a7a7a7;
 }
-.ui-txt-muted{
+.jz-txt-muted{
 	color:#bbb;
 }
-.ui-txt-warning{
+.jz-txt-warning{
 	color:#ff4222;
 }
-.ui-txt-highlight{
+.jz-txt-highlight{
 	color:#ff9a33;
 }
-.ui-txt-ok{
+.jz-txt-ok{
 	color:#65d521;
 }
 
@@ -392,7 +392,7 @@
 }
 /*   文字截断      end*/
 /*   两端对齐    start*/
-.ui-justify{
+.jz-justify{
 	text-align: justify;
 	font-size:0;
 	&:after{
@@ -410,11 +410,11 @@
 
 /*   flex       start*/
 /*水平等宽分布*/
-.ui-flex-row {
+.jz-flex-row {
 	display: flex;
 }
 /*垂直等高分布*/
-.ui-flex-column {
+.jz-flex-column {
 	display: flex;
 	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
@@ -422,11 +422,11 @@
 	-ms-flex-direction: column;
 	flex-direction: column;
 }
-.ui-flex-col {
+.jz-flex-col {
 	flex: 1;
 }
 /*实现文本垂直居中*/
-.ui-flex-vh {
+.jz-flex-vh {
 	-webkit-align-items: center;
 	-moz-align-items: center;
 	-o-align-items: center;
@@ -457,7 +457,7 @@
 }
 /*   列表点击背景    end*/
 /*   弹层背景        start*/
-.ui-mask{
+.jz-mask{
     position:fixed;
     top:0;
     left:0;

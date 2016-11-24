@@ -1,7 +1,7 @@
 $tab-height:38px; //tab高度
 $tab-bordercolor:#ccc;   //tab默认边框颜色
 $tab-bordercolor-cur:red;  //tab当前边框颜色
-.ui-tab{
+.jz-tab{
     height:$tab-height;
     line-height: $tab-height;
     &::before{
@@ -13,7 +13,7 @@ $tab-bordercolor-cur:red;  //tab当前边框颜色
             border:none;
         }
     }
-    &>.ui-tab-cur{
+    &>.jz-tab-cur{
         &::before{
             border:none;
             border-bottom:2px solid $tab-bordercolor-cur;

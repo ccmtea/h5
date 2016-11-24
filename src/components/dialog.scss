@@ -1,21 +1,21 @@
-$ui-dialog-w:94%; //弹窗宽度
-$ui-dialog-b:4px; //弹窗圆角
+$jz-dialog-w:94%; //弹窗宽度
+$jz-dialog-b:4px; //弹窗圆角
 
-$ui-dialog-hd-fs:20px;  //弹窗标题字体大小
-$ui-dialog-hd-color:#313131;   //弹窗标题颜色
+$jz-dialog-hd-fs:20px;  //弹窗标题字体大小
+$jz-dialog-hd-color:#313131;   //弹窗标题颜色
  
-$ui-dialog-bd-fs:16px;  //弹窗主体字体大小
-$ui-dialog-bd-color:#858585;   //弹窗主体字体颜色
+$jz-dialog-bd-fs:16px;  //弹窗主体字体大小
+$jz-dialog-bd-color:#858585;   //弹窗主体字体颜色
 
-$ui-dialog-fd-h:38px;  //弹窗底部高度
+$jz-dialog-fd-h:38px;  //弹窗底部高度
 
-$ui-dialog-btn-fs:14px;  //弹窗底部字体大小
-$ui-dialog-btna-color:#313131;   //弹窗底部辅助按钮字体颜色
-$ui-dialog-btnp-color:#5edd9e;   //弹窗底部主要按钮字体颜色
+$jz-dialog-btn-fs:14px;  //弹窗底部字体大小
+$jz-dialog-btna-color:#313131;   //弹窗底部辅助按钮字体颜色
+$jz-dialog-btnp-color:#5edd9e;   //弹窗底部主要按钮字体颜色
 
-.ui-dialog{
+.jz-dialog{
     position:fixed;
-    width:$ui-dialog-w;
+    width:$jz-dialog-w;
     max-width:300px;
     top:50%;
     left:50%;
@@ -24,31 +24,31 @@ $ui-dialog-btnp-color:#5edd9e;   //弹窗底部主要按钮字体颜色
 
     transform: translate(-50%, -50%);
     background:#fff;
-    border-radius:$ui-dialog-b;
-    .ui-dialog-hd{
-        font-size:$ui-dialog-hd-fs;
-        color:$ui-dialog-hd-color;
+    border-radius:$jz-dialog-b;
+    .jz-dialog-hd{
+        font-size:$jz-dialog-hd-fs;
+        color:$jz-dialog-hd-color;
     }
-    .ui-dialog-bd{
-        font-size:$ui-dialog-bd-fs;
-        color:$ui-dialog-bd-color;
+    .jz-dialog-bd{
+        font-size:$jz-dialog-bd-fs;
+        color:$jz-dialog-bd-color;
     }
-    .ui-dialog-fd{
-        height:$ui-dialog-fd-h;
-        line-height:$ui-dialog-fd-h;
+    .jz-dialog-fd{
+        height:$jz-dialog-fd-h;
+        line-height:$jz-dialog-fd-h;
         &::before{
             border:none;
             border-top:1px solid #ececec;
         }
     }
-    .ui-dialog-btn{
-        font-size:$ui-dialog-btn-fs;
+    .jz-dialog-btn{
+        font-size:$jz-dialog-btn-fs;
     }
-    .ui-dialog-btn-assist{
-        color:$ui-dialog-btna-color;
+    .jz-dialog-btn-assist{
+        color:$jz-dialog-btna-color;
     }
-    .ui-dialog-btn-primary{
-        color:$ui-dialog-btnp-color;
+    .jz-dialog-btn-primary{
+        color:$jz-dialog-btnp-color;
         &::before{
             border:none;
             border-left:1px solid #ececec;

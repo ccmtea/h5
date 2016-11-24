@@ -3,7 +3,7 @@ $actionsheet-menu-bg:#fff;  //菜单主体内容背景颜色
 $actionsheet-action-bg:#fff; //底部按钮背景颜色
 $actionsheet-cell-fs:16px;   //菜单字体大小
 
-.ui-actionsheet {
+.jz-actionsheet {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -14,13 +14,13 @@ $actionsheet-cell-fs:16px;   //菜单字体大小
     background-color: $actionsheet-bg;
     transition: transform .3s;
 }
-.ui-actionsheet-menu{
+.jz-actionsheet-menu{
     background-color: $actionsheet-menu-bg;
 }
-.ui-actionsheet-action {
+.jz-actionsheet-action {
     background-color: $actionsheet-action-bg;
 }
-.ui-actionsheet-cell {
+.jz-actionsheet-cell {
     position: relative;
     padding: 10px 0;
     font-size:$actionsheet-cell-fs;
@@ -28,6 +28,6 @@ $actionsheet-cell-fs:16px;   //菜单字体大小
         border-bottom:1px solid #ececec;
     }
 }
-.ui-actionsheet-toggle{
+.jz-actionsheet-toggle{
     transform: translate(0, 0);
 }
